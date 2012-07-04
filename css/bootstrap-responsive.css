@@ -136,6 +136,10 @@
 }
 
 @media (max-width: 767px) {
+  .hero-unit h1 {
+    font-size: 36px;
+  }
+
   body {
     padding-right: 20px;
     padding-left: 20px;
@@ -199,6 +203,11 @@
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
+
+  .hero-unit h1 {
+    font-size: 46px;
+  }
+
   .row {
     margin-left: -20px;
     *zoom: 1;
@@ -681,7 +690,7 @@
 
 @media (max-width: 979px) {
   body {
-    padding-top: 0;
+    /* padding-top: 0; */
   }
   .navbar-fixed-top,
   .navbar-fixed-bottom {
@@ -808,6 +817,11 @@
 }
 
 @media (min-width: 980px) {
+  .hero-unit {
+    margin-top: 80px;
+  }
+
+
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
