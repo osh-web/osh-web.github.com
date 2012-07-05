@@ -1,5 +1,5 @@
 $(function(){
-  var boxList = $('.unit');
+  var boxList = $('.span4');
   boxList.height(getMaxHeight(boxList));
 
 });
