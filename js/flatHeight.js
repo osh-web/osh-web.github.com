@@ -1,16 +1,25 @@
-$(function(){
-  var boxList = $('.span4');
-  boxList.height(getMaxHeight(boxList));
+(function ($) {
+    // define function
+    // Array
+    Array.prototype.max = function() {
+      return Math.max.apply(Math, this);
+    };
 
-});
+    // jQuery
+    $.maxHeight = function ($$) {
+      return $.map($$, function () {
+        return $(this).height();
+      }).max();
+    };
 
-function getMaxHeight(domList){
-  var uMaxHeight = 0;
-  domList.each(function(i){
-    var uHeight = $(this).height();
-    if (uHeight > uMaxHeight){
-      uMaxHeight = uHeight;
-    }
+    $.flatHeight = function (selector) {
+      var $$ = $(selector);
+      var max = $.maxHeight($$);
+      return $$.height(max);
+    };
+
+  $(function(){
+    // entry point
+    $.flatHeight('.span4');
   });
-  return uMaxHeight;
-}
+})(jQuery);
