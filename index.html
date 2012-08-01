@@ -1,89 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>OSH＠2013</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html lang="ja" ng-app="project">
+  <head>
+    <meta charset="utf-8">
+    <title>OSH＠2013</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script data-main="js/main" src="js/require.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" />
+  </head>
 
-        <!-- //////////////////////////////// Bootstrap ///////////////////////////////// -->
-        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-        <!-- //////////////////////////////// Bootstrap ///////////////////////////////// -->
-    </head>
-    <body>
-
-        <div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="#">OSH＠2013</a>
-                    <div class="nav-collapse">
-                        <ul class="nav">
-                            <li class="active"><a href="#">TOP</a></li>
-                            <li><a href="summary.html">概要</a></li>
-                            <li><a href="entry.html">お申し込み</a></li>
-                            <li><a href="inquiry.html">Q&A</a></li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <!-- Main hero unit for a primary marketing message or call to action -->
-            <div class="hero-unit">
-                <h1>オープンセミナー広島＠2013</h1>
-                <p>オープンセミナーとは2003年より中四国地域で開催されているIT技術者向けの無料セミナーです。</p>
-                <p>
-                    ボランティアによって企画・運営されている非営利セミナーです。現在は香川県、岡山県、徳島県、広島県、愛媛県で開催されています。現在のオープンセミナーは各地域での実行委員により実行されています。オープンセミナーはスポンサーと地域のボランティアによって成り立っています。</p>
-                <p>※随時詳細が決まり次第追加していきます。</p>
-                <p><a class="btn btn-primary btn-large" href="summary.html">開催概要はこちら &raquo;</a></p>
-            </div>
-
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="span4">
-                    <h2>開催場所について</h2>
-                    <p>2013年1月19日 10:00 - 17:00</p>
-                    <p>rcc文化センター 6階 601(B1)</p>
-                    <p><a class="btn" href="#">開催場所の詳細はこちら &raquo;</a></p>
-                </div>
-                <div class="span4">
-                    <h2>スポンサーについて</h2>
-                    <p>スポンサーを募集しています。<br />
-                        スポンサーセッションやアンケート、バナーの掲載等のお問い合わせはお気軽にご連絡ください。</p>
-                    <p><a class="btn" href="mailto:alftaketomo@gmail.com?subject=OSH@2012のスポンサーについて">お問い合わせはこちら &raquo;</a></P>
-                </div>
-                <div class="span4">
-                    <h2>その他お問い合わせ</h2>
-                    <p>その他のお問い合わせはこちらからお願いします。</p>
-                    <p>たとえば...</p>
-                    <ul>
-                        <li>スタッフの立候補</li>
-                        <li>セミナーに関するお問い合わせ</li>
-                    </ul>
-                    </p><a class="btn" href="mailto:alftaketomo@gmail.com?subject=OSHに関するお問い合わせ">お問い合わせはこちら &raquo;</a></p>
-                </div>
-            </div>
-
-            <hr>
-
-            <footer>
-
-            </footer>
-
-        </div> <!-- /container -->
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/flatHeight.js"></script>
-    </body>
+  <body>
+    <navigation></navigation>
+    <div class="container" ng-view>
+    </div>
+    <hr>
+    <footer></footer>
+  </body>
 </html>

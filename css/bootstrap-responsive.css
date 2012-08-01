@@ -817,7 +817,7 @@
 }
 
 @media (min-width: 980px) {
-  .hero-unit {
+  body > .container {
     margin-top: 80px;
   }
 
