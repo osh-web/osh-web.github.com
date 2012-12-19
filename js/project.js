@@ -4,7 +4,8 @@ angular.module('project', []).
           when('/',        {controller: IndexCtrl, templateUrl: 'views/top.html'}).
           when('/summary', {controller: IndexCtrl, templateUrl: 'views/summary.html'}).
           when('/entry',   {controller: IndexCtrl, templateUrl: 'views/entry.html'}).
-          when('/inquiry', {controller: IndexCtrl, templateUrl: 'views/inquiry.html'});
+          when('/inquiry', {controller: IndexCtrl, templateUrl: 'views/inquiry.html'}).
+          when('/member', {controller: IndexCtrl, templateUrl: 'views/member.html'});
     }).
     directive('navigation', function() {
       return {
