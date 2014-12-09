@@ -403,3 +403,38 @@ a:visited { color: #205caa; }
     margin: 0 0 15px; }
 
 }
+
+.notice {
+    margin: 0.5em;
+    padding: 1em;
+    background-color: #ffeeee;
+    border: solid 1px #ffaaaa;
+    color: #aa0000;
+}
+
+.h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.abstract {
+    margin: 2em 0;
+}
+
+.abstract dt {
+    margin: 0.8em 0;
+}
+
+.abstract dd {
+    margin: 0 0 0 0.6em;
+}
+
+.abstract p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0.4em 0;
+}
+
+.home {
+    margin: 2em auto;
+}
