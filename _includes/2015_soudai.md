@@ -15,7 +15,7 @@
 #### 所属
 
 [日本PostgreSQLユーザ会](https://www.postgresql.jp/) 中国支部長
-[中国地方DB勉強会](dbstudychugoku.github.io) 主催
+[中国地方DB勉強会](http://dbstudychugoku.github.io/) 主催
 [Magic３エバンジェリスト](http://www.magic3.org/doc/)
 
 #### Webサイト
