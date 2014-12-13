@@ -488,7 +488,9 @@ hr {
 }
 
 .event p {
-    margin: auto auto auto 4em;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0.8em auto 0.5em 4em;
 }
 
 .event ul {
