@@ -51,6 +51,11 @@ AWSやAzureなどクラウドサービスの登場により、物理的なサー
 [<i class="fa fa-facebook"></i>](https://www.facebook.com/soudai.sone)
 [<i class="fa fa-twitter"></i>](http://twitter.com/soudai1025)
 [<i class="fa fa-github"></i>](https://github.com/soudai)
+* 柿木 勝之
+[<i class="fa fa-facebook"></i>](https://www.facebook.com/kakimomokuri)
+[<i class="fa fa-twitter"></i>](http://twitter.com/k2works)
+[<i class="fa fa-github"></i>](https://github.com/k2works)
+
 
 ## 主催
 
