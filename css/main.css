@@ -522,3 +522,8 @@ hr {
     color: #a00;
     margin: 0.5em 0 0.5em;
 }
+
+.premium img {
+    width: 100%;
+    max-width: 468px;
+}
