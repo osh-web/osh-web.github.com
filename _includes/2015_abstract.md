@@ -65,6 +65,11 @@ AWSやAzureなどクラウドサービスの登場により、物理的なサー
 
 * [株式会社 オレンジシステム広島](http://www.orange.co.jp/)
 
+## 協力
+
+* [コワーキングスペース ShakeHands](http://www.shakehands.jp/)
+* [すごい広島](http://great-h.github.io/)
+
 ## 懇親会
 
 会場： [コワーキングスペース ShakeHands](http://www.shakehands.jp/)
