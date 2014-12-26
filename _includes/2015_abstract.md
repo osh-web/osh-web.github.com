@@ -64,6 +64,8 @@ AWSやAzureなどクラウドサービスの登場により、物理的なサー
 ## 協賛企業
 
 * [株式会社 オレンジシステム広島](http://www.orange.co.jp/)
+* [株式会社 システムフレンド](http://www.systemfriend.co.jp)
+* [株式会社 ネクストビジョン](http://www.nextvision.co.jp/)
 
 ## 協力
 
