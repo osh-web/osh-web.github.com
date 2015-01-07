@@ -72,6 +72,12 @@ AWSやAzureなどクラウドサービスの登場により、物理的なサー
 * [コワーキングスペース ShakeHands](http://www.shakehands.jp/)
 * [すごい広島](http://great-h.github.io/)
 
+## スペシャルサンクス
+
+* [HiBiS](http://www.hibis.jp/)
+* [広島県情報産業協会](http://www.hia.or.jp/)
+
+
 ## 懇親会
 
 会場： [コワーキングスペース ShakeHands](http://www.shakehands.jp/)
