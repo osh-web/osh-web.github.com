@@ -4,7 +4,7 @@
 
 ## 会場
 
-[県立広島大学](http://www.pu-hiroshima.ac.jp/)
+[県立広島大学](http://www.pu-hiroshima.ac.jp/) 2455講義室
 
 ## テーマ
 
