@@ -14,6 +14,6 @@
 
 #### Web
 
-* [眠るシーラカンスと水底のプログラマー | Winodws Phone, Windows 8, EC-CUBEの情報を発信します](http://coelacanth.jp.net)
+* [眠るシーラカンスと水底のプログラマー](http://coelacanth.jp.net)
 * [西村 誠：CodeZine（コードジン）](http://codezine.jp/author/1343)
 * [Makoto Nishimura - Most Valuable Professional](https://mvp.microsoft.com/ja-jp/mvp/Makoto%20Nishimura-5000324)
