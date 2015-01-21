@@ -71,7 +71,7 @@ AWSやAzureなどクラウドサービスの登場により、物理的なサー
 
 * [コワーキングスペース ShakeHands](http://www.shakehands.jp/)
 * [DevLOVE広島](https://www.facebook.com/groups/657965497630510/)
-* [すくすくスクラム](https://www.facebook.com/Sukusuku.Scrum.Hiroshima)
+* [すくすくスクラム広島](https://www.facebook.com/Sukusuku.Scrum.Hiroshima)
 * [中国地方DB勉強会](http://dbstudychugoku.github.io/)
 * [LT駆動開発](http://ltdd.doorkeeper.jp/)
 * [すごい広島](http://great-h.github.io/)
