@@ -54,6 +54,8 @@ AWSやAzureなどクラウドサービスの登場により、物理的なサー
 [<i class="fa fa-github"></i>](https://github.com/https://github.com/mrt-k)
 * 岩崎圭太
 [<i class="fa fa-facebook"></i>](https://www.facebook.com/iwasaki192)
+* @takatayoshitake
+[<i class="fa fa-twitter"></i>](https://twitter.com/takatayoshitake)
 * 西村 誠
 [<i class="fa fa-facebook"></i>](https://www.facebook.com/makoto.nishimura.108)
 [<i class="fa fa-twitter"></i>](https://twitter.com/coelacanth)
