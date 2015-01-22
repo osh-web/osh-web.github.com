@@ -2,7 +2,7 @@
 
 プログラマーとインフラエンジニアが別の部署として存在する会社でこれまで働いてきました。その中で感じた考え方の違いや、問題点、両社が仲良くすることで生まれる相乗効果について話をしたいと思います。
 
-### 講師 西村 誠 <small>にしむら まこと</small>
+### 西村 誠 <small>にしむら まこと</small>
 
 [<i class="fa fa-facebook"></i>](https://www.facebook.com/makoto.nishimura.108)
 [<i class="fa fa-twitter"></i>](https://twitter.com/coelacanth)

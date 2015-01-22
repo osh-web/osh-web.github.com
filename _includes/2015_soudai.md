@@ -11,7 +11,7 @@ PostgreSQLのインストールや冗長化は非常に大切なことですが�
 
 今回はPostgreSQLを題材にして、Ansibleの概要と今日から始められることをお伝えしようと思います。
 
-### 講師 曽根 壮大 <small>そね たけとも</small>
+### 曽根 壮大 <small>そね たけとも</small>
 
 [<i class="fa fa-facebook"></i>](https://www.facebook.com/soudai.sone)
 [<i class="fa fa-twitter"></i>](http://twitter.com/soudai1025)

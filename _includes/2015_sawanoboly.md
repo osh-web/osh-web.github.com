@@ -7,7 +7,7 @@
 また、環境にクラウドサービスを選択すると、リソースがオンデマンドで使用できたりインフラストラクチャがプログラマブルであることを踏まえた開発環境という考え方も出てきています。
 余談として、開発者がそのような環境に対応するために押さえておくとよいポイントをサーバインフラエンジニアの視点からお話します。
 
-### 講師 澤登 亨彦 <small>さわのぼり ゆきひこ</small>
+### 澤登 亨彦 <small>さわのぼり ゆきひこ</small>
 
 [<i class="fa fa-facebook"></i>](https://www.facebook.com/yukihiko.sawanobori )
 [<i class="fa fa-twitter"></i>](https://twitter.com/sawanoboly)

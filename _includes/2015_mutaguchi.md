@@ -4,7 +4,7 @@ PowerShell Desired State Configuration（DSC）の登場により、いよいよ
 またWindowsのみならずLinuxなど他プラットフォームについてもDSCで横断的に構成管理を行える世界が来ようとしています。
 本セッションでは、PowerShell DSCを用いた最新のMicrosoft系インフラ構成管理の手法について、間もなくリリースされる予定のPowerShell 5.0の新機能も交えて紹介したいと思います。
 
-### 講師 牟田口 大介 <small>むたぐちだいすけ</small>
+### 牟田口 大介 <small>むたぐちだいすけ</small>
 
 [<i class="fa fa-facebook"></i>](https://www.facebook.com/daisuke.mutaguchi)
 [<i class="fa fa-twitter"></i>](https://twitter.com/mutaguchi)

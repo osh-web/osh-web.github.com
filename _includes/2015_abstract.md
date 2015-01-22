@@ -44,21 +44,27 @@ AWSやAzureなどクラウドサービスの登場により、物理的なサー
 [<i class="fa fa-facebook"></i>](https://www.facebook.com/yukihiko.sawanobori )
 [<i class="fa fa-twitter"></i>](https://twitter.com/sawanoboly)
 [<i class="fa fa-github"></i>](https://github.com/sawanoboly)
-* 牟田口 大介
-[<i class="fa fa-facebook"></i>](https://www.facebook.com/daisuke.mutaguchi)
-[<i class="fa fa-twitter"></i>](https://twitter.com/mutaguchi)
-* 曽根 壮大
-[<i class="fa fa-facebook"></i>](https://www.facebook.com/soudai.sone)
-[<i class="fa fa-twitter"></i>](http://twitter.com/soudai1025)
-[<i class="fa fa-github"></i>](https://github.com/soudai)
-* 西村 誠
-[<i class="fa fa-facebook"></i>](https://www.facebook.com/makoto.nishimura.108)
-[<i class="fa fa-twitter"></i>](https://twitter.com/coelacanth)
-[<i class="fa fa-github"></i>](https://github.com/coelacanth77)
 * 柿木 勝之
 [<i class="fa fa-facebook"></i>](https://www.facebook.com/kakimomokuri)
 [<i class="fa fa-twitter"></i>](http://twitter.com/k2works)
 [<i class="fa fa-github"></i>](https://github.com/k2works)
+* 森田浩平
+[<i class="fa fa-facebook"></i>](https://www.facebook.com/mrtc0k)
+[<i class="fa fa-twitter"></i>](https://twitter.com/mrtc0)
+[<i class="fa fa-github"></i>](https://github.com/https://github.com/mrt-k)
+* 岩崎圭太
+[<i class="fa fa-facebook"></i>](https://www.facebook.com/iwasaki192)
+* 西村 誠
+[<i class="fa fa-facebook"></i>](https://www.facebook.com/makoto.nishimura.108)
+[<i class="fa fa-twitter"></i>](https://twitter.com/coelacanth)
+[<i class="fa fa-github"></i>](https://github.com/coelacanth77)
+* 曽根 壮大
+[<i class="fa fa-facebook"></i>](https://www.facebook.com/soudai.sone)
+[<i class="fa fa-twitter"></i>](http://twitter.com/soudai1025)
+[<i class="fa fa-github"></i>](https://github.com/soudai)
+* 牟田口 大介
+[<i class="fa fa-facebook"></i>](https://www.facebook.com/daisuke.mutaguchi)
+[<i class="fa fa-twitter"></i>](https://twitter.com/mutaguchi)
 
 
 ## 主催

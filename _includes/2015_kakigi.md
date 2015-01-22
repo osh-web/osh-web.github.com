@@ -2,7 +2,7 @@
 
 ネット通販会社で基幹システムのインフラ基盤をAWSOpsWorksをメインに刷新した際の取り組みについて。
 
-### 講師 柿木 勝之 <small>かきぎ かつゆき</small>
+### 柿木 勝之 <small>かきぎ かつゆき</small>
 
 [<i class="fa fa-facebook"></i>](https://www.facebook.com/kakimomokuri)
 [<i class="fa fa-twitter"></i>](http://twitter.com/k2works)
