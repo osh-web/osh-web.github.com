@@ -614,6 +614,16 @@ a:visited {
     box-shadow: 0 0 10px 1px rgba(60,60,60,0.1);;
 }
 
+.sns-button-wrap {
+    width: auto;
+    text-align: center;
+    margin: 24px auto 14px auto;
+}
+
+.sns-button {
+    display: inline-block;
+}
+
 .body-wrap .header1 {
     color: #a00;
     font-size: 20px;
