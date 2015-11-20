@@ -8,3 +8,4 @@ url: "http://osh-web.github.io"
 # Build settings
 markdown: kramdown
 permalink: pretty
+exclude: node_modules
