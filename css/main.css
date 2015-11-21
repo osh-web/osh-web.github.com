@@ -433,7 +433,7 @@ a:visited { color: #205caa; }
 
 .hero {
     margin: 0;
-    padding: 10px;
+    padding: 20px 10px;
     background-image: url(/img/main.jpg);
     color: white;
     background-size: cover;
@@ -536,14 +536,14 @@ a:visited { color: #205caa; }
 }
 
 .speaker-wrap {
-    margin: 20px 4px 4px 4px;
+    margin: 40px 4px 4px 4px;
     padding: 4px 8px;
 }
 
 .speaker-wrap-sub {
     Background: #f3f3f3;
     margin: 12px 12px 40px 12px;
-    padding: 4px 12px;
+    padding: 4px 12px 8px 12px;
 }
 
 .speaker .name-header {
@@ -591,10 +591,6 @@ a:visited {
     color: #cc3333;
 }
 
-.content {
-    margin: 8px 10px;
-}
-
 .body-wrap .header1 {
     color: #a00;
     font-size: 20px;
@@ -604,8 +600,61 @@ a:visited {
     Background-color: #fee;
 }
 
+.sponsor-big-wrap {
+    padding: 10px 10px;
+}
+
+.sponsor-big {
+    margin: auto;
+    leight: 0;
+    right: 0;
+    max-width: 468px;
+}
+
+.sponsor-big img {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+}
+
+.sponsor-big {
+    margin: auto;
+    leight: 0;
+    right: 0;
+    max-width: 468px;
+}
+
+.sponsor-silver-wrap {
+    padding: 4px 10px;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+.sponsor-silver {
+    display: inline-block;
+}
+
+.sponsor-silver img {
+    display: inline-block;
+    margin: 4px 4px;
+    width: 100%;
+    max-width: 234px;
+}
+
+
+.content-wrap {
+    padding: 20px 10px;
+}
+
+.content {
+    margin: 60px auto;
+    leight: 0;
+    right: 0;
+    max-width: 640px;
+}
+
 .content .abstract-text {
-    margin: 40px 0;
     padding: 4px;
     color: #666;
     font-size: 13px;
