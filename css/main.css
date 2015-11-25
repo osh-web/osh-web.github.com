@@ -603,6 +603,17 @@ a:visited {
     color: #cc3333;
 }
 
+.btn {
+    font-size: 18px;
+    display: block;
+    margin: 20px 40px;
+    border: solid 1px #ffaaaa;
+    padding: 12px 10px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 10px 1px rgba(60,60,60,0.1);;
+}
+
 .body-wrap .header1 {
     color: #a00;
     font-size: 20px;
@@ -707,6 +718,25 @@ hr {
     color: #a00;
     margin: 0.5em 0 0.5em;
 }
+
+.jobs {
+    margin: 0;
+    padding:  0;
+    max-width: 640px;
+    list-style-type: none;
+}
+.jobs img {
+    max-width: 468px;
+    width: 100%;
+}
+.jobs p {
+    font-size: 13px;
+    margin: 6px 0;
+}
+.jobs-detail {
+    margin: 0 0 30px 0;
+}
+
 
 .event p {
     font-size: 14px;
