@@ -702,6 +702,13 @@ a:visited {
     margin: 40px 14px;
 }
 
+.abstract-wrap h2 {
+    font-size: 18px;
+    color: #999;
+    padding: 0;
+    margin: 0;
+}
+
 .abstract h2 {
     margin: 12px 0 0 0;
 }
