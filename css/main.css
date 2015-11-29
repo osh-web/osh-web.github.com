@@ -825,3 +825,8 @@ hr {
     text-align: center;
     box-shadow: 0px 2px #aaa;
 }
+
+.doorkeeper-widget {
+    text-align: center;
+    margin: 0 0 80px 0;
+}
