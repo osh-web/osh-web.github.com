@@ -813,6 +813,58 @@ hr {
     margin: 2em auto auto 0.5em;
 }
 
+.map {
+    text-align: center;
+}
+
+.timetable {
+    padding: 8px;
+    margin: 2em auto auto auto;
+    max-width: 640px;
+}
+
+.timetable h1 {
+    font-size: 18px;
+}
+
+.timetable p {
+    color: #999;
+}
+
+.timetable span {
+    display: inline-block;
+    padding: 2px;
+    color: #666;
+    font-size: 14px;
+}
+
+.timetable .title {
+    color: #000;
+    font-size: 16px;
+}
+
+.timetable ul ul {
+    margin-left: 40px;
+}
+
+.timetable > ul {
+    margin: 0.8em auto;
+    border: 1px solid #a66;
+    border-width: 1px 0 0 0;
+}
+
+.timetable > ul > li {
+    background-color: #fee;
+    border: 1px solid #a66;
+    border-top: 0;
+}
+
+.timetable li {
+    list-style: none;
+    padding: 0 4px;
+}
+
+
 .strong-link {
     position: relative;
     left: 0;
