@@ -1,22 +1,18 @@
 {
-  "name": "osh-web.github.com",
-  "version": "1.0.0",
-  "description": "オープンセミナー2015@広島",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/osh-web/osh-web.github.com.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/osh-web/osh-web.github.com/issues"
-  },
-  "homepage": "https://github.com/osh-web/osh-web.github.com#readme",
+  "name": "open-seminar-hiroshima",
+  "version": "0.1.0",
+  "private": true,
   "devDependencies": {
-    "browser-sync": "^2.10.0"
+    "react-scripts": "0.6.1"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
