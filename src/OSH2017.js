@@ -48,7 +48,7 @@ const Hero = () => {
                 </p>
             </CardText>
             <CardActions>
-                <RaisedButton label="申し込みする" href="" primary={true}/>
+                <RaisedButton label="申し込みする" href="https://osh.connpass.com/event/48114/" primary={true}/>
             </CardActions>
         </Card>
         );
