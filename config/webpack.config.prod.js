@@ -198,6 +198,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
+      filename: '2017/index.html',
       template: paths.appOSH2017Html,
       minify: minify
     }),
