@@ -33,6 +33,7 @@
     "html-webpack-plugin": "2.22.0",
     "http-proxy-middleware": "0.17.1",
     "jest": "15.1.1",
+    "js-yaml": "^3.7.0",
     "json-loader": "0.5.4",
     "material-ui": "^0.16.0",
     "object-assign": "4.1.0",
@@ -59,7 +60,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "deploy": "gh-pages -d build -b master"
+    "deploy": "gh-pages -d build -b gh-pages"
   },
   "jest": {
     "moduleFileExtensions": [

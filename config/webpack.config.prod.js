@@ -7,6 +7,7 @@ var InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 var url = require('url');
 var paths = require('./paths');
 var getClientEnvironment = require('./env');
+var yaml = require('js-yaml');
 
 /**
  * front-matterを挿入する
@@ -19,7 +20,7 @@ InjectFrontMatterPlugin.prototype.apply = function(compiler) {
     compiler.plugin('compilation', function(compilation) {
         compilation.plugin('html-webpack-plugin-after-html-processing', function(htmlPluginData, callback) {
             if (htmlPluginData.outputName == '2017/index.html') {
-                htmlPluginData.html = "---\n" + "permalink: /2017/\n"  + "---\n" + htmlPluginData.html;
+                htmlPluginData.html = "---\n" + yaml.dump({permalink: "/2017/"}, {schema: yaml.CORE_SCHEMA}) + "---\n" + htmlPluginData.html;
             }
             callback(null, htmlPluginData);
         });
