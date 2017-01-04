@@ -8,6 +8,24 @@ var url = require('url');
 var paths = require('./paths');
 var getClientEnvironment = require('./env');
 
+/**
+ * front-matterを挿入する
+ * @constructor
+ */
+function InjectFrontMatterPlugin() {
+}
+
+InjectFrontMatterPlugin.prototype.apply = function(compiler) {
+    compiler.plugin('compilation', function(compilation) {
+        compilation.plugin('html-webpack-plugin-after-html-processing', function(htmlPluginData, callback) {
+            if (htmlPluginData.outputName == '2017/index.html') {
+                htmlPluginData.html = "---\n" + "permalink: /2017/\n"  + "---\n" + htmlPluginData.html;
+            }
+            callback(null, htmlPluginData);
+        });
+    });
+};
+
 function ensureSlash(path, needsSlash) {
   var hasSlash = path.endsWith('/');
   if (hasSlash && !needsSlash) {
@@ -199,8 +217,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       filename: '2017/index.html',
-      template: paths.appOSH2017Html
+      template: paths.appOSH2017Html,
+      minify: minify
     }),
+    new InjectFrontMatterPlugin(),
     // Makes some environment variables available to the JS code, for example:
     // if (process.env.NODE_ENV === 'production') { ... }. See `./env.js`.
     // It is absolutely essential that NODE_ENV was set to production here.
