@@ -23,13 +23,13 @@ tags = ["IoT", "IchigoJam"]
 
 [[speakers]]
 name = "山本 学"
-href = "やまもと まなぶ"
+furi = "やまもと まなぶ"
 title = "調整中"
 description = "調整中"
 tags = ["myThings"]
 
 [[speakers]]
-name = "てらだ よしお"
+name = "寺田 佳央"
 furi = "てらだ よしお"
 title = "調整中"
 description = "調整中"
@@ -45,6 +45,7 @@ profile = """
 2015年8月、ハッカソンという単語も知らずにハッカソンに参加し、ICTをツールとしたオープンイノベーションに目覚める。以来、アイデアソン／ハッカソンのみならず各種イベントに参加することでICTコミュニティを作りながら、広島の存在感増幅を目指して活動中。また、17年間楽しんでいるサイクリングについても、ICTのチカラを借りてイノベーションを起こす事を企み中。
 """
 facebook = "akihiro.motoki.5"
+tags = ["ミドル", "広島"]
 
   [[speakers.oraganizatinos]]
     name = "NPO法人 瀬戸内サイクルメディア"
@@ -66,7 +67,6 @@ facebook = "akihiro.motoki.5"
     name = "KDDI∞Labo2015"
     href = "https://www.pref.hiroshima.lg.jp/site/innovation/kddi1216.html"
 
-tags = ["ミドル", "広島"]
 
 [[speakers]]
 name = "花谷 美香"

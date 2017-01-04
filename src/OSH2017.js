@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import './App.css';
 import AppBar from 'material-ui/AppBar';
-import FlatButton from 'material-ui/FlatButton';
+import RaisedButton from 'material-ui/RaisedButton';
 import Subheader from 'material-ui/Subheader';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import Chip from 'material-ui/Chip';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import {red500, green500} from 'material-ui/styles/colors';
 import {speakers} from 'toml!./2017/speaker.toml';
@@ -23,6 +24,12 @@ const Hero = () => {
     return (
         <Card>
             <CardTitle title="エンジニアがより良い社会を作れる!!" subtitle="MAY THE ENGINEERING BE WITH YOU" />
+
+            <CardMedia
+                overlay={<CardTitle title="オープンセミナー2017@広島" subtitle="2017年2月25日(土)" />}
+            >
+                <img src="/img/2017_header.jpg" />
+            </CardMedia>
             <CardText>
                 <p>
                     「人」や「モノ」あらゆるモノコトがネットに繋がるようになり、近年 ICT：Information and Communication Technology(インフォメーション・アンド・コミュニケーション・テクノロジー)やIoT：Internet of Things（モノのインターネット）といったキーワードも至る所で見聞きするようになってきました。
@@ -41,7 +48,7 @@ const Hero = () => {
                 </p>
             </CardText>
             <CardActions>
-                <FlatButton label="申し込みする" href=""/>
+                <RaisedButton label="申し込みする" href="" primary={true}/>
             </CardActions>
         </Card>
         );
@@ -49,9 +56,30 @@ const Hero = () => {
 
 class Speaker extends Component {
     render() {
+        const chip_style = {
+            margin: 4,
+        };
+
+        let chips = this.props.tags.map((tag) => {
+            return (
+                <Chip style={chip_style}>{tag}</Chip>
+            );
+        });
+
+        const style = {
+            display: 'flex',
+            flexWrap: 'wrap',
+            paddingBottom: 14,
+            paddingLeft: 10,
+            paddingRight: 10,
+        };
+
         return (
             <Card>
-                <CardTitle title={this.props.speaker.name} subtitle={this.props.speaker.furi} />
+                <CardTitle title={this.props.name} subtitle={this.props.furi} />
+                <div style={style}>
+                    {chips}
+                </div>
             </Card>
         );
     }
@@ -60,7 +88,7 @@ class Speaker extends Component {
 class App extends Component {
     render() {
         let Speakers = speakers.map((speaker) => {
-            return (<Speaker speaker={speaker}/>);
+            return (<Speaker name={speaker.name} furi={speaker.furi} tags={speaker.tags} />);
         });
 
         return (

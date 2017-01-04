@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppBar from 'material-ui/AppBar';
 import App from './App';
 import OSH2017 from './OSH2017';
 import './index.css';
