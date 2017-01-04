@@ -76,10 +76,17 @@ class Speaker extends Component {
 
         return (
             <Card>
-                <CardTitle title={this.props.name} subtitle={this.props.furi} />
+                <CardTitle
+                    title={this.props.title}
+                />
                 <div style={style}>
                     {chips}
                 </div>
+                <CardHeader
+                    title={this.props.name}
+                    subtitle={this.props.furi}
+                    avatar={this.props.avatar}
+                />
             </Card>
         );
     }
@@ -88,7 +95,13 @@ class Speaker extends Component {
 class App extends Component {
     render() {
         let Speakers = speakers.map((speaker) => {
-            return (<Speaker name={speaker.name} furi={speaker.furi} tags={speaker.tags} />);
+            return (<Speaker
+                title={speaker.title}
+                name={speaker.name}
+                furi={speaker.furi}
+                tags={speaker.tags}
+                avatar={speaker.image}
+            />);
         });
 
         return (
@@ -104,6 +117,7 @@ class App extends Component {
 
                     <Subheader>スピーカー</Subheader>
                     {Speakers}
+
 
                 </div>
             </MuiThemeProvider>
