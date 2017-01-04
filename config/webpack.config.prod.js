@@ -199,8 +199,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       filename: '2017/index.html',
-      template: paths.appOSH2017Html,
-      minify: minify
+      template: paths.appOSH2017Html
     }),
     // Makes some environment variables available to the JS code, for example:
     // if (process.env.NODE_ENV === 'production') { ... }. See `./env.js`.
