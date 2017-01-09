@@ -1,5 +1,5 @@
 {
-  "name": "open-seminar-hiroshima",
+  "name": "osh-web.github.io",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -90,5 +90,9 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/osh-web/osh-web.github.com",
+  "author": "Tomohiko Himura <eiel.hal@gmail.com>",
+  "license": "MIT"
 }
