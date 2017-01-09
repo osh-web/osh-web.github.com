@@ -4,6 +4,10 @@ import App from './App';
 import OSH2017 from './OSH2017';
 import './index.css';
 
+const reducer = () => {};
+
+const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+
 const root = document.getElementById('root');
 if (root) {
     ReactDOM.render(

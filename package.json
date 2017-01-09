@@ -42,6 +42,7 @@
     "promise": "7.1.1",
     "react-dev-utils": "^0.2.1",
     "recursive-readdir": "2.1.0",
+    "redux-devtools": "^3.3.1",
     "rimraf": "2.5.4",
     "strip-ansi": "3.0.1",
     "style-loader": "0.13.1",
@@ -55,7 +56,9 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-markdown": "^2.4.2",
-    "recompose": "^0.21.2"
+    "react-redux": "^5.0.1",
+    "recompose": "^0.21.2",
+    "redux": "^3.6.0"
   },
   "homepage": "http://osh-web.github.io",
   "scripts": {
