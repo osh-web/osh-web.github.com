@@ -9,6 +9,7 @@ import Chip from 'material-ui/Chip';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import {red500, green500} from 'material-ui/styles/colors';
 import {speakers} from 'toml!./2017/speaker.toml';
+import Markdown from 'react-markdown';
 
 const muiTheme = getMuiTheme({
     palette: {
@@ -54,54 +55,49 @@ const Hero = () => {
         );
 };
 
-class Speaker extends Component {
-    render() {
-        const chip_style = {
-            margin: 4,
-        };
+const Speaker = props => {
+    const chip_style = {
+        margin: 4,
+    };
 
-        let chips = this.props.tags.map((tag) => {
-            return (
-                <Chip style={chip_style}>{tag}</Chip>
-            );
-        });
-
-        const style = {
-            display: 'flex',
-            flexWrap: 'wrap',
-            paddingBottom: 14,
-            paddingLeft: 10,
-            paddingRight: 10,
-        };
-
+    let chips = props.tags.map((tag) => {
         return (
-            <Card>
-                <CardTitle
-                    title={this.props.title}
-                />
-                <div style={style}>
-                    {chips}
-                </div>
-                <CardHeader
-                    title={this.props.name}
-                    subtitle={this.props.furi}
-                    avatar={this.props.avatar}
-                />
-            </Card>
+            <Chip style={chip_style}>{tag}</Chip>
         );
-    }
+    });
+
+    const style = {
+        display: 'flex',
+        flexWrap: 'wrap',
+        paddingBottom: 14,
+        paddingLeft: 10,
+        paddingRight: 10,
+    };
+
+    return (
+        <Card>
+            <CardTitle
+                title={props.title}
+            />
+            <div style={style}>
+                {chips}
+            </div>
+            <CardHeader
+                title={props.name}
+                subtitle={props.furi}
+                avatar={props.avatar}
+            />
+            <CardText>
+                <Markdown source={props.profile}/>
+            </CardText>
+        </Card>
+    );
 };
 
 class App extends Component {
     render() {
         let Speakers = speakers.map((speaker) => {
-            return (<Speaker
-                title={speaker.title}
-                name={speaker.name}
-                furi={speaker.furi}
-                tags={speaker.tags}
-                avatar={speaker.image}
-            />);
+            return (<Speaker {...speaker} />);
         });
 
         return (
