@@ -21,6 +21,10 @@ const muiTheme = getMuiTheme({
     },
 });
 
+const EntryButton = () => {
+    return <RaisedButton label="申し込みする" href="https://osh.connpass.com/event/48114/" primary={true}/>
+};
+
 const Hero = () => {
     return (
         <Card>
@@ -32,6 +36,7 @@ const Hero = () => {
                 <img src="/img/2017_header.jpg" />
             </CardMedia>
             <CardText>
+                <h1>エンジニアがより良い社会を作れる!!<br /><span style={{fontSize: -2, color: '#999'}}>MAY THE ENGINEERING BE WITH YOU</span></h1>
                 <p>
                     「人」や「モノ」あらゆるモノコトがネットに繋がるようになり、近年 ICT：Information and Communication Technology(インフォメーション・アンド・コミュニケーション・テクノロジー)やIoT：Internet of Things（モノのインターネット）といったキーワードも至る所で見聞きするようになってきました。
                 </p>
@@ -49,7 +54,6 @@ const Hero = () => {
                 </p>
             </CardText>
             <CardActions>
-                <RaisedButton label="申し込みする" href="https://osh.connpass.com/event/48114/" primary={true}/>
             </CardActions>
         </Card>
         );
