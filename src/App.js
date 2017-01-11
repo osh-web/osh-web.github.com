@@ -34,26 +34,28 @@ class Hero extends Component {
     }
 }
 
+const Bar = () => {
+    return (
+        <AppBar
+            title="オープンセミナー広島"
+            iconClassNameRight="muidocs-icon-navigation-expand-more"
+            titleStyle={{'font-size': 20}}
+        />
+    );
+};
 
-
-class App extends Component {
-    render() {
-        return (
-            <MuiThemeProvider muiTheme={muiTheme}>
-                <div className="App">
-                    <AppBar
-                        title="オープンセミナー広島"
-                        iconClassNameRight="muidocs-icon-navigation-expand-more"
-                        titleStyle={{'font-size': 20}}
-                    />
-                    <Hero />
-                    <p className="App-intro">
-                    </p>
-                    <Seminar/>
-                </div>
-            </MuiThemeProvider>
-        );
-    }
-}
+const App = () => {
+    return (
+        <MuiThemeProvider muiTheme={muiTheme}>
+            <div className="App">
+                <Bar />
+                <Hero />
+                <p className="App-intro">
+                </p>
+                <Seminar/>
+            </div>
+        </MuiThemeProvider>
+    );
+};
 
 export default App;
