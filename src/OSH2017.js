@@ -26,6 +26,33 @@ const EntryButton = () => {
     return <RaisedButton label="申し込みする" href="https://osh.connpass.com/event/48114/" primary={true}/>
 };
 
+const sponsors = [
+    {
+        url: 'http://www.orange.co.jp/',
+        name: '株式会社オレンジシステム広島',
+        image: '/img/orange_468.png',
+        width: 468,
+    }
+];
+
+const Sponsor = ({url, name, image, width}) => {
+    const style = {
+        width: width,
+    };
+    return h('div', {},
+        h('a', {href: url},
+            h('img', {src: image, alt: name, style })
+        )
+    );
+};
+
+const Sponsors = () => {
+    console.log(sponsors);
+    return h('div',
+        sponsors.map((props) => { return h(Sponsor, props); })
+    );
+};
+
 const Content = () => {
     let Speakers = speakers.map((speaker) => {
         return h(Speaker, {key: speaker.furi, ...speaker});
@@ -48,8 +75,9 @@ const Content = () => {
     return h('div', {style}, [
         h(Hero, {style: {display: 'block', width: 640}}),
         h(Subheader, "スピーカー"),
-        Speakers
-
+        Speakers,
+        h(Subheader, "スポンサー"),
+        h(Sponsors)
         ]
     )
 };

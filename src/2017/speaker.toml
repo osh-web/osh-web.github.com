@@ -25,7 +25,7 @@ tags = ["IoT", "IchigoJam"]
 [[speakers]]
 name = "山本 学"
 furi = "やまもと まなぶ"
-title = "セッション調整中"
+title = "myThings使ったIoTによる地域課題解決"
 description = "調整中"
 tags = ["myThings"]
 
