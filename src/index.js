@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux'
+
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
+
 import App from './App';
 import OSH2017 from './OSH2017';
 import './index.css';

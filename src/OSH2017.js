@@ -28,7 +28,7 @@ const EntryButton = () => {
 
 const Content = () => {
     let Speakers = speakers.map((speaker) => {
-        return h(Speaker, {...speaker});
+        return h(Speaker, {key: speaker.furi, ...speaker});
     });
 
     const centering = {

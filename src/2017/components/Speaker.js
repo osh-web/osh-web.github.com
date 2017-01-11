@@ -31,7 +31,10 @@ const Chips = ({tags}) => {
 
 const Speaker = ({title, name, furi, image, profile, tags}) => {
     return (
-        <Card style={{maxWidth: 320, margin: 10}} >
+        <Card key={furi}
+            style={{maxWidth: 320, margin: 10}}
+            initiallyExparded={false}
+        >
             <CardMedia overlay={<CardTitle title={title} />}>
                 <img src={image ? image : '/img/2017_no_image@2x.jpg' } />
             </CardMedia>
@@ -41,6 +44,8 @@ const Speaker = ({title, name, furi, image, profile, tags}) => {
                 subtitle={furi}
                 avatar={image}
                 actAsExpander={true}
+                showExpandableButton={true}
+                onExpandChange={(state) => { console.log(state) }}
             />
             <CardText expandable={true}>
                 <Markdown source={profile}/>
