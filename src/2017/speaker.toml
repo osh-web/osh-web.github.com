@@ -28,6 +28,7 @@ furi = "やまもと まなぶ"
 title = "myThings使ったIoTによる地域課題解決"
 description = "調整中"
 tags = ["myThings"]
+image = "/img/2017_yamamoto@2x.jpg"
 
 [[speakers]]
 name = "寺田 佳央"
