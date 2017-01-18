@@ -31,13 +31,30 @@ const sponsors = [
         url: 'http://www.orange.co.jp/',
         name: '株式会社オレンジシステム広島',
         image: '/img/orange_468.png',
-        width: 468,
+        type: 'platinum',
+    },
+    {
+        url: 'https://www.nextvision.co.jp/',
+        name: '株式会社ネクストビジョン',
+        image: '/img/nextvision_234.png',
+        type: 'silver',
     }
 ];
 
-const Sponsor = ({url, name, image, width}) => {
+const Sponsor = ({url, name, image, type}) => {
+    const type2width = {
+        'silver': 117,
+        'gold': 234,
+        'platinum': 234,
+    };
+    const type2opacity = {
+        'silver': 0.8,
+        'gold': 1,
+        'platinum': 1,
+    };
     const style = {
-        width: width,
+        width: type2width[type],
+        opacity: type2opacity[type],
     };
     return h('div', {},
         h('a', {href: url},
@@ -47,8 +64,10 @@ const Sponsor = ({url, name, image, width}) => {
 };
 
 const Sponsors = () => {
-    console.log(sponsors);
-    return h('div',
+    const style = {
+        textAlign: 'center'
+    };
+    return h('div', {style},
         sponsors.map((props) => { return h(Sponsor, props); })
     );
 };
