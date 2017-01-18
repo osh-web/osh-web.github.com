@@ -1,6 +1,11 @@
 import React from 'react'
+<<<<<<< HEAD
 import {Card, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card'
+=======
+import {Card, CardHeader, CardMedia, CardTitle, CardText, CardActions} from 'material-ui/Card'
+>>>>>>> プロフィール修正中
 import Chip from 'material-ui/Chip'
+import IconButton from 'material-ui/IconButton'
 import Markdown from 'react-markdown'
 
 const Chips = ({tags}) => {
@@ -29,7 +34,7 @@ const Chips = ({tags}) => {
     );
 };
 
-const Speaker = ({title, name, furi, image, profile, tags}) => {
+const Speaker = ({title, name, furi, image, profile, tags, github}) => {
     const titleStyle = ((length) => {
         switch(true) {
             case length > 25:
@@ -57,11 +62,17 @@ const Speaker = ({title, name, furi, image, profile, tags}) => {
                 avatar={image}
                 actAsExpander={true}
                 showExpandableButton={true}
-                onExpandChange={(state) => { console.log(state) }}
-            />
+            >
+            </CardHeader>
             <CardText expandable={true}>
                 <Markdown source={profile}/>
             </CardText>
+            <CardActions>
+                <IconButton href={`https://github.com/${github}`} tooltip={github} target="_blank">
+                    <i className="fa fa-github" aria-hidden="true"></i>
+                </IconButton>
+                <i className="fa fa-github" aria-hidden="true"></i>
+            </CardActions>
         </Card>
     );
 };
