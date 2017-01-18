@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
+import h from 'react-hyperscript'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import AppBar from 'material-ui/AppBar'
 import Subheader from 'material-ui/Subheader'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import {red500, green500} from 'material-ui/styles/colors'
+import WindowEvent from './2017/containers/WindowEvent'
 
 import './App.css'
 import Hero from './2017/components/Hero'
 import Speaker from './2017/components/Speaker'
+import Sponsor from './2017/containers/Sponsor'
 import { speakers } from 'toml!./2017/speaker.toml'
-import h from 'react-hyperscript'
 
 const muiTheme = getMuiTheme({
     palette: {
@@ -35,28 +37,6 @@ const sponsors = [
         type: 'silver',
     }
 ];
-
-const Sponsor = ({url, name, image, type}) => {
-    const type2width = {
-        'silver': 117,
-        'gold': 234,
-        'platinum': 234,
-    };
-    const type2opacity = {
-        'silver': 0.8,
-        'gold': 1,
-        'platinum': 1,
-    };
-    const style = {
-        width: type2width[type],
-        opacity: type2opacity[type],
-    };
-    return h('div', {},
-        h('a', {href: url},
-            h('img', {src: image, alt: name, style })
-        )
-    );
-};
 
 const Sponsors = () => {
     const style = {
@@ -104,7 +84,8 @@ const App = () => {
                     iconClassNameRight: "muidocs-icon-navigation-expand-more",
                     titleStyle: {'font-size': 16}
                 }),
-                h(Content)
+                h(Content),
+                h(WindowEvent)
             ]
         )
     );
