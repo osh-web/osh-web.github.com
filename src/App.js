@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import './App.css';
-import AppBar from 'material-ui/AppBar';
-import Seminar from './Seminar';
-import Paper from 'material-ui/Paper';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import AppBar from 'material-ui/AppBar';
+import RaisedButton from 'material-ui/RaisedButton'
+import {Card, CardActions, CardMedia, CardTitle, CardText} from 'material-ui/Card'
 import {red500, green500} from 'material-ui/styles/colors';
+
+import EntryButton from './2017/components/EntryButton'
+import './App.css';
+import Seminar from './Seminar';
 
 const muiTheme = getMuiTheme({
     palette: {
@@ -24,12 +27,20 @@ class Hero extends Component {
 
     render() {
        return (
-           <Paper zDepth={0} style={{margin: "100px 10px"}}>
-               <h1 style={{'color': muiTheme.palette.accent1Color, 'font-size': 21}}>
-                   オープンセミナー2017@広島
-               </h1>
-               <h2 style={{'font-size': 18, 'color': muiTheme.palette.accent1Color}}>2017年2月25日(土) 開催決定</h2>
-           </Paper>
+           <Card style={{maxWidth: 460, marginTop: 20}}>
+               <CardTitle
+                   title="エンジニアがより良い社会を作れる!!"
+                   subtitle="MAY THE ENGINEERING BE WITH YOU"
+                   titleStyle={{fontSize: 20}} />
+
+               <CardMedia overlay={<CardTitle title="オープンセミナー2017@広島" subtitle="2017年2月25日(土)" />} >
+                   <img src="/img/2017_header.jpg" />
+               </CardMedia>
+               <CardActions>
+                   <RaisedButton label="詳細情報" href="/2017/" />
+                   <EntryButton />
+               </CardActions>
+           </Card>
        )
     }
 }
@@ -39,17 +50,23 @@ const Bar = () => {
         <AppBar
             title="オープンセミナー広島"
             iconClassNameRight="muidocs-icon-navigation-expand-more"
-            titleStyle={{'font-size': 20}}
+            titleStyle={{fontSize: 20}}
         />
     );
 };
 
 const App = () => {
+    const style = {
+        display: 'flex',
+        justifyContent: 'center',
+    };
     return (
         <MuiThemeProvider muiTheme={muiTheme}>
             <div className="App">
                 <Bar />
-                <Hero />
+                <div style={style}>
+                    <Hero />
+                </div>
                 <p className="App-intro">
                 </p>
                 <Seminar/>
