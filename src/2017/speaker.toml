@@ -33,9 +33,16 @@ image = "/img/2017_yamamoto@2x.jpg"
 [[speakers]]
 name = "寺田 佳央"
 furi = "てらだ よしお"
-title = "セッション調整中"
-description = "調整中"
+title = """Engineer is Hero !!
+マイクロサービスの開発手法や IoT を採用し感情や表情を解析しより良い社会を作ろう
+"""
+description = "Microsoft の Cognitive Services を利用すると、写真のデータを解析し人間の性別や年齢、感情などを推測することができます。本セッションでは Cognitive Services のアプリケーション開発から、IoT を利用したデモでご覧いただくほか、マイクロサービスを活用した開発手法の注意点についてご紹介します。"
+profile = """
+2001 年 サン・マイクロシステムズ株式会社に入社し GlassFish エバンジェリストとして活動。その後、日本オラクル株式会社で Java エバンジェリストとして活動。
+2015 年 7月、日本マイクロソフト株式会社に移籍し、移籍後もなお Java エバンジェリストとして、マイクロソフト・プラットフォームにおける Java の利用促進・啓蒙活動を実施中。2016 年 7 月、日本人で 2 人目となる Java Champion に就任。
+"""
 tags = ["Microsoft", "Java", "広島"]
+image = "/img/2017_terada@2x.jpg"
 
 
 [[speakers]]
