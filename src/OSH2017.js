@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import AppBar from 'material-ui/AppBar'
-import RaisedButton from 'material-ui/RaisedButton'
 import Subheader from 'material-ui/Subheader'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import {red500, green500} from 'material-ui/styles/colors'
@@ -21,10 +20,6 @@ const muiTheme = getMuiTheme({
         height: 50,
     },
 });
-
-const EntryButton = () => {
-    return <RaisedButton label="申し込みする" href="https://osh.connpass.com/event/48114/" primary={true}/>
-};
 
 const sponsors = [
     {
