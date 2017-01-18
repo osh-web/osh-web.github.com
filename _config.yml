@@ -1,0 +1,11 @@
+# Site settings
+title: オープンセミナー広島
+email: 
+description: "オープンセミナーとは2003年より中四国地域で開催されているIT技術者向けの非営利の無料セミナーです。現在は香川県、岡山県、徳島県、広島県、愛媛県で開催されています。企画と運営は各地域の技術系ユーザコミュニティのボランティアにより行われています。"
+baseurl: ""
+url: "http://osh-web.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+exclude: node_modules
