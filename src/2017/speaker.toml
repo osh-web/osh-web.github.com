@@ -33,7 +33,7 @@ image = "/img/2017_yamamoto@2x.jpg"
 [[speakers]]
 name = "寺田 佳央"
 furi = "てらだ よしお"
-title = """Engineer is Hero !!
+title = """Engineer is Hero !! \\
 マイクロサービスの開発手法や IoT を採用し感情や表情を解析しより良い社会を作ろう
 """
 description = "Microsoft の Cognitive Services を利用すると、写真のデータを解析し人間の性別や年齢、感情などを推測することができます。本セッションでは Cognitive Services のアプリケーション開発から、IoT を利用したデモでご覧いただくほか、マイクロサービスを活用した開発手法の注意点についてご紹介します。"

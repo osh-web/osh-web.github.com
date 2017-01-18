@@ -30,12 +30,22 @@ const Chips = ({tags}) => {
 };
 
 const Speaker = ({title, name, furi, image, profile, tags}) => {
+    const titleStyle = ((length) => {
+        switch(true) {
+            case length > 25:
+                return { fontSize: 13, lineHeight: 1.4 };
+            case length > 10:
+                return { fontSize: 15, lineHeight: '50px' };
+            default:
+                return { fontSize: 24, lineHeight: '34px' };
+        }
+    })(title.length);
     return (
         <Card key={furi}
             style={{maxWidth: 320, margin: 10}}
             initiallyExparded={false}
         >
-            <CardMedia overlay={<CardTitle title={title} />}>
+            <CardMedia overlay={<CardTitle title={<Markdown source={title} />} titleStyle={titleStyle}/>}>
                 <img src={image ? image : '/img/2017_no_image@2x.jpg' } />
             </CardMedia>
             <Chips tags={tags} />
