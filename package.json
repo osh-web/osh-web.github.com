@@ -53,6 +53,8 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
+    "html-to-react": "^1.2.2",
+    "raw-loader": "^0.5.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-event-listener": "^0.4.1",

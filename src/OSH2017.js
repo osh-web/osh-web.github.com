@@ -2,9 +2,11 @@ import h from 'react-hyperscript'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import AppBar from 'material-ui/AppBar'
 import Subheader from 'material-ui/Subheader'
+import Paper from 'material-ui/Paper'
 import FlatButton from 'material-ui/FlatButton'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import {red500, green500} from 'material-ui/styles/colors'
+import Markdown from 'react-markdown'
 import WindowEvent from './2017/containers/WindowEvent'
 
 import './App.css'
@@ -12,6 +14,8 @@ import Hero from './2017/components/Hero'
 import Speaker from './2017/components/Speaker'
 import Sponsor from './2017/containers/Sponsor'
 import { speakers } from 'toml!./2017/speaker.toml'
+import infomation from 'raw-loader!./2017/table.html'
+import tableStyles from './2017/table.css';
 
 const muiTheme = getMuiTheme({
     palette: {
@@ -78,7 +82,11 @@ const Content = () => {
         h(Subheader, { style: subheaderStyle }, "Speaker"),
         Speakers,
         h(Subheader, { style: subheaderStyle }, "Sponsor"),
-        h(Sponsors)
+        h(Sponsors),
+        h(Subheader, { style: subheaderStyle }, "Infomation"),
+        h(Paper, {style: {padding: "44px 24px", th: { textAlign: 'left' }} },
+            h(Markdown, {className: tableStyles.root,  source: infomation })
+        )
         ]
     )
 };
