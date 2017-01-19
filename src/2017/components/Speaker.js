@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card'
+import React from 'react'
+import {Card, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card'
 import Chip from 'material-ui/Chip'
 import Markdown from 'react-markdown'
 
@@ -46,7 +46,7 @@ const Speaker = ({title, name, furi, image, profile, tags}) => {
             initiallyExparded={false}
         >
             <CardMedia overlay={<CardTitle title={<Markdown source={title} />} titleStyle={titleStyle}/>}>
-                <img src={image ? image : '/img/2017_no_image@2x.jpg' } />
+                <img src={image ? image : '/img/2017_no_image@2x.jpg' } role="presentation"/>
             </CardMedia>
             <Chips tags={tags} />
             <CardHeader

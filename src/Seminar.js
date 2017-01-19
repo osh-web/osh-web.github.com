@@ -26,7 +26,6 @@ class Seminar extends Component {
                 'url': '/2013/'
             },
         ].map((event) => {
-            const label = `${event.name}「${event.theme}」`;
             return (
                 <Card onClick={() => { this.click(event.url)} } >
                     <CardHeader

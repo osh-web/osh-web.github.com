@@ -11,7 +11,7 @@ export default () => {
             <CardMedia
                 overlay={<CardTitle title="オープンセミナー2017@広島" subtitle="2017年2月25日(土)" />}
             >
-                <img src="/img/2017_header.jpg" />
+                <img src="/img/2017_header.jpg" role="presentation"/>
             </CardMedia>
             <CardText>
                 <h1>エンジニアがより良い社会を作れる!!<br /><span style={{fontSize: -2, color: '#999'}}>MAY THE ENGINEERING BE WITH YOU</span></h1>

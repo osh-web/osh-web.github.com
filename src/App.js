@@ -3,7 +3,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import AppBar from 'material-ui/AppBar';
 import RaisedButton from 'material-ui/RaisedButton'
-import {Card, CardActions, CardMedia, CardTitle, CardText} from 'material-ui/Card'
+import {Card, CardActions, CardMedia, CardTitle} from 'material-ui/Card'
 import {red500, green500} from 'material-ui/styles/colors';
 
 import EntryButton from './2017/components/EntryButton'
@@ -34,7 +34,7 @@ class Hero extends Component {
                    titleStyle={{fontSize: 20}} />
 
                <CardMedia overlay={<CardTitle title="オープンセミナー2017@広島" subtitle="2017年2月25日(土)" />} >
-                   <img src="/img/2017_header.jpg" />
+                   <img src="/img/2017_header.jpg" role="presentation" />
                </CardMedia>
                <CardActions>
                    <RaisedButton label="詳細情報" href="/2017/" />
