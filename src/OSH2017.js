@@ -3,6 +3,7 @@ import h from 'react-hyperscript'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import AppBar from 'material-ui/AppBar'
 import Subheader from 'material-ui/Subheader'
+import FlatButton from 'material-ui/FlatButton'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import {red500, green500} from 'material-ui/styles/colors'
 import WindowEvent from './2017/containers/WindowEvent'
@@ -59,22 +60,43 @@ const Content = () => {
     };
 
     const style = {
-        marginTop: 20,
+        marginTop: 80,
         marginBottom: 20,
         marginLeft: 5,
         marginRight: 5,
         ...centering
     };
 
+    const subheaderStyle = {
+        fontSize: 20,
+        textAlign: 'center',
+        marginTop: 100,
+        marginBottom: 100,
+    };
+
     return h('div', {style}, [
         h(Hero, {style: {display: 'block', width: 640}}),
-        h(Subheader, "スピーカー"),
+        h(Subheader, { style: subheaderStyle }, "Speaker"),
         Speakers,
-        h(Subheader, "スポンサー"),
+        h(Subheader, { style: subheaderStyle }, "Sponsor"),
         h(Sponsors)
         ]
     )
 };
+
+const Footer = () => {
+    const style = {
+        backgroundColor: muiTheme.palette.primary1Color,
+        marginTop: 100,
+        paddingTop: 20,
+        paddingBottom: 20,
+    };
+    return h('div', {style}, [
+        h('div', { style: { textAlign: 'center' } },
+            h(FlatButton, {href: "/", color: 'white', label: "オープンセミナー広島", labelStyle: {color: 'white'} })
+        ),
+    ]);
+}
 
 const App = () => {
     return h(MuiThemeProvider, {muiTheme},
@@ -82,9 +104,11 @@ const App = () => {
                 h(AppBar, {
                     title: "オープンセミナー2017@広島",
                     iconClassNameRight: "muidocs-icon-navigation-expand-more",
+                    showMenuIconButton: false,
                     titleStyle: {'font-size': 16}
                 }),
                 h(Content),
+                h(Footer),
                 h(WindowEvent)
             ]
         )
