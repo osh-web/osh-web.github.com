@@ -34,6 +34,8 @@ const Speaker = ({title, name, furi, image, profile, tags}) => {
         switch(true) {
             case length > 25:
                 return { fontSize: 13, lineHeight: 1.4 };
+            case length > 21:
+                return { fontSize: 12, lineHeight: '40px' };
             case length > 10:
                 return { fontSize: 15, lineHeight: '50px' };
             default:
