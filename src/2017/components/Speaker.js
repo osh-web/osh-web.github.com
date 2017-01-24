@@ -1,12 +1,9 @@
 import React from 'react'
-<<<<<<< HEAD
 import {Card, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card'
-=======
-import {Card, CardHeader, CardMedia, CardTitle, CardText, CardActions} from 'material-ui/Card'
->>>>>>> プロフィール修正中
 import Chip from 'material-ui/Chip'
 import IconButton from 'material-ui/IconButton'
 import Markdown from 'react-markdown'
+import h from 'react-hyperscript'
 
 const Chips = ({tags}) => {
     const style = {
@@ -34,7 +31,7 @@ const Chips = ({tags}) => {
     );
 };
 
-const Speaker = ({title, name, furi, image, profile, tags, github}) => {
+const Speaker = ({title, name, furi, image, profile, tags, github, twitter, facebook}) => {
     const titleStyle = ((length) => {
         switch(true) {
             case length > 25:
@@ -47,6 +44,30 @@ const Speaker = ({title, name, furi, image, profile, tags, github}) => {
                 return { fontSize: 24, lineHeight: '34px' };
         }
     })(title.length);
+    const Github = github ?
+        h(IconButton, {
+            iconClassName: "fa fa-github",
+            href: `https://github.com/${github}`,
+            tooltip: github,
+            target: "_blank",
+            tooltipPosition: "top-center"
+        }) : null;
+    const Twitter = twitter ?
+        h(IconButton, {
+            iconClassName: "fa fa-twitter",
+            href: `https://twitter.com/${twitter}`,
+            tooltip: twitter,
+            target: "_blank",
+            tooltipPosition: "top-center"
+        }) : null;
+    const Facebook = facebook ?
+        h(IconButton, {
+            iconClassName: "fa fa-facebook",
+            href: `https://www.facebook.com/${facebook}`,
+            tooltip: facebook,
+            target: "_blank",
+            tooltipPosition: "top-center"
+        }) : null;
     return (
         <Card key={furi}
             style={{maxWidth: 320, margin: 10}}
@@ -64,15 +85,14 @@ const Speaker = ({title, name, furi, image, profile, tags, github}) => {
                 showExpandableButton={true}
             >
             </CardHeader>
+            <div style={{marginLeft: 10, marginRight: 10}}>
+                {Github}
+                {Twitter}
+                {Facebook}
+            </div>
             <CardText expandable={true}>
                 <Markdown source={profile}/>
             </CardText>
-            <CardActions>
-                <IconButton href={`https://github.com/${github}`} tooltip={github} target="_blank">
-                    <i className="fa fa-github" aria-hidden="true"></i>
-                </IconButton>
-                <i className="fa fa-github" aria-hidden="true"></i>
-            </CardActions>
         </Card>
     );
 };

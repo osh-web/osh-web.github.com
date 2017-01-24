@@ -29,6 +29,8 @@ title = "myThings使ったIoTによる地域課題解決"
 description = "調整中"
 tags = ["myThings"]
 image = "/img/2017_yamamoto@2x.jpg"
+twitter = "yamamoto_manabu"
+facebook = "yamamoto.manabu.gak"
 
 [[speakers]]
 name = "寺田 佳央"
@@ -43,6 +45,8 @@ profile = """
 """
 tags = ["Microsoft", "Java", "広島"]
 image = "/img/2017_terada@2x.jpg"
+twitter = "yoshioterada"
+facebook = "yoshio.terada"
 
 
 [[speakers]]
@@ -76,6 +80,7 @@ tags = ["ミドル", "広島"]
   [[speakers.sessions]]
     name = "KDDI∞Labo2015"
     href = "https://www.pref.hiroshima.lg.jp/site/innovation/kddi1216.html"
+facebook = "akihiro.motoki.5"
 
 
 [[speakers]]
@@ -110,3 +115,5 @@ BIZSTAR株式会社代表。ビジネスコンサルタント。Web制作会社�
 UX HIROSHIMA主催。中小企業庁ミラサポ専門家。
 """
 tags = ["UX", "広島"]
+twitter = "yayuyayu"
+facebook = "yuki.yakushijin"
