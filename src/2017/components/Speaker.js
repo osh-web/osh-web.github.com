@@ -1,8 +1,9 @@
 // @flow
 import React from 'react'
-import {Card, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card'
+import {Card, CardHeader, CardMedia, CardTitle, CardActions} from 'material-ui/Card'
 import Chip from 'material-ui/Chip'
 import IconButton from 'material-ui/IconButton'
+import FlatButton from 'material-ui/FlatButton'
 import Markdown from 'react-markdown'
 import h from 'react-hyperscript'
 
@@ -32,8 +33,8 @@ const Chips = ({tags}: {tags: string[]}) => {
     );
 };
 
-type SpeakerProp = {title: string, name: string, furi: string, image: string, profile: string, tags: string[], github: string, twitter: string, facebook: string}
-const Speaker = ({title, name, furi, image, profile, tags, github, twitter, facebook}: SpeakerProp) => {
+type SpeakerProp = {id: string, title: string, name: string, furi: string, image: string, tags: string[], github: string, twitter: string, facebook: string, onShowDetail: any}
+const Speaker = ({id, title, name, furi, image, tags, github, twitter, facebook, onShowDetail}: SpeakerProp) => {
     const titleStyle = ((length) => {
         switch(true) {
             case length > 25:
@@ -72,8 +73,8 @@ const Speaker = ({title, name, furi, image, profile, tags, github, twitter, face
         }) : null;
     return (
         <Card key={furi}
-            style={{maxWidth: 320, margin: 10}}
-            initiallyExparded={false}
+              style={{maxWidth: 320, margin: 10}}
+              expandable={false}
         >
             <CardMedia overlay={<CardTitle title={<Markdown source={title} />} titleStyle={titleStyle}/>}>
                 <img src={image ? image : '/img/2017_no_image@2x.jpg' } role="presentation"/>
@@ -84,17 +85,14 @@ const Speaker = ({title, name, furi, image, profile, tags, github, twitter, face
                 subtitle={furi}
                 avatar={image}
                 actAsExpander={true}
-                showExpandableButton={true}
             >
             </CardHeader>
-            <div style={{marginLeft: 10, marginRight: 10}}>
+            <CardActions>
+                <FlatButton label="詳細" onClick={onShowDetail}/>
                 {Github}
                 {Twitter}
                 {Facebook}
-            </div>
-            <CardText expandable={true}>
-                <Markdown source={profile}/>
-            </CardText>
+            </CardActions>
         </Card>
     );
 };

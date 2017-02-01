@@ -1,4 +1,5 @@
 [[speakers]]
+id = "taisukef"
 name = "福野 泰介"
 furi = "ふくの たいすけ"
 title = "セッション調整中"
@@ -23,6 +24,7 @@ tags = ["IoT", "IchigoJam"]
 
 
 [[speakers]]
+id = "yamamoto_manabu"
 name = "山本 学"
 furi = "やまもと まなぶ"
 title = "myThings使ったIoTによる地域課題解決"
@@ -33,6 +35,7 @@ twitter = "yamamoto_manabu"
 facebook = "yamamoto.manabu.gak"
 
 [[speakers]]
+id = "yoshioterada"
 name = "寺田 佳央"
 furi = "てらだ よしお"
 title = """Engineer is Hero !! \\
@@ -50,6 +53,7 @@ facebook = "yoshio.terada"
 
 
 [[speakers]]
+id = "motoki"
 name = "元木 昭宏"
 furi = "もとき あきひろ"
 title = "ワクワクエンジニアライフの提案"
@@ -84,6 +88,7 @@ facebook = "akihiro.motoki.5"
 
 
 [[speakers]]
+id = "hanatani"
 name = "花谷 美香"
 furi = "はなたに みか"
 title = "子どもプログラミングとドリームマップ"
@@ -102,6 +107,7 @@ tags = ["子どもプログラミング", "広島"]
     href = "http://www.dream-tech.jp/company/"
 
 [[speakers]]
+id = "yayuyayu"
 name = "薬師神 裕樹"
 furi = "やくしじん ゆうき"
 title = "生活の中のテクノロジーとサービスとUXについて"

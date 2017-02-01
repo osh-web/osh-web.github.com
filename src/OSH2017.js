@@ -13,7 +13,8 @@ import WindowEvent from './2017/containers/WindowEvent'
 
 import './App.css'
 import Hero from './2017/components/Hero'
-import Speaker from './2017/components/Speaker'
+import Speaker from './2017/containers/Speaker'
+import SpeakerDetail from './2017/containers/SpeakerDetail'
 import Sponsor from './2017/containers/Sponsor'
 import { speakers } from 'toml!./2017/speaker.toml'
 import infomation from 'raw-loader!./2017/table.html'
@@ -118,6 +119,7 @@ const App = () => {
                 }),
                 h(Content),
                 h(Footer),
+                h(SpeakerDetail),
                 h(WindowEvent)
             ]
         )
