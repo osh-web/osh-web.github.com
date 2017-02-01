@@ -16,10 +16,15 @@ const toUl = (links: {name: string, href: string}[], title) => {
 
 const SpeakerDetail = ({open, title, name, furi, description, profile, image, github, twitter, facebook, links, oraganizatinos, sessions, onRequestClose}) => {
   const raw_title = title && title.replace('\\', '');
+  const contentStyle = {
+    width: '95%',
+    maxWidth: 'none',
+  };
   return h(Dialog, {
     title: raw_title,
     modal: false,
     open,
+    contentStyle,
     onRequestClose,
     autoScrollBodyContent: true,
   },[
