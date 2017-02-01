@@ -1,3 +1,4 @@
+// @flow
 import React from 'react'
 import {Card, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card'
 import Chip from 'material-ui/Chip'
@@ -5,7 +6,7 @@ import IconButton from 'material-ui/IconButton'
 import Markdown from 'react-markdown'
 import h from 'react-hyperscript'
 
-const Chips = ({tags}) => {
+const Chips = ({tags}: {tags: string[]}) => {
     const style = {
         display: 'flex',
         flexWrap: 'wrap',
@@ -18,7 +19,7 @@ const Chips = ({tags}) => {
         margin: 4,
     };
 
-    const chips = tags.map((tag) => {
+    const chips = tags.map((tag: string) => {
         return (
             <Chip style={chip_style}>{tag}</Chip>
         );
@@ -31,7 +32,8 @@ const Chips = ({tags}) => {
     );
 };
 
-const Speaker = ({title, name, furi, image, profile, tags, github, twitter, facebook}) => {
+type SpeakerProp = {title: string, name: string, furi: string, image: string, profile: string, tags: string[], github: string, twitter: string, facebook: string}
+const Speaker = ({title, name, furi, image, profile, tags, github, twitter, facebook}: SpeakerProp) => {
     const titleStyle = ((length) => {
         switch(true) {
             case length > 25:

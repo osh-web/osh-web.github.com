@@ -1,3 +1,4 @@
+// @flow
 import { connect } from 'react-redux'
 import Sponsor from '../components/Sponsor'
 
