@@ -1,3 +1,4 @@
+// @flow
 import h from 'react-hyperscript'
 
 const Sponsor = ({url, name, image, type, width}) => {

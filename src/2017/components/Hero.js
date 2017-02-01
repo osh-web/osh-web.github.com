@@ -1,3 +1,4 @@
+// @flow
 import React from 'react'
 import {Card, CardActions, CardMedia, CardTitle, CardText} from 'material-ui/Card'
 import EntryButton from './EntryButton'

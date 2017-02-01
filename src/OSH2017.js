@@ -1,3 +1,4 @@
+// @flow
 import h from 'react-hyperscript'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import AppBar from 'material-ui/AppBar'

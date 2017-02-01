@@ -3,6 +3,7 @@ _site
 
 # dependencies
 node_modules
+flow-typed
 
 # testing
 coverage
