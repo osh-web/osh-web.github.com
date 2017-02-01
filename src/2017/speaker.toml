@@ -29,10 +29,24 @@ name = "山本 学"
 furi = "やまもと まなぶ"
 title = "myThings使ったIoTによる地域課題解決"
 description = "調整中"
+profile = """
+# 略歴
+ヤフー株式会社所属のエンジニア。ヤフーではYahoo!クラウドソーシングの基盤設計・開発、スクラムマスターを担当した後、IoT領域の新サービスであるmyThingsでもスクラムマスターとして開発に従事した。myThingsリリース後は、myThingsの魅力をより多くのエンドユーザー、開発者に伝えるべくmyThingsのエバンジェリストとして活動を行っている。好きな言葉は自動化、見える化、見せる化。
+"""
 tags = ["myThings"]
 image = "/img/2017_yamamoto@2x.jpg"
 twitter = "yamamoto_manabu"
 facebook = "yamamoto.manabu.gak"
+  [[speakers.oraganizatinos]]
+    name = "ヤフー株式会社　スマートデバイス推進本部　大阪開発室"
+    href = "http://docs.yahoo.co.jp/"
+  [[speakers.links]]
+    name = "Software Design 2016年5月号　SORACOM特集　「＜特別SIMで始めよう！　SORACOMでわかるIoT＞　第4章：myThingsとSORACOM
+―― myThingsを使ってノンプログラミングでSORACOMをより便利に使おう」"
+    href = "http://gihyo.jp/magazine/SD/archive/2016/201605"
+  [[speakers.sessions]]
+    name = "デブサミ2016　「myThingsからみたIoTの未来と課題」"
+    href = "http://event.shoeisha.jp/devsumi/20160218/session/983/"
 
 [[speakers]]
 id = "yoshioterada"
@@ -51,6 +65,27 @@ image = "/img/2017_terada@2x.jpg"
 twitter = "yoshioterada"
 facebook = "yoshio.terada"
 
+  [[speakers.links]]
+    name = "ブログ"
+    href = "https://yoshio3.com/"
+
+  [[speakers.oraganizatinos]]
+    name = "日本マイクロソフト株式会社"
+    href = "https://www.microsoft.com/ja-jp/"
+  [[speakers.oraganizatinos]]
+    name = "シニア Java エバンジェリスト"
+  [[speakers.sessions]]
+    name = "Microsoft Tech Summit 「Pivotal Cloud Foundry on Azure で実現する Java マイクロサービス開発のご紹介」"
+    href = "http://microsoft-events.jp/mstechsummit/session/"
+  [[speakers.sessions]]
+    name = "Java One 2015 San Francisco「Building Nanoservices with Java EE and Java 8」"
+    href = "https://events.rainfocus.com/oow15/catalog/oracle.jsp?event=javaone&search=%22Yoshio%20Terada%22&showEnrolled=false"
+  [[speakers.sessions]]
+    name = "Java Day Tokyo 2015 「Java EE 7エッセンシャルレシピ」"
+    href = "http://www.slideshare.net/OracleMiddleJP/cdi-essential-receipe-at-java-day-tokyo-2015"
+  [[speakers.sessions]]
+    name = "Developers Summit 2016 「そろそろ俺たちの本気を見せてやるぜ！～ マイクロソフトとOSSごった煮 DevOps 衝撃デモシリーズ！」"
+    href = "http://event.shoeisha.jp/devsumi/20160218/"
 
 [[speakers]]
 id = "motoki"
@@ -123,3 +158,19 @@ UX HIROSHIMA主催。中小企業庁ミラサポ専門家。
 tags = ["UX", "広島"]
 twitter = "yayuyayu"
 facebook = "yuki.yakushijin"
+
+  [[speakers.oraganizatinos]]
+    name = "BIZSTAR株式会社"
+    href = "https://bizstar.co.jp/"
+  [[speakers.oraganizatinos]]
+    name = "UX HIROSHIMA"
+    href = "http://uxhiroshima.com/"
+  [[speakers.sessions]]
+    name = "CSS Nite in HIROSHIMA, Vol. 7 「広島という市場でプロジェクトを成功させる、IAやディレクションの秘訣」"
+    href = "http://cssnite.webtouchmeeting.com/vol7/"
+  [[speakers.sessions]]
+    name = "UX JAPAN FORUM 2016 「UXを広島に」"
+    href = "http://www.uxjapan.org/"
+  [[speakers.sessions]]
+    name = "UXシンポジウム沖縄2015 「ユーザーインサイトに\"ダイブ\"するユーザー理解を深める 「主観的共感」の重要性」"
+    href = "http://7dw.jp/blog/2038"

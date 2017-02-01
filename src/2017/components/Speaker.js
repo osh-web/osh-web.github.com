@@ -2,10 +2,10 @@
 import React from 'react'
 import {Card, CardHeader, CardMedia, CardTitle, CardActions} from 'material-ui/Card'
 import Chip from 'material-ui/Chip'
-import IconButton from 'material-ui/IconButton'
 import FlatButton from 'material-ui/FlatButton'
 import Markdown from 'react-markdown'
-import h from 'react-hyperscript'
+
+import { Github, Twitter, Facebook} from './SNSLinkButton'
 
 const Chips = ({tags}: {tags: string[]}) => {
     const style = {
@@ -33,7 +33,7 @@ const Chips = ({tags}: {tags: string[]}) => {
     );
 };
 
-type SpeakerProp = {id: string, title: string, name: string, furi: string, image: string, tags: string[], github: string, twitter: string, facebook: string, onShowDetail: any}
+type SpeakerProp = {id: string, title: string, name: string, furi: string, image: string, tags: string[], github?: string, twitter?: string, facebook?: string, onShowDetail: any}
 const Speaker = ({id, title, name, furi, image, tags, github, twitter, facebook, onShowDetail}: SpeakerProp) => {
     const titleStyle = ((length) => {
         switch(true) {
@@ -47,30 +47,6 @@ const Speaker = ({id, title, name, furi, image, tags, github, twitter, facebook,
                 return { fontSize: 24, lineHeight: '34px' };
         }
     })(title.length);
-    const Github = github ?
-        h(IconButton, {
-            iconClassName: "fa fa-github",
-            href: `https://github.com/${github}`,
-            tooltip: github,
-            target: "_blank",
-            tooltipPosition: "top-center"
-        }) : null;
-    const Twitter = twitter ?
-        h(IconButton, {
-            iconClassName: "fa fa-twitter",
-            href: `https://twitter.com/${twitter}`,
-            tooltip: twitter,
-            target: "_blank",
-            tooltipPosition: "top-center"
-        }) : null;
-    const Facebook = facebook ?
-        h(IconButton, {
-            iconClassName: "fa fa-facebook",
-            href: `https://www.facebook.com/${facebook}`,
-            tooltip: facebook,
-            target: "_blank",
-            tooltipPosition: "top-center"
-        }) : null;
     return (
         <Card key={furi}
               style={{maxWidth: 320, margin: 10}}
@@ -85,13 +61,14 @@ const Speaker = ({id, title, name, furi, image, tags, github, twitter, facebook,
                 subtitle={furi}
                 avatar={image}
                 actAsExpander={true}
+                onClick={onShowDetail}
             >
             </CardHeader>
             <CardActions>
                 <FlatButton label="詳細" onClick={onShowDetail}/>
-                {Github}
-                {Twitter}
-                {Facebook}
+                { github ? <Github github={github} /> : null }
+                { twitter ? <Twitter twitter={twitter} /> : null }
+                { facebook ? <Facebook facebook={facebook} /> : null }
             </CardActions>
         </Card>
     );
