@@ -10,7 +10,7 @@ export default () => {
             <CardTitle title="エンジニアがより良い社会を作れる!!" subtitle="MAY THE ENGINEERING BE WITH YOU" />
 
             <CardMedia
-                overlay={<CardTitle title="オープンセミナー2017@広島" subtitle="2017年2月25日(土)" />}
+                overlay={<CardTitle title="オープンセミナー2017@広島" subtitle="2017年2月25日(土) 10時開始予定" />}
             >
                 <img src="/img/2017_header.jpg" role="presentation"/>
             </CardMedia>
