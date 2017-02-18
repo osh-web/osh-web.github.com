@@ -38,6 +38,12 @@ const sponsors = [
         type: 'platinum',
     },
     {
+        url: 'https://ex-cloud.jp/',
+        name: 'エクスクラウド',
+        image: '/img/ex-cloud.png',
+        type: 'platinum',
+    },
+    {
         url: 'https://www.nextvision.co.jp/',
         name: '株式会社ネクストビジョン',
         image: '/img/nextvision_234.png',
