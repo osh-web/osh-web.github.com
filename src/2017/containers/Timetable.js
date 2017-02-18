@@ -49,7 +49,7 @@ const timeline = [
     {
         time: "17:25",
         text: "エンディング"
-    }
+    },
 ];
 
 const speakerMap = speakers.reduce((acc, speaker) => {
@@ -80,7 +80,14 @@ const _Timetable = () => {
             } else {
                 return h(NormalLine, {time, text})
             }
-        })
+        }),
+        h("div", {style: {margin: 20, color: "#666", fontSize: 12}}, [
+            "本タイムテーブルは現時点での予定です。",
+            h("br"),
+            "運営の都合上で予告なしに変更される可能性があります。",
+            h("br"),
+            "変更される場合は、なるべく大きな変更がないように対応いたします。"
+        ])
     ]);
 };
 

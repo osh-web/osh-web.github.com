@@ -12,8 +12,9 @@ const NormalLine = ({time, text}) => {
 };
 
 const SpeakerLine = ({time, title, name, image, onShowDetail}) => {
+    const _title = title.replace("\\", "");
     return h(ListItem, {
-        primaryText: `${time} ${title}`,
+        primaryText: `${time} ${_title}`,
         secondaryText: `${name}`,
         leftAvatar: h(Avatar, {src: image}),
         rightIcon: h(ActionInfo),

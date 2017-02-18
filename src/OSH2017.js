@@ -90,7 +90,7 @@ const Content = () => {
     return h('div', {style}, [
         h(Hero, {style: {display: 'block', width: 640}}),
         h(Subheader, { style: subheaderStyle }, "Timetable"),
-        h(Timetable),
+        h(Timetable, {style: {maxWidth: 320}}),
         h(Subheader, { style: subheaderStyle }, "Speaker"),
         Speakers,
         h(Subheader, { style: subheaderStyle }, "Sponsor"),
