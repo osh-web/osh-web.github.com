@@ -19,6 +19,7 @@ import Sponsor from './2017/containers/Sponsor'
 import { speakers } from 'toml!./2017/speaker.toml'
 import infomation from 'raw-loader!./2017/table.html'
 import tableStyles from './2017/table.css';
+import Timetable from './2017/containers/Timetable'
 
 const muiTheme = getMuiTheme({
     palette: {
@@ -88,6 +89,8 @@ const Content = () => {
 
     return h('div', {style}, [
         h(Hero, {style: {display: 'block', width: 640}}),
+        h(Subheader, { style: subheaderStyle }, "Timetable"),
+        h(Timetable),
         h(Subheader, { style: subheaderStyle }, "Speaker"),
         Speakers,
         h(Subheader, { style: subheaderStyle }, "Sponsor"),
@@ -112,7 +115,7 @@ const Footer = () => {
             h(FlatButton, {href: "/", color: 'white', label: "オープンセミナー広島", labelStyle: {color: 'white'} })
         ),
     ]);
-}
+};
 
 const App = () => {
     return h(MuiThemeProvider, {muiTheme},
