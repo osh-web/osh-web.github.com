@@ -93,9 +93,9 @@ const Content = () => {
         h(Timetable, {style: {maxWidth: 320}}),
         h(Subheader, { style: subheaderStyle }, "Speaker"),
         Speakers,
-        h(Subheader, { style: subheaderStyle }, "Sponsor"),
+        h(Subheader, { style: subheaderStyle }, "Sponsors"),
         h(Sponsors),
-        h(Subheader, { style: subheaderStyle }, "Infomation"),
+        h(Subheader, { style: subheaderStyle }, "Information"),
         h(Paper, {style: {padding: "44px 24px", th: { textAlign: 'left' }} },
             h(CSSModules(Markdown, tableStyles), { className: tableStyles.root,  source: infomation }),
         )
