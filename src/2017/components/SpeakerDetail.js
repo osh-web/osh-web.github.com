@@ -18,7 +18,7 @@ const SpeakerDetail = ({open, title, name, furi, description, profile, image, gi
   const raw_title = title && title.replace('\\', '');
   const contentStyle = {
     width: '95%',
-    maxWidth: 'none',
+    maxWidth: 720,
   };
   return h(Dialog, {
     title: raw_title,

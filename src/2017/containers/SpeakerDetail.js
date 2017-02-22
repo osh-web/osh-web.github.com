@@ -9,7 +9,7 @@ const speakerObject = speakers.reduce((acc, speaker) => {
     ...acc,
     [speaker.id]: speaker,
   };
-}, {})
+}, {});
 
 const mapStateToProps = (state, ownProps) => {
   const speaker = speakerObject[state.speakerDialog] || {};
