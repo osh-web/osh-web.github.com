@@ -6,6 +6,7 @@ import h from 'react-hyperscript'
 
 const NormalLine = ({time, text}) => {
     return h(ListItem, {
+        disabled: true,
         primaryText: `${time} ${text}`,
         leftAvatar: h(Avatar, {icon: ""}),
     })
