@@ -7,7 +7,8 @@ import {Card, CardActions, CardMedia, CardTitle} from 'material-ui/Card'
 import {red500, green500} from 'material-ui/styles/colors';
 
 import EntryButton from './2017/components/EntryButton'
-import './App.css';
+// TODO CSSのロードに失敗するので一旦コメントアウト
+// import './App.css';
 import Seminar from './Seminar';
 
 const muiTheme = getMuiTheme({

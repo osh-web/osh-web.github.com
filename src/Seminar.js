@@ -40,7 +40,7 @@ class Seminar extends Component {
     };
 
     click (url) {
-        window.location = url;
+        // window.location = url;
     }
 
     render() {
