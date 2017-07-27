@@ -11,14 +11,16 @@ import Markdown from 'react-markdown'
 import CSSModules from 'react-css-modules';
 import WindowEvent from './2017/containers/WindowEvent'
 
-import './App.css'
+// TODO CSSのロードに失敗するので一旦コメントアウト
+// import './App.css'
 import Hero from './2017/components/Hero'
 import Speaker from './2017/containers/Speaker'
 import SpeakerDetail from './2017/containers/SpeakerDetail'
 import Sponsor from './2017/containers/Sponsor'
 import { speakers } from 'toml!./2017/speaker.toml'
 import infomation from 'raw-loader!./2017/table.html'
-import tableStyles from './2017/table.css';
+// TODO CSSのロードに失敗するので一旦コメントアウト
+// import tableStyles from './2017/table.css';
 import Timetable from './2017/containers/Timetable'
 
 const muiTheme = getMuiTheme({
@@ -97,7 +99,8 @@ const Content = () => {
         h(Sponsors),
         h(Subheader, { style: subheaderStyle }, "Information"),
         h(Paper, {style: {padding: "44px 24px", th: { textAlign: 'left' }} },
-            h(CSSModules(Markdown, tableStyles), { className: tableStyles.root,  source: infomation }),
+            // h(CSSModules(Markdown, tableStyles), { className: tableStyles.root,  source: infomation }),
+            h(Markdown, {source: infomation }),
         )
         ]
     )
