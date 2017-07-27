@@ -6,14 +6,14 @@ import { resize } from '../actions'
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        target: window
+        target: this
     };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         onResize: () => {
-            return dispatch(resize(window.innerWidth, window.innerHeight));
+            return dispatch(resize(this.innerWidth, this.innerHeight));
         }
     }
 };

@@ -8,7 +8,6 @@ import FlatButton from 'material-ui/FlatButton'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import {red500, green500} from 'material-ui/styles/colors'
 import Markdown from 'react-markdown'
-import CSSModules from 'react-css-modules';
 import WindowEvent from './2017/containers/WindowEvent'
 
 // TODO CSSのロードに失敗するので一旦コメントアウト
