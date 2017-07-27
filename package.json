@@ -53,7 +53,7 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
-    "gatsby": "^1.2.0",
+    "gatsby": "^1.4.1",
     "gatsby-link": "^1.0.9",
     "html-to-react": "^1.2.2",
     "raw-loader": "^0.5.1",
