@@ -14,12 +14,13 @@
   "homepage": "http://osh-web.github.io",
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "build": "gatsby build",
     "test": "node scripts/test.js --env=jsdom",
-    "push": "gh-pages -d build -b master",
+    "push": "gh-pages -d public -b master",
+    "clean": "rm -rf public",
     "flow": "flow",
     "flow-typed": "flow-typed install",
-    "deploy": "npm run build && npm run push"
+    "deploy": "npm clean && npm run build && npm run push"
   },
   "jest": {
     "moduleFileExtensions": [
