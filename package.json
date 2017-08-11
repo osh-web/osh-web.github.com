@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@jetbrains/ring-ui": "^0.2.1",
     "gatsby": "^1.4.1",
     "gatsby-link": "^1.0.9",
     "material-ui": "^0.18.7",
