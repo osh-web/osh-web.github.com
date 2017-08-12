@@ -1,79 +1,26 @@
-import React, { Component } from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import AppBar from 'material-ui/AppBar';
-import RaisedButton from 'material-ui/RaisedButton'
-import {Card, CardActions, CardMedia, CardTitle} from 'material-ui/Card'
-import {red500, green500} from 'material-ui/styles/colors';
+import React, { Component } from 'react'
+import Helmet from 'react-helmet'
+import '@material/toolbar/dist/mdc.toolbar.css'
 
-import EntryButton from './2017/components/EntryButton'
-// TODO CSSのロードに失敗するので一旦コメントアウト
-// import './App.css';
-import Seminar from './Seminar';
-
-const muiTheme = getMuiTheme({
-    palette: {
-        primary1Color: red500,
-        accent1Color: green500
-    },
-    appBar: {
-        height: 50,
-    },
-});
-
-class Hero extends Component {
-    static style = {
-
-    };
-
-    render() {
-       return (
-           <Card style={{maxWidth: 460, marginTop: 20}}>
-               <CardTitle
-                   title="エンジニアがより良い社会を作れる!!"
-                   subtitle="MAY THE ENGINEERING BE WITH YOU"
-                   titleStyle={{fontSize: 20}} />
-
-               <CardMedia overlay={<CardTitle title="オープンセミナー2017@広島" subtitle="2017年2月25日(土)" />} >
-                   <img src="/img/2017_header.jpg" role="presentation" />
-               </CardMedia>
-               <CardActions>
-                   <RaisedButton label="詳細情報" href="/2017/" />
-                   <EntryButton />
-               </CardActions>
-           </Card>
-       )
-    }
-}
-
-const Bar = () => {
-    return (
-        <AppBar
-            title="オープンセミナー広島"
-            iconClassNameRight="muidocs-icon-navigation-expand-more"
-            titleStyle={{fontSize: 20}}
-        />
-    );
+const Toolbar = ({title}) => {
+    return <header className="mdc-toolbar">
+      <div className="mdc-toolbar__row">
+        <section className="mdc-toolbar__section mdc-toolbar__section--align-start">
+          <a href="#" className="material-icons mdc-toolbar__icon--menu">menu</a>
+          <span className="mdc-toolbar__title">{title}</span>
+        </section>
+      </div>
+    </header>
 };
 
 const App = () => {
-    const style = {
-        display: 'flex',
-        justifyContent: 'center',
-    };
-    return (
-        <MuiThemeProvider muiTheme={muiTheme}>
-            <div className="App">
-                <Bar />
-                <div style={style}>
-                    <Hero />
-                </div>
-                <p className="App-intro">
-                </p>
-                <Seminar/>
-            </div>
-        </MuiThemeProvider>
-    );
+    return <div>
+
+    <Helmet>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    </Helmet>
+    <Toolbar title="オープンセミナー広島" />
+    </div>
 };
 
 export default App;

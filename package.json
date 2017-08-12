@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@jetbrains/ring-ui": "^0.2.1",
+    "@material/toolbar": "^0.4.4",
     "gatsby": "^1.8.4",
     "gatsby-link": "^1.6.7",
-    "material-ui": "^0.18.7",
+    "gatsby-plugin-react-helmet": "^1.0.2",
+    "postcss-custom-properties": "^6.1.0",
     "react-hyperscript": "^3.0.0",
     "react-markdown": "^2.5.0",
     "react-redux": "^5.0.6",
