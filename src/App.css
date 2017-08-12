@@ -1,5 +1,6 @@
 
 @import '@material/toolbar/dist/mdc.toolbar.css';
+@import '@material/typography/dist/mdc.typography.css';
 
 :root {
   --mdc-theme-primary: rgb(244, 67, 54);
@@ -7,4 +8,12 @@
 
 body {
   margin: 0;
+  background-image: url("./img/noise_bg.png");
+}
+
+html,
+body,
+body > div,
+body > div > div {
+  height: 100%;
 }
