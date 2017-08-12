@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
-import '@material/toolbar/dist/mdc.toolbar.css'
+
 import './App.css'
 
 const Toolbar = ({title}) => {
