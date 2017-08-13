@@ -10,6 +10,15 @@
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@material/base/-/base-0.2.3.tgz#c4eb26b6d6e5840c254ad487588dc4f69b971f3e"
 
+"@material/card@^0.2.6":
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/@material/card/-/card-0.2.6.tgz#37184de3629490eb9e6b562dc7f7823cf87cf8f8"
+  dependencies:
+    "@material/elevation" "^0.1.11"
+    "@material/rtl" "^0.1.7"
+    "@material/theme" "^0.1.7"
+    "@material/typography" "^0.3.0"
+
 "@material/elevation@^0.1.11":
   version "0.1.11"
   resolved "https://registry.yarnpkg.com/@material/elevation/-/elevation-0.1.11.tgz#195815648697f2fbad20666a4c232dc9b6f1189b"

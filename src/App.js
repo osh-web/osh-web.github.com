@@ -4,24 +4,37 @@ import Helmet from 'react-helmet'
 import Toolbar from './components/Toolbar'
 
 import './App.css'
+import SeminarList from './Seminar.js'
 
-const App = () => {
+const Hero = () => {
   const centerStyle = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
   }
+  const style = {
+    padding: "0 20px",
+    height: "60%",
+    color: "white",
+    backgroundColor: "#E64A19",
+    ...centerStyle,
+  }
+  return <section className="mdc-typography" style={{...style}}>
+    <div>
+      <h1 className="mdc-typography--display1">オープンセミナー2018@広島</h1>
+      <p className="mdc-typography--body1">2018年2月開催予定</p>
+    </div>
+  </section>
+}
+
+const App = () => {
   return <div style={{height: "100%"}}>
       <Helmet>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
       </Helmet>
       <Toolbar title="オープンセミナー広島" />
-      <section className="mdc-typography" style={{margin: "0 20px",height: "80%", ...centerStyle} }>
-        <div>
-          <h1 className="mdc-typography--display1">オープンセミナー2018@広島</h1>
-          <p className="mdc-typography--body1">2018年2月開催予定</p>
-        </div>
-      </section>
+      <Hero />
+      <SeminarList />
     </div>
 };
 

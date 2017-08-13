@@ -1,9 +1,11 @@
 
 @import '@material/toolbar/dist/mdc.toolbar.css';
+@import '@material/card/dist/mdc.card.css';
 @import '@material/typography/dist/mdc.typography.css';
+@import "@material/theme/dist/mdc.theme.css";
 
 :root {
-  --mdc-theme-primary: rgb(244, 67, 54);
+  --mdc-theme-primary: #E64A19;
 }
 
 body {
