@@ -1,5 +1,4 @@
 // @see https://www.gatsbyjs.org/docs/add-custom-webpack-config/
-const webpack = require('webpack');
 
 exports.modifyWebpackConfig = ({
   config,
@@ -9,10 +8,9 @@ exports.modifyWebpackConfig = ({
     case 'develop':
       config.merge({
         postcss: [
-          require('postcss-import')({
-            addDependencyTo: webpack
+          require('postcss-custom-properties')({
+            variables: {"mdc-theme-primary": "#E64A19"}
           }),
-          require('postcss-custom-properties'),
         ]
       })
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '@material/card/dist/mdc.card.css';
 
 
 const seminar_list = [

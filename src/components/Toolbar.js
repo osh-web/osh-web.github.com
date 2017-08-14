@@ -1,4 +1,5 @@
 import React from 'react'
+import '@material/toolbar/dist/mdc.toolbar.css';
 
 export default ({title}) => {
     return <header className="mdc-toolbar">

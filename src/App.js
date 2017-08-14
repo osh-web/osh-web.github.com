@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 
+import '@material/typography/dist/mdc.typography.css';
+import "@material/theme/dist/mdc.theme.css";
+
 import Toolbar from './components/Toolbar'
 
 import './App.css'
 import SeminarList from './Seminar.js'
+
+
 
 const Hero = () => {
   const centerStyle = {
