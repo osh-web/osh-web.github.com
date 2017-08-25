@@ -27,7 +27,8 @@ const Hero = () => {
   return <section className="mdc-typography" style={{...style}}>
     <div>
       <h1 className="mdc-typography--display1">オープンセミナー2018@広島</h1>
-      <p className="mdc-typography--body1">2018年2月開催予定</p>
+      <p className="mdc-typography--body1">2018年2月24日開催予定</p>
+      <p className="mdc-typography--body1">詳細は随時公開予定</p>
     </div>
   </section>
 }
