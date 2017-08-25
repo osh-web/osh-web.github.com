@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Link from "gatsby-link"
 import '@material/card/dist/mdc.card.css';
 
 
@@ -35,15 +36,16 @@ const Seminar = ({name, theme, url}) => {
   const clickHandler = (url) => {
     return (event) => location = url;
   }
-  return <div className="mdc-card"
+  return <a href={url} style={{textDecoration: "none"}}>
+    <div className="mdc-card"
       style={{margin: "16px 8px", color: "white"}}
-      onClick={clickHandler(url)}
     >
-    <section className="mdc-card__primary">
-      <h1 className="mdc-card__subtitle">{name}</h1>
-      <h2 className="mdc-card__title mdc-card__title--large">{theme}</h2>
-    </section>
-  </div>
+      <section className="mdc-card__primary">
+        <h1 className="mdc-card__subtitle">{name}</h1>
+        <h2 className="mdc-card__title mdc-card__title--large">{theme}</h2>
+      </section>
+    </div>
+  </a>
 }
 
 const SeminarList = () => {
