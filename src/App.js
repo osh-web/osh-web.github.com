@@ -14,13 +14,12 @@ const Hero = () => {
   const style = {
     padding: "0 20px",
     height: "60%",
-    color: "white",
     ...centerStyle,
   }
   return <section className="mdc-typography mdc-theme--primary-bg" style={{...style}}>
     <div>
-      <h1 className="mdc-typography--display1">オープンセミナー2018@広島</h1>
-      <p className="mdc-typography--title">
+      <h1 className="mdc-typography--display1 mdc-theme--text-primary-on-primary">オープンセミナー2018@広島</h1>
+      <p className="mdc-typography--title mdc-theme--text-secondary-on-primary">
       	2018年2月24日開催予定<br />
         詳細は随時公開していきます。
       </p>
