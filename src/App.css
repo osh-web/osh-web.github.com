@@ -2,6 +2,12 @@
 @import "@material/theme/dist/mdc.theme.css";
 @import "@material/toolbar/dist/mdc.toolbar.css";
 @import "@material/card/dist/mdc.card.css";
+@import 'mdc-variables.css';
+
+/* 開発時にエラーを表示してくれるのを隠す */
+html::before, html::after {
+  display: none !important;
+}
 
 body {
   margin: 0;
@@ -14,9 +20,4 @@ body > div,
 body > div > div,
 body > div > div > div {
   height: 100%;
-}
-:root {
-	--mdc-toolbar-ratio-to-extend-flexible: 4;
-	--mdc-theme-primary: #D84315;
-	--mdc-theme-accent: #C62828;
 }
