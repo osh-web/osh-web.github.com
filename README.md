@@ -6,7 +6,7 @@
 
 ```
 $ yarn
-$ gatsby develop
+$ yarn start
 ```
 
 ## デプロイ方法
@@ -20,5 +20,4 @@ $ yarn deploy
 * gatsby に基づいています
   * `src/pages`ディレクトリにページがあります
 * 2016以前のページ
-  * 静的ページのため`static`ディレクトリにあります
-  * Jekyllによって処理される想定です
+  * 別のリポジトリに分けています
