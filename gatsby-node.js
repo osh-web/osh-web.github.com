@@ -5,15 +5,11 @@ exports.modifyWebpackConfig = ({
   stage
 }) => {
   switch (stage) {
+    case 'build-css':
+    case 'build-html':
+    case 'build-javascript':
     case 'develop':
-      config.merge({
-        postcss: [
-          require('postcss-custom-properties')({
-            variables: {"mdc-theme-primary": "#E64A19"}
-          }),
-        ]
-      })
-
+    case 'develop-html':
   }
   return config;
 };

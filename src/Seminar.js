@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Link from "gatsby-link"
-import '@material/card/dist/mdc.card.css';
 
 
 const seminar_list = [
