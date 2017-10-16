@@ -41,7 +41,7 @@ const Seminar = ({ name, theme, url }) => (
   <BoxWrap is="a" href={url} width={[1, 0.48]} py={40} pl={[6, 20]} f={[1, 4]} mb={[20, 50]} mr={10}>
     <Subhead f={[1, 3]} color={'#666'}>
       {name}
-    </Subhead >
+    </Subhead>
     <Subhead pt={1} f={[2, 2, 4]}>
       {theme}
     </Subhead>

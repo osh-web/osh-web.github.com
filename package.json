@@ -3,11 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material/card": "^0.2.7",
-    "@material/toolbar": "^0.4.7",
-    "gatsby": "^1.9.8",
-    "gatsby-link": "^1.6.13",
-    "gatsby-plugin-react-helmet": "^1.0.4",
     "grommet-icons": "^0.10.1",
     "postcss-custom-properties": "^6.1.0",
     "postcss-import": "^10.0.0",

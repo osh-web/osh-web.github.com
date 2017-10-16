@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Map } from 'grommet-icons';
-import { Banner, Heading, Badge } from 'rebass'
+import { Banner, Heading } from 'rebass'
 
 const primary = '#D84315'
 const accepnt = '#C62828'
