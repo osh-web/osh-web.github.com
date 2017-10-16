@@ -1,13 +1,5 @@
 import React from 'react'
-import { injectGlobal } from 'styled-components'
-
-
-injectGlobal`
-body {
-  margin: 0;
-  padding: 0;
-}
-`
+import { ServerStyleSheet } from 'styled-components'
 
 
 export default {
@@ -16,15 +8,26 @@ export default {
       path: '/',
     },
     {
+      path: '/about/',
+    },
+    {
       path: '/2017/',
     },
   ],
-  Html: ({ Html, Head, Body, children }) => (
-    <Html lang="ja-jp">
-      <Head>
-        <meta name="viewport" content="width=devise-width, initial-scale=1" />
-      </Head>
-      <Body className="hge">{children}</Body>
-    </Html>
-  ),
+  Html: ({ Html, Head, Body, children }) => {
+    const sheet = new ServerStyleSheet()
+    const newChildren = sheet.collectStyles(children)
+    const styleTags = sheet.getStyleElement()
+
+    return (
+      <Html lang="ja-jp">
+        <Head>
+          <meta name="viewport" content="width=devise-width, initial-scale=1" />
+          <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+          {styleTags}
+        </Head>
+        <Body>{newChildren}</Body>
+      </Html>
+    )
+  },
 }

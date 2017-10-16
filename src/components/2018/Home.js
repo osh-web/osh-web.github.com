@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 import Hero from './Hero.js'
 import SeminarList from '../SeminarList.js'
+import Footer from '../Footer'
 
 export default () => (
   <Box>
@@ -12,6 +13,6 @@ export default () => (
     <Box mb={[20, 100]}>
       <SeminarList />
     </Box>
-    <Hero />
+    <Footer />
   </Box>
 )
