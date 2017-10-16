@@ -8,6 +8,7 @@
     "gatsby": "^1.9.8",
     "gatsby-link": "^1.6.13",
     "gatsby-plugin-react-helmet": "^1.0.4",
+    "grommet-icons": "^0.10.1",
     "postcss-custom-properties": "^6.1.0",
     "postcss-import": "^10.0.0",
     "react": "^16.0.0",
@@ -63,6 +64,7 @@
     "eslint-plugin-react": "^7.4.0",
     "gh-pages": "^1.0.0",
     "react-static": "^1.0.40",
+    "rebass": "^1.0.4",
     "serve": "^6.2.0"
   }
 }
