@@ -1,9 +1,10 @@
 import React from 'react'
-import { Router, Route, Switch, Redirect } from 'react-static'
+import { Router, Route, Switch, Redirect, Link } from 'react-static'
 import { injectGlobal } from 'styled-components'
 
 import Jsonld from './json_ld.js'
-import Home2018 from './components/2018/Home'
+import { About, History, Speaker, Home } from './containers'
+import { Footer } from './components/'
 
 injectGlobal`
 * {
@@ -21,9 +22,13 @@ export default () => (
   <Router>
     <div className="content">
       <Switch>
-        <Route exact path="/" component={Home2018} />
+        <Route exact path="/" component={Home} />
+        <Route path="/about/" component={About} />
+        <Route path="/speakers/" component={Speaker} />
+        <Route path="/history/" component={History} />
         <Redirect to="/" />
       </Switch>
+      <Footer Link={Link} />
       <Jsonld />
     </div>
   </Router>
