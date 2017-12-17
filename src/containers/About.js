@@ -1,11 +1,9 @@
-import h from 'react-hyperscript'
+import React from 'react'
+import { Head } from 'react-static'
 import { Link } from 'react-static'
-import styled from 'styled-components'
 
-import { color } from '../resources'
 import { BackButton } from '../components'
 
-const { primary } = color
 
 const p1 = `
 オープンセミナーは2003年より中四国地域で開催されている
@@ -16,28 +14,24 @@ const p2 = `
 企画と運営は各地域の技術系ユーザコミュニティのボランティアによって行われています。
 `
 
-const Description = () => (
-  h('div', [
-    h('p', { px: 15, pt: 20, f: [2, 3] }, [
-      p1,
-    ]),
-    h('p', { px: 15, py: 5, f: [2, 3] }, [
-      p2,
-    ]),
-  ])
-)
-
-const Title = ({ title }) => (
-  h('h1', {
-    f: [4, 6],
-  }, [
-    title,
-  ])
+const Title = ({ children }) => (
+  <h1 f={[4, 6]}>
+    {children}
+  </h1>
 )
 
 export default () => (
-  h('div', [
-    p1,p2,
-    h(BackButton, { Link, to: '/' }, []),
-  ])
+  <div>
+    <Head>
+      <title>
+        初めての方へ - オープンセミナー広島
+      </title>
+    </Head>
+    <Title>初めての方へ</Title>
+    <h2>オープンセミナーとは</h2>
+    {p1}
+    {p2}
+    <h2>オープンセミナー広島について</h2>
+    <BackButton Link={Link} to="/">HOME</BackButton>
+  </div>
 )

@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Router, Route, Switch, Redirect, Link } from 'react-static'
+import { withRouter } from 'react-router';
 import { injectGlobal } from 'styled-components'
 
 import Jsonld from './json_ld.js'
-import { About, History, Speaker, Home } from './containers'
+import { About, History, Session, Home, Staff } from './containers'
 import { Footer } from './components/'
 
 injectGlobal`
@@ -17,19 +18,35 @@ body {
 }
 `
 
+class ScrollToTopBase extends Component {
+  componentDidUpdate (prevProps) {
+    if (this.props.location !== prevProps.location) {
+      window.scrollTo(0, 0)
+    }
+  }
+
+  render () {
+    return this.props.children
+  }
+}
+
+const ScrollToTop = withRouter(ScrollToTopBase)
 
 export default () => (
   <Router>
-    <div className="content">
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about/" component={About} />
-        <Route path="/speakers/" component={Speaker} />
-        <Route path="/history/" component={History} />
-        <Redirect to="/" />
-      </Switch>
-      <Footer Link={Link} />
-      <Jsonld />
-    </div>
+    <ScrollToTop>
+      <div className="content">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about/" component={About} />
+          <Route path="/2018/sessions/" component={Session} />
+          <Route path="/2018/staff/" component={Staff} />
+          <Route path="/history/" component={History} />
+          <Redirect to="/" />
+        </Switch>
+        <Footer Link={Link} />
+        <Jsonld />
+      </div>
+    </ScrollToTop>
   </Router>
 )

@@ -33,6 +33,6 @@ export default () => (
     <Flex wrap pl={[20, 100]} pt={[10, 40]}>
       {seminarList.map(seminar => <Seminar {...seminar} />)}
     </Flex>
-    <BackButton Link={Link} to="/" />,
+    <BackButton Link={Link} to="/">HOME</BackButton>,
   </Box>
 )

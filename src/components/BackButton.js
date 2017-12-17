@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Flex, Box } from 'grid-styled'
 
 import { color } from '../resources'
 
@@ -10,8 +11,10 @@ const level1 = component => styled(component)`
 `
 
 const Base = ({ Link, to, className, children }) => (
-  <Link className={className} to={to}>
-    {children}
+  <Link style={{ color: 'white', textDecoration: 'none' }} to={to}>
+    <Flex className={className} justify="center" align="center">
+      {children}
+    </Flex>
   </Link>
 )
 

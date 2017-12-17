@@ -23,6 +23,7 @@ export default {
       <Html lang="ja-jp">
         <Head>
           <meta name="viewport" content="width=devise-width, initial-scale=1" />
+          <title>オープンセミナー広島</title>
           <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
           {styleTags}
         </Head>

@@ -8,12 +8,16 @@
     "postcss-custom-properties": "^6.1.0",
     "postcss-import": "^10.0.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
     "react-hyperscript": "^3.0.0",
     "react-markdown": "^2.5.0",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-scroll": "^0.4.4",
     "recompose": "^0.26.0",
+    "styled-system": "^1.1.1",
     "toml-loader": "^1.0.0"
   },
   "homepage": "http://osh-web.github.io",
@@ -25,7 +29,8 @@
     "clean": "rm -rf dist",
     "flow": "flow",
     "flow-typed": "flow-typed install",
-    "deploy": "npm run build && npm run push"
+    "deploy": "npm run build && npm run push",
+    "lint:css": "stylelint './src/**/*.js'"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -61,6 +66,10 @@
     "eslint-plugin-react": "^7.4.0",
     "gh-pages": "^1.0.0",
     "react-static": "^1.0.40",
-    "serve": "^6.2.0"
+    "serve": "^6.2.0",
+    "stylelint": "^8.2.0",
+    "stylelint-config-standard": "^17.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.0.0"
   }
 }
