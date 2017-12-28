@@ -6,6 +6,7 @@ import { Link, Head } from 'react-static'
 
 import { Hero, H1, H2 } from '../components/2018'
 import EventAbstract from '../containers/EventAbstract'
+import SponsorBannars from '../containers/SponsorBannars'
 
 const ListButtonInner = ({ to, className, children }) => (
   <Link to={to} className={className}>
@@ -76,5 +77,6 @@ export default () => (
       </Flex>
     </div>
     <EventAbstract />
+    <SponsorBannars />
   </div>
 )
