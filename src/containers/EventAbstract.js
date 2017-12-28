@@ -36,15 +36,15 @@ const Sponsors = (
 )
 
 const AbstractTtile = styled(Half)`
-  display: table-cell;
+  display: flex;
   border: solid 1px #fff;
   border-left-width: 20px;
   border-right-width: 20px;
   box-sizing: border-box;
   background-color: ${accent};
   color: white;
-  text-align: center;
-  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
 `
 
 const AbstractValue = styled(Half)`
