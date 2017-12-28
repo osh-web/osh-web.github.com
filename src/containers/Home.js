@@ -6,6 +6,8 @@ import { Link, Head } from 'react-static'
 
 import { Hero } from '../components/2018'
 import { color } from '../resources'
+import sponsors from '../resources/2018/sponsors'
+import speakers from '../resources/2018/speakers'
 
 const { accent } = color
 
@@ -57,22 +59,76 @@ const Menu = () => (
   </Flex>
 )
 
-const eventInfo = [
+const Speaker = ({ name, company }) => (
+  <li>
+    {name} (<a href={company.uri}>{company.name}</a>)
+  </li>
+)
+
+const Speakers = (
+  <ul>
+    {speakers.map(Speaker)}
+  </ul>
+)
+
+const Sponsor = ({ name, url }) => (
+  <li>
+    <a href={url}>
+      {name}
+    </a>
+  </li>
+)
+
+const Sponsors = (
+  <ul>
+    {sponsors.map(Sponsor)}
+  </ul>
+)
+
+type EventInfo = {
+  title: string,
+  value: mixed,
+}
+const eventInfo: EventInfo[] = [
   {
     title: 'イベント名',
     value: 'オープンセミナー広島',
   },
   {
     title: '開催日時',
-    value: '2018年2月24日(土)',
+    value: '2018年2月24日(土) 9:30 - 18:00 ',
   },
   {
     title: 'テーマ',
     value: 'いまさらチームビルディング',
   },
   {
+    title: '出演(順不同)(敬称略)',
+    value: Speakers,
+  },
+  {
     title: '会場',
     value: [<div>広島県広島市中区大手町1-5-3</div>, <div>サテライトキャンパスひろしま 501講義室</div>],
+  },
+  {
+    title: '協賛',
+    value: Sponsors,
+  },
+  {
+    title: '参加費',
+    value: '無料',
+  },
+  {
+    title: '懇親会',
+    value: 'Procida プロチダ DINING & PARTY',
+  },
+  {
+    title: '主催',
+    value: 'オープンセミナー2018@広島 実行委員会',
+  },
+  {
+    title: 'URL',
+    value: 'http://osh-web.github.io',
   },
 ]
 
@@ -159,7 +215,7 @@ export default () => (
         <Half px={10}>
           <p>
             本セミナー内でライトニングトーク大会のライトニングトークを公募しています。
-            希望の方は<a href="">こちら</a>から応募してください。
+            希望の方は<a href="https://docs.google.com/forms/d/e/1FAIpQLSeu7K22CflKVv3q8rbjoBIyIQWuUpL1MBmCBxpkoU4vM0_kvg/viewform">こちら</a>から応募してください。
           </p>
         </Half>
       </Flex>
