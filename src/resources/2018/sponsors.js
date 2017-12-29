@@ -24,7 +24,7 @@ export const subthread: Sponsor = {
   name: '株式会社サブスレッド',
   key: 'subthread',
   url: 'http://www.subthread.co.jp/',
-  bannar: false,
+  bannar: true,
 }
 
 export const platinum: Sponsor[] = [

@@ -60,7 +60,7 @@ const sponsors = [
 
 const SponsorBannars = () => (
   <Flex justify="center">
-    <Flex justify="center" wrap m={20} style={{ maxWidth }}>
+    <Flex justify="space-between" wrap m={20} style={{ maxWidth }}>
       {sponsors.map(Bannar)}
     </Flex>
   </Flex>

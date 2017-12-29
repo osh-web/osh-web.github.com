@@ -16,7 +16,7 @@ const Speaker = ({ name, company }) => (
 )
 
 const Speakers = (
-  <ul style={{listStyleType: 'none'}}>
+  <ul style={{ listStyleType: 'none' }}>
     {speakers.map(Speaker)}
   </ul>
 )
@@ -30,7 +30,7 @@ const Sponsor = ({ name, url }) => (
 )
 
 const Sponsors = (
-  <ul style={{listStyleType: 'none'}}>
+  <ul style={{ listStyleType: 'none' }}>
     {sponsors.map(Sponsor)}
   </ul>
 )
