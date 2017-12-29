@@ -9,6 +9,13 @@ import { accent } from '../resources/color'
 import H1 from '../components/2018/H1'
 import H2 from '../components/2018/H2'
 
+const ResetList = styled.ul`
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+`
+
 const Speaker = ({ name, company }) => (
   <li key={name}>
     {name} (<a href={company.uri}>{company.name}</a>)
@@ -16,9 +23,9 @@ const Speaker = ({ name, company }) => (
 )
 
 const Speakers = (
-  <ul style={{ listStyleType: 'none' }}>
+  <ResetList>
     {speakers.map(Speaker)}
-  </ul>
+  </ResetList>
 )
 
 const Sponsor = ({ name, url }) => (
@@ -30,9 +37,9 @@ const Sponsor = ({ name, url }) => (
 )
 
 const Sponsors = (
-  <ul style={{ listStyleType: 'none' }}>
+  <ResetList>
     {sponsors.map(Sponsor)}
-  </ul>
+  </ResetList>
 )
 
 const AbstractTtile = styled(Half)`
