@@ -1,0 +1,4 @@
+[ignore]
+.*/node_modules/stylelint/.*
+.*/node_modules/.*/test/.*
+.*/node_modules/styled-components/src/.*
