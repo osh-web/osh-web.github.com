@@ -24,11 +24,11 @@ const ListButton = styled(ListButtonInner)`
 `
 
 const menuList = [
-  /*
   {
     to: '/about',
     text: '初めての方へ',
   },
+  /*
   {
     to: '/2018/sessions',
     text: 'セッション',
@@ -37,11 +37,11 @@ const menuList = [
     to: '/2018/staff',
     text: 'スタッフ',
   },
+  */
   {
     to: '/history',
     text: 'これまでのオープンセミナー',
   },
-  */
 ]
 
 const Menu = () => (

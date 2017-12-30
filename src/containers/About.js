@@ -1,8 +1,10 @@
 import React from 'react'
-import { Head } from 'react-static'
-import { Link } from 'react-static'
+import { Head, Link } from 'react-static'
+import { Flex, Box } from 'grid-styled'
 
 import { BackButton } from '../components'
+import H1 from '../components/2018/H1'
+import H2 from '../components/2018/H2'
 
 
 const p1 = `
@@ -15,9 +17,9 @@ const p2 = `
 `
 
 const Title = ({ children }) => (
-  <h1 f={[4, 6]}>
+  <H1 f={[4, 6]}>
     {children}
-  </h1>
+  </H1>
 )
 
 export default () => (
@@ -28,10 +30,29 @@ export default () => (
       </title>
     </Head>
     <Title>初めての方へ</Title>
-    <h2>オープンセミナーとは</h2>
-    {p1}
-    {p2}
-    <h2>オープンセミナー広島について</h2>
+    <H2>オープンセミナーとは</H2>
+    <Flex justify="center">
+      <Box mx={[16, 200]}>
+        {p1}
+        {p2}
+      </Box>
+    </Flex>
+    <H2>オープンセミナー広島について</H2>
+    <Flex justify="center">
+      <Box mx={[16, 200]} >
+        <p>
+          広島では毎年2月ごろにオープンセミナーを開催をしています。
+          実行委員長を毎年交代をし、運営のノウハウを引き継ぎ、新たな実行委員会を毎年立ち上げています。
+          実行委員会では、ITコミュニティに積極的に参加シている人や、コミュニティを立ち上げている人たちが主となっています。
+          そのため、コミュニティの年に一度のお祭りのようなものとなっています。
+        </p>
+        <p>
+          実行委員会では、一緒にイベントを作りあげたい仲間を探しています。
+          コミュニティ同士の繋がりの強くしたい方や、コミュニティの主催者と仲良くしたい方におすすめです。
+          参加ご希望の方は気軽にご連絡ください。
+        </p>
+      </Box>
+    </Flex>
     <BackButton Link={Link} to="/">HOME</BackButton>
   </div>
 )
