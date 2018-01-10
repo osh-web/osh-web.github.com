@@ -27,8 +27,16 @@ export const subthread: Sponsor = {
   bannar: true,
 }
 
+export const cloudgarage: Sponsor = {
+  name: 'CloudGarage',
+  key: 'cloudgarage',
+  url: 'https://cloudgarage.jp/',
+  bannar: true,
+}
+
 export const platinum: Sponsor[] = [
   atlassian,
+  cloudgarage,
   orange,
   subthread,
 ]
