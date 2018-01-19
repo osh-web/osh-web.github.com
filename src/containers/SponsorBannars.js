@@ -52,7 +52,7 @@ const silverBannar = silver
   .map(silverToBannar)
 
 
-const sponsor_groups = [
+const sponsorGroups = [
   platinumBannar,
   goldBannar,
   silverBannar,
@@ -60,11 +60,13 @@ const sponsor_groups = [
 
 const SponsorBannars = () => (
   <Flex wrap justify="center">
-    {sponsor_groups.map(sponsors => (
-      <Flex justify="center" wrap m={20} style={{ maxWidth }}>
-        {sponsors.map(Bannar)}
-      </Flex>
-    ))}
+    <div style={{ maxWidth }}>
+      {sponsorGroups.map(sponsors => (
+        <Flex justify="center" wrap m={20} style={{ maxWidth }}>
+          {sponsors.map(Bannar)}
+        </Flex>
+      ))}
+    </div>
   </Flex>
 )
 
