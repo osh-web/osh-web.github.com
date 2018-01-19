@@ -41,7 +41,16 @@ export const platinum: Sponsor[] = [
   subthread,
 ]
 
-export const gold: Sponsor[] = []
+export const bitriver: Sponsor = {
+  name: 'ビットリバー株式会社',
+  key: 'bitriver',
+  url: 'https://bitriver.jp',
+  bannar: true,
+}
+
+export const gold: Sponsor[] = [
+  bitriver,
+]
 
 export const nextvision: Sponsor = {
   name: '株式会社ネクストビジョン',
@@ -57,9 +66,17 @@ export const linkroad: Sponsor = {
   bannar: true,
 }
 
+export const pmaj: Sponsor = {
+  name: '日本プロジェクトマネジメント協会',
+  key: 'pmaj',
+  url: 'http://www.pmaj.or.jp/',
+  bannar: true,
+}
+
 export const silver: Sponsor[] = [
   nextvision,
   linkroad,
+  pmaj,
 ]
 
 export default [...platinum, ...gold, ...silver]
