@@ -1,7 +1,6 @@
 import React from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
-
 export default {
   getRoutes: async () => [
     {
@@ -24,7 +23,10 @@ export default {
         <Head>
           <meta name="viewport" content="width=devise-width, initial-scale=1" />
           <title>オープンセミナー広島</title>
-          <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css"
+            rel="stylesheet"
+          />
           {styleTags}
         </Head>
         <Body>{newChildren}</Body>

@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Flex } from 'grid-styled'
 
@@ -19,7 +18,6 @@ const keyToImagePath = sponsor => {
     imagePath: `/img/2018/${key}.png`,
   }
 }
-
 
 const platinumToBannar = sponsor => ({
   ...sponsor,
@@ -51,12 +49,7 @@ const silverBannar = silver
   .map(keyToImagePath)
   .map(silverToBannar)
 
-
-const sponsorGroups = [
-  platinumBannar,
-  goldBannar,
-  silverBannar,
-]
+const sponsorGroups = [platinumBannar, goldBannar, silverBannar]
 
 const SponsorBannars = () => (
   <Flex wrap justify="center">

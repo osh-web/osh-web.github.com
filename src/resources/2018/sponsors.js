@@ -3,7 +3,7 @@ type Sponsor = {
   name: string,
   key: string,
   url: string,
-  bannar: bool, // バナーがあるかどうか
+  bannar: boolean, // バナーがあるかどうか
 }
 
 export const atlassian: Sponsor = {
@@ -34,12 +34,7 @@ export const cloudgarage: Sponsor = {
   bannar: true,
 }
 
-export const platinum: Sponsor[] = [
-  atlassian,
-  cloudgarage,
-  orange,
-  subthread,
-]
+export const platinum: Sponsor[] = [atlassian, cloudgarage, orange, subthread]
 
 export const bitriver: Sponsor = {
   name: 'ビットリバー株式会社',
@@ -48,9 +43,7 @@ export const bitriver: Sponsor = {
   bannar: true,
 }
 
-export const gold: Sponsor[] = [
-  bitriver,
-]
+export const gold: Sponsor[] = [bitriver]
 
 export const nextvision: Sponsor = {
   name: '株式会社ネクストビジョン',
@@ -73,10 +66,6 @@ export const pmaj: Sponsor = {
   bannar: true,
 }
 
-export const silver: Sponsor[] = [
-  nextvision,
-  linkroad,
-  pmaj,
-]
+export const silver: Sponsor[] = [nextvision, linkroad, pmaj]
 
 export default [...platinum, ...gold, ...silver]

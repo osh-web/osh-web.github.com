@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Router, Route, Switch, Redirect, Link } from 'react-static'
-import { withRouter } from 'react-router';
+import { withRouter } from 'react-router'
 import { injectGlobal } from 'styled-components'
 
 import Jsonld from './json_ld.js'

@@ -28,10 +28,4 @@ export const event2017 = {
   url: '/2017/',
 }
 
-export default [
-  event2013,
-  event2014,
-  event2015,
-  event2016,
-  event2017,
-]
+export default [event2013, event2014, event2015, event2016, event2017]

@@ -2,8 +2,7 @@ import { Box as Base } from 'grid-styled'
 import { fontSize, color } from 'styled-system'
 
 export const Box = Base.extend`
-  ${fontSize}
-  ${color}
+  ${fontSize} ${color};
 `
 export default Box
 

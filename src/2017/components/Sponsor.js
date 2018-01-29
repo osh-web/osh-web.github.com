@@ -1,7 +1,13 @@
 // @flow
 import h from 'react-hyperscript'
 
-type Props = { url: string, name: string, image: string, type: string, width: number}
+type Props = {
+  url: string,
+  name: string,
+  image: string,
+  type: string,
+  width: number,
+}
 const Sponsor = (props: Props) => {
   const { url, name, image, type, width } = props
   console.log(width)
@@ -19,10 +25,10 @@ const Sponsor = (props: Props) => {
     width: type2width[type],
     opacity: type2opacity[type],
   }
-  return h('div', {},
-    h('a', { href: url },
-      h('img', { src: image, alt: name, style }),
-    ),
+  return h(
+    'div',
+    {},
+    h('a', { href: url }, h('img', { src: image, alt: name, style })),
   )
 }
 

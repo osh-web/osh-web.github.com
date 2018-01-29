@@ -17,15 +17,20 @@ const BottomBar = Box.extend`
   }
 `
 
-export default ({ Link }) => (
-  h(BottomBar, {
-    py: 12,
-    pl: [10, 20],
-  }, [
-    h(Link, {
-      to: '/',
-    }, [
-      name,
-    ]),
-  ])
-)
+export default ({ Link }) =>
+  h(
+    BottomBar,
+    {
+      py: 12,
+      pl: [10, 20],
+    },
+    [
+      h(
+        Link,
+        {
+          to: '/',
+        },
+        [name],
+      ),
+    ],
+  )

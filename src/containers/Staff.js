@@ -1,3 +1,1 @@
-export default () => (
-  <div>staff</div>
-)
+export default () => <div>staff</div>

@@ -6,7 +6,6 @@ import { BackButton } from '../components'
 import H1 from '../components/2018/H1'
 import H2 from '../components/2018/H2'
 
-
 const p1 = `
 オープンセミナーは2003年より中四国地域で開催されている
 IT技術者向けの非営利の無料セミナーです。
@@ -16,18 +15,12 @@ const p2 = `
 企画と運営は各地域の技術系ユーザコミュニティのボランティアによって行われています。
 `
 
-const Title = ({ children }) => (
-  <H1 f={[4, 6]}>
-    {children}
-  </H1>
-)
+const Title = ({ children }) => <H1 f={[4, 6]}>{children}</H1>
 
 export default () => (
   <div>
     <Head>
-      <title>
-        初めての方へ - オープンセミナー広島
-      </title>
+      <title>初めての方へ - オープンセミナー広島</title>
     </Head>
     <Title>初めての方へ</Title>
     <H2>オープンセミナーとは</H2>
@@ -39,7 +32,7 @@ export default () => (
     </Flex>
     <H2>オープンセミナー広島について</H2>
     <Flex justify="center">
-      <Box mx={[16, 200]} >
+      <Box mx={[16, 200]}>
         <p>
           広島では毎年2月ごろにオープンセミナーを開催をしています。
           実行委員長を毎年交代をし、運営のノウハウを引き継ぎ、新たな実行委員会を毎年立ち上げています。
@@ -53,6 +46,8 @@ export default () => (
         </p>
       </Box>
     </Flex>
-    <BackButton Link={Link} to="/">HOME</BackButton>
+    <BackButton Link={Link} to="/">
+      HOME
+    </BackButton>
   </div>
 )

@@ -13,7 +13,6 @@ const ResetList = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
-
 `
 
 const Speaker = ({ name, company }) => (
@@ -22,25 +21,15 @@ const Speaker = ({ name, company }) => (
   </li>
 )
 
-const Speakers = (
-  <ResetList>
-    {speakers.map(Speaker)}
-  </ResetList>
-)
+const Speakers = <ResetList>{speakers.map(Speaker)}</ResetList>
 
 const Sponsor = ({ name, url }) => (
   <li key={name}>
-    <a href={url}>
-      {name}
-    </a>
+    <a href={url}>{name}</a>
   </li>
 )
 
-const Sponsors = (
-  <ResetList>
-    {sponsors.map(Sponsor)}
-  </ResetList>
-)
+const Sponsors = <ResetList>{sponsors.map(Sponsor)}</ResetList>
 
 const AbstractTtile = styled(Half)`
   display: flex;
@@ -85,7 +74,10 @@ const eventInfo: EventInfo[] = [
   },
   {
     title: '会場',
-    value: [<div>広島県広島市中区大手町1-5-3</div>, <div>サテライトキャンパスひろしま 501講義室</div>],
+    value: [
+      <div>広島県広島市中区大手町1-5-3</div>,
+      <div>サテライトキャンパスひろしま 501講義室</div>,
+    ],
   },
   {
     title: '協賛',
@@ -116,10 +108,12 @@ const EventAbstract = () => (
       <Flex justify="center">
         <Half px={10}>
           <p>
-            何らかの目標を達成するために複数人で行動を共にしている方が少なくないはずです。 しかし、本当にその集団はチームになっているのでしょうか。
+            何らかの目標を達成するために複数人で行動を共にしている方が少なくないはずです。
+            しかし、本当にその集団はチームになっているのでしょうか。
           </p>
           <p>
-            ただ単に何人かの人が集まり作業を行っているだけの状態になってはいませんか。 目的を真に共有し共感しお互いを尊重し言い合える、１+１が３になる様なチームになっているのでしょうか。
+            ただ単に何人かの人が集まり作業を行っているだけの状態になってはいませんか。
+            目的を真に共有し共感しお互いを尊重し言い合える、１+１が３になる様なチームになっているのでしょうか。
           </p>
           <p>
             この機会に本当のチームになるためのチームビルディングに関して再考してみませんか？
@@ -129,10 +123,9 @@ const EventAbstract = () => (
       <H2>イベント情報</H2>
       <Flex wrap>
         {eventInfo.map(({ title, value }) => [
-          (<AbstractTtile p={1}>{title}</AbstractTtile>),
-          (<AbstractValue p={1}>{value}</AbstractValue>),
-        ],
-        )}
+          <AbstractTtile p={1}>{title}</AbstractTtile>,
+          <AbstractValue p={1}>{value}</AbstractValue>,
+        ])}
       </Flex>
     </div>
   </div>

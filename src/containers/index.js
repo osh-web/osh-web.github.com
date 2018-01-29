@@ -4,10 +4,4 @@ import Home from './Home'
 import Session from './Session'
 import Staff from './Staff'
 
-export {
-  About,
-  History,
-  Home,
-  Session,
-  Staff,
-}
+export { About, History, Home, Session, Staff }
