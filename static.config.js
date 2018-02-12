@@ -13,6 +13,20 @@ export default {
       path: '/2017/',
     },
   ],
+  webpack:
+    (config, { defaultLoaders }) => {
+      config.module.rules = [{
+        oneOf: [
+          defaultLoaders.jsLoader,
+          {
+            test: /\.css$/,
+            loaders: ['style-loader', 'css-loader?modules'],
+          },
+          defaultLoaders.fileLoader,
+        ]
+      }]
+      return config
+    },
   Html: ({ Html, Head, Body, children }) => {
     const sheet = new ServerStyleSheet()
     const newChildren = sheet.collectStyles(children)

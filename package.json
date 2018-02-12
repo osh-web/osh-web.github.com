@@ -23,6 +23,7 @@
   "homepage": "http://osh-web.github.io",
   "scripts": {
     "start": "react-static start",
+    "list": "eslint",
     "build": "react-static build",
     "serve": "serve dist -p 3000",
     "push": "gh-pages -d dist -b master",
@@ -69,7 +70,7 @@
     "gh-pages": "^1.0.0",
     "prettier": "^1.10.2",
     "prettier-eslint-cli": "^4.7.0",
-    "react-static": "^1.0.40",
+    "react-static": "5",
     "serve": "^6.2.0",
     "stylelint": "^8.2.0",
     "stylelint-config-standard": "^17.0.0",
