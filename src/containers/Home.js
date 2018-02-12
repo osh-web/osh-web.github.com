@@ -8,6 +8,7 @@ import { Hero, H1, H2 } from '../components/2018'
 import Information from '../components/2018/Information'
 import EventAbstract from '../containers/EventAbstract'
 import SponsorBannars from '../containers/SponsorBannars'
+import Speakers from '../containers/Speakers'
 
 const ListButtonInner = ({ to, className, children }) => (
   <Link to={to} className={className}>
@@ -63,6 +64,7 @@ export default () => (
     <Hero />
     <Menu />
     <Information />
+    <Speakers/>
     <EventAbstract />
     <SponsorBannars />
   </div>

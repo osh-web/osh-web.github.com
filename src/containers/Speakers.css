@@ -1,0 +1,15 @@
+.Speakers > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Speakers img {
+    padding: 8px;
+    width: 100px;
+    height: 100px;
+}
+
+.Speakers img:hover {
+    background-color: #eee;
+}
