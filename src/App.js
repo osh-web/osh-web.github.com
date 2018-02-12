@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import { Router, Route, Switch, Redirect, Link } from 'react-static'
 import { withRouter } from 'react-router'
+import { Router, Link } from 'react-static'
+import { hot } from 'react-hot-loader'
+import Routes from 'react-static-routes'
 import { injectGlobal } from 'styled-components'
 
 import Jsonld from './json_ld.js'
-import { About, History, Session, Home, Staff } from './containers'
 import { Footer } from './components/'
 
 injectGlobal`
@@ -32,21 +33,15 @@ class ScrollToTopBase extends Component {
 
 const ScrollToTop = withRouter(ScrollToTopBase)
 
-export default () => (
+const App = () => (
   <Router>
     <ScrollToTop>
       <div className="content">
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about/" component={About} />
-          <Route path="/2018/sessions/" component={Session} />
-          <Route path="/2018/staff/" component={Staff} />
-          <Route path="/history/" component={History} />
-          <Redirect to="/" />
-        </Switch>
+        <Routes />
         <Footer Link={Link} />
         <Jsonld />
       </div>
     </ScrollToTop>
   </Router>
 )
+export default hot(module)(App)

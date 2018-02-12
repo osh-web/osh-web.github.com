@@ -5,23 +5,24 @@ export default {
   getRoutes: async () => [
     {
       path: '/',
+      component: 'src/containers/Home',
     },
     {
       path: '/about/',
+      component: 'src/containers/About',
     },
     {
-      path: '/2017/',
+      path: '/history/',
+      component: 'src/containers/History',
     },
-  ],
+ ],
   webpack:
     (config, { defaultLoaders }) => {
+      defaultLoaders.cssLoader.loader[2].options['modules'] = true
       config.module.rules = [{
         oneOf: [
           defaultLoaders.jsLoader,
-          {
-            test: /\.css$/,
-            loaders: ['style-loader', 'css-loader?modules'],
-          },
+          defaultLoaders.cssLoader,
           defaultLoaders.fileLoader,
         ]
       }]
