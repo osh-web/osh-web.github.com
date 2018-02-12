@@ -18,7 +18,13 @@ export default {
  ],
   webpack:
     (config, { defaultLoaders }) => {
-      defaultLoaders.cssLoader.loader[2].options['modules'] = true
+      if (defaultLoaders.cssLoader.use) {
+        // develop
+        defaultLoaders.cssLoader.use[1].options['modules'] = true
+      } else {
+        // production
+        defaultLoaders.cssLoader.loader[2].options['modules'] = true
+      }
       config.module.rules = [{
         oneOf: [
           defaultLoaders.jsLoader,
@@ -35,16 +41,16 @@ export default {
 
     return (
       <Html lang="ja-jp">
-        <Head>
-          <meta name="viewport" content="width=devise-width, initial-scale=1" />
-          <title>オープンセミナー広島</title>
-          <link
-            href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css"
-            rel="stylesheet"
-          />
-          {styleTags}
-        </Head>
-        <Body>{newChildren}</Body>
+      <Head>
+        <meta name="viewport" content="width=devise-width, initial-scale=1" />
+        <title>オープンセミナー広島</title>
+        <link
+          href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css"
+          rel="stylesheet"
+        />
+        {styleTags}
+      </Head>
+      <Body>{newChildren}</Body>
       </Html>
     )
   },

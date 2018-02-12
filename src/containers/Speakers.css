@@ -1,15 +1,53 @@
-.Speakers > div {
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.Speakers img {
-    padding: 8px;
-    width: 100px;
-    height: 100px;
+.item {
+    align-self: center;
+
+    background-color: #fffafa;
+    margin: 16px;
+    padding: 16px;
+    max-width: 600px;
 }
 
-.Speakers img:hover {
-    background-color: #eee;
+.title {
+    margin: 0;
+    padding: 0;
+}
+
+.description {
+    line-height: 1.6;
+}
+
+.profile {
+    line-height: 1.6;
+    font-size: smaller;
+}
+
+.item img {
+    float: right;
+    padding: 0 16px 8px;
+    width: 200px;
+    height: 200px;
+}
+.furi {
+    display: block;
+    font-size: smaller;
+}
+.name {
+    margin: 0;
+    padding: 0;
+}
+.company {
+    display: block;
+    font-size: larger;
+}
+
+@media screen and (min-width: 480px) {
+    .item {
+        margin: 20px;
+    }
 }
