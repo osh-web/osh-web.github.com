@@ -1,4 +1,4 @@
 {
-  "extends": ["react-static/.babelrc"],
+  "extends": "react-static/.babelrc",
   "presets": ["flow"]
 }
