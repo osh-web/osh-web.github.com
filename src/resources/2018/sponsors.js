@@ -10,7 +10,7 @@ export const atlassian: Sponsor = {
   name: 'アトラシアン株式会社',
   key: 'atlassian',
   url: 'https://ja.atlassian.com/company',
-  bannar: false,
+  bannar: true,
 }
 
 export const orange: Sponsor = {
