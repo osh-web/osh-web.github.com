@@ -505,7 +505,7 @@ var atlassian = exports.atlassian = {
   name: 'アトラシアン株式会社',
   key: 'atlassian',
   url: 'https://ja.atlassian.com/company',
-  bannar: false
+  bannar: true
 };
 var orange = exports.orange = {
   name: '株式会社オレンジシステム広島',
@@ -1102,7 +1102,7 @@ var universalOptions = {
 
 var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Home',
-  file: '/Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/dist/react-static-routes.js',
+  file: '/home/ubuntu/workspace/wk/osh-web.github.com/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 12)), (0, _importCss3.default)('src/containers/Home', {
       disableWarnings: true
@@ -1122,7 +1122,7 @@ var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/About',
-  file: '/Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/dist/react-static-routes.js',
+  file: '/home/ubuntu/workspace/wk/osh-web.github.com/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 15)), (0, _importCss3.default)('src/containers/About', {
       disableWarnings: true
@@ -1142,7 +1142,7 @@ var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_2 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/History',
-  file: '/Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/dist/react-static-routes.js',
+  file: '/home/ubuntu/workspace/wk/osh-web.github.com/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 16)), (0, _importCss3.default)('src/containers/History', {
       disableWarnings: true
@@ -2720,4 +2720,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.bc40140d.js.map
+//# sourceMappingURL=static.eb4eb4ca.js.map
