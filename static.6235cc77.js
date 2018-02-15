@@ -528,7 +528,7 @@ var cloudgarage = exports.cloudgarage = {
   bannar: true
 };
 
-var platinum = exports.platinum = [atlassian, cloudgarage, orange, subthread];
+var platinum = exports.platinum = [atlassian, orange, cloudgarage, subthread];
 
 var bitriver = exports.bitriver = {
   name: 'ビットリバー株式会社',
@@ -560,7 +560,7 @@ var pmaj = exports.pmaj = {
   bannar: true
 };
 
-var silver = exports.silver = [nextvision, linkroad, pmaj];
+var silver = exports.silver = [nextvision, pmaj, linkroad];
 
 exports.default = [].concat(platinum, gold, silver);
 
@@ -2463,7 +2463,7 @@ var SponsorBannars = function SponsorBannars() {
       sponsorGroups.map(function (sponsors) {
         return _react2.default.createElement(
           _gridStyled.Flex,
-          { justify: 'center', wrap: true, m: 20, style: { maxWidth: maxWidth } },
+          { justify: 'center', wrap: true, m: 20, style: { maxWidth: maxWidth, alignItems: 'center' } },
           sponsors.map(Bannar)
         );
       })
@@ -2720,4 +2720,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.eb4eb4ca.js.map
+//# sourceMappingURL=static.6235cc77.js.map
