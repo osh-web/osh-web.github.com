@@ -34,7 +34,7 @@ export const cloudgarage: Sponsor = {
   bannar: true,
 }
 
-export const platinum: Sponsor[] = [atlassian, cloudgarage, orange, subthread]
+export const platinum: Sponsor[] = [atlassian, orange, cloudgarage, subthread]
 
 export const bitriver: Sponsor = {
   name: 'ビットリバー株式会社',
@@ -66,6 +66,6 @@ export const pmaj: Sponsor = {
   bannar: true,
 }
 
-export const silver: Sponsor[] = [nextvision, linkroad, pmaj]
+export const silver: Sponsor[] = [nextvision, pmaj, linkroad]
 
 export default [...platinum, ...gold, ...silver]
