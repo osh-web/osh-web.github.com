@@ -690,7 +690,7 @@ var mao = exports.mao = {
   }
 };
 
-exports.default = [ryuzee, shoyoshi, ma2shita, seratch, tatsuo310, mkiskt, mao];
+exports.default = [ryuzee, shoyoshi, ma2shita, seratch, tatsuo310, mkiskt];
 
 /***/ }),
 /* 15 */
@@ -2720,4 +2720,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.cecf10c0.js.map
+//# sourceMappingURL=static.a61111bf.js.map
