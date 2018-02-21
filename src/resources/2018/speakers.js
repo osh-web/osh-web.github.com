@@ -144,4 +144,4 @@ export const mao: Speaker = {
   },
 }
 
-export default [ryuzee, shoyoshi, ma2shita, seratch, tatsuo310, mkiskt, mao]
+export default [ryuzee, shoyoshi, ma2shita, seratch, tatsuo310, mkiskt]
