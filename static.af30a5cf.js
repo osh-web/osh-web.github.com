@@ -484,7 +484,6 @@ exports.default = function () {
     ),
     _react2.default.createElement(_.Hero, null),
     _react2.default.createElement(Menu, null),
-    _react2.default.createElement(_Information2.default, null),
     _react2.default.createElement(_Speakers2.default, null),
     _react2.default.createElement(_EventAbstract2.default, null),
     _react2.default.createElement(_SponsorBannars2.default, null)
@@ -2720,4 +2719,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.a61111bf.js.map
+//# sourceMappingURL=static.af30a5cf.js.map
