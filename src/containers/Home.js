@@ -63,7 +63,6 @@ export default () => (
     </Head>
     <Hero />
     <Menu />
-    <Information />
     <Speakers/>
     <EventAbstract />
     <SponsorBannars />
