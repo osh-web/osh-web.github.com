@@ -144,33 +144,6 @@ exports.default = {
 
 /***/ }),
 /* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _templateObject = _taggedTemplateLiteral(['\n  font-size: 20px;\n\n  color: ', ';\n  text-align: center;\n  font-weight: 100;\n'], ['\n  font-size: 20px;\n\n  color: ', ';\n  text-align: center;\n  font-weight: 100;\n']);
-
-var _styledComponents = __webpack_require__(2);
-
-var _styledComponents2 = _interopRequireDefault(_styledComponents);
-
-var _color = __webpack_require__(5);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-var H2 = _styledComponents2.default.h2(_templateObject, _color.accent);
-
-exports.default = H2;
-
-/***/ }),
-/* 7 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -198,7 +171,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -223,6 +196,33 @@ exports.color = _color2.default;
 exports.seminarList = _seminarList2.default;
 
 /***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _templateObject = _taggedTemplateLiteral(['\n  font-size: 20px;\n\n  color: ', ';\n  text-align: center;\n  font-weight: 100;\n'], ['\n  font-size: 20px;\n\n  color: ', ';\n  text-align: center;\n  font-weight: 100;\n']);
+
+var _styledComponents = __webpack_require__(2);
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _color = __webpack_require__(5);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var H2 = _styledComponents2.default.h2(_templateObject, _color.accent);
+
+exports.default = H2;
+
+/***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -234,11 +234,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.BackButton = exports.Footer = undefined;
 
-var _Footer = __webpack_require__(42);
+var _Footer = __webpack_require__(40);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _BackButton = __webpack_require__(44);
+var _BackButton = __webpack_require__(42);
 
 var _BackButton2 = _interopRequireDefault(_BackButton);
 
@@ -362,7 +362,7 @@ var loadFromPromiseCache = exports.loadFromPromiseCache = function loadFromPromi
 var cacheProm = exports.cacheProm = function cacheProm(pr, chunkName, props, promisecache) {
   return promisecache[callForString(chunkName, props)] = pr;
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)(module)))
 
 /***/ }),
 /* 11 */
@@ -397,19 +397,15 @@ var _reactStatic = __webpack_require__(4);
 
 var _ = __webpack_require__(31);
 
-var _Information = __webpack_require__(36);
-
-var _Information2 = _interopRequireDefault(_Information);
-
-var _EventAbstract = __webpack_require__(38);
+var _EventAbstract = __webpack_require__(36);
 
 var _EventAbstract2 = _interopRequireDefault(_EventAbstract);
 
-var _SponsorBannars = __webpack_require__(39);
+var _SponsorBannars = __webpack_require__(37);
 
 var _SponsorBannars2 = _interopRequireDefault(_SponsorBannars);
 
-var _Speakers = __webpack_require__(40);
+var _Speakers = __webpack_require__(38);
 
 var _Speakers2 = _interopRequireDefault(_Speakers);
 
@@ -716,7 +712,7 @@ var _H = __webpack_require__(3);
 
 var _H2 = _interopRequireDefault(_H);
 
-var _H3 = __webpack_require__(6);
+var _H3 = __webpack_require__(8);
 
 var _H4 = _interopRequireDefault(_H3);
 
@@ -825,7 +821,7 @@ var _H = __webpack_require__(3);
 
 var _H2 = _interopRequireDefault(_H);
 
-var _resources = __webpack_require__(8);
+var _resources = __webpack_require__(7);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -967,7 +963,7 @@ var _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);
 
 var _styledComponents = __webpack_require__(2);
 
-var _json_ld = __webpack_require__(45);
+var _json_ld = __webpack_require__(43);
 
 var _json_ld2 = _interopRequireDefault(_json_ld);
 
@@ -1031,7 +1027,7 @@ var App = function App() {
   );
 };
 exports.default = (0, _reactHotLoader.hot)(module)(App);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)(module)))
 
 /***/ }),
 /* 20 */
@@ -1101,7 +1097,7 @@ var universalOptions = {
 
 var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Home',
-  file: '/home/ubuntu/workspace/wk/osh-web.github.com/dist/react-static-routes.js',
+  file: '/Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 12)), (0, _importCss3.default)('src/containers/Home', {
       disableWarnings: true
@@ -1121,7 +1117,7 @@ var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/About',
-  file: '/home/ubuntu/workspace/wk/osh-web.github.com/dist/react-static-routes.js',
+  file: '/Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 15)), (0, _importCss3.default)('src/containers/About', {
       disableWarnings: true
@@ -1141,7 +1137,7 @@ var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_2 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/History',
-  file: '/home/ubuntu/workspace/wk/osh-web.github.com/dist/react-static-routes.js',
+  file: '/Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 16)), (0, _importCss3.default)('src/containers/History', {
       disableWarnings: true
@@ -1599,7 +1595,7 @@ function universal(component) {
   }, _temp;
 }
 exports.default = universal;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)(module)))
 
 /***/ }),
 /* 28 */
@@ -1872,7 +1868,7 @@ var _H = __webpack_require__(3);
 
 var _H2 = _interopRequireDefault(_H);
 
-var _H3 = __webpack_require__(6);
+var _H3 = __webpack_require__(8);
 
 var _H4 = _interopRequireDefault(_H3);
 
@@ -1904,7 +1900,7 @@ var _gridStyled = __webpack_require__(1);
 
 var _Box = __webpack_require__(33);
 
-var _resources = __webpack_require__(8);
+var _resources = __webpack_require__(7);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1993,12 +1989,17 @@ exports.default = function () {
     ),
     _react2.default.createElement(
       _Box.Box,
-      { mt: 10, f: [5, 6] },
-      _react2.default.createElement(EventDate, null)
+      { mt: 10, f: [1, 2] },
+      '\u30A4\u30D9\u30F3\u30C8\u306F\u7D42\u4E86\u3057\u307E\u3057\u305F'
     ),
     _react2.default.createElement(
       _Box.Box,
       { f: [3, 4] },
+      _react2.default.createElement(EventDate, null)
+    ),
+    _react2.default.createElement(
+      _Box.Box,
+      { mt: 10, f: [3, 4] },
       _react2.default.createElement(Place, { f: [4] })
     ),
     _react2.default.createElement(
@@ -2090,101 +2091,6 @@ exports.default = [event2013, event2014, event2015, event2016, event2017];
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _H = __webpack_require__(3);
-
-var _H2 = _interopRequireDefault(_H);
-
-var _LightningTalkInfo = __webpack_require__(37);
-
-var _LightningTalkInfo2 = _interopRequireDefault(_LightningTalkInfo);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Information = function Information() {
-    return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-            _H2.default,
-            null,
-            '\u304A\u77E5\u3089\u305B'
-        ),
-        _react2.default.createElement(_LightningTalkInfo2.default, null)
-    );
-};
-
-exports.default = Information;
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _gridStyled = __webpack_require__(1);
-
-var _H = __webpack_require__(6);
-
-var _H2 = _interopRequireDefault(_H);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var LightningTalkInfo = function LightningTalkInfo() {
-    return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-            _H2.default,
-            null,
-            '\u30E9\u30A4\u30C8\u30CB\u30F3\u30B0\u30C8\u30FC\u30AF\u306E\u516C\u52DF'
-        ),
-        _react2.default.createElement(
-            _gridStyled.Flex,
-            { justify: 'center' },
-            _react2.default.createElement(
-                _gridStyled.Half,
-                { px: 10 },
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    '\u672C\u30BB\u30DF\u30CA\u30FC\u5185\u3067\u30E9\u30A4\u30C8\u30CB\u30F3\u30B0\u30C8\u30FC\u30AF\u5927\u4F1A\u306E\u30E9\u30A4\u30C8\u30CB\u30F3\u30B0\u30C8\u30FC\u30AF\u3092\u516C\u52DF\u3057\u3066\u3044\u307E\u3059\u3002 \u5E0C\u671B\u306E\u65B9\u306F',
-                    _react2.default.createElement(
-                        'a',
-                        { href: 'https://docs.google.com/forms/d/e/1FAIpQLSeu7K22CflKVv3q8rbjoBIyIQWuUpL1MBmCBxpkoU4vM0_kvg/viewform' },
-                        '\u3053\u3061\u3089 '
-                    ),
-                    '\u304B\u3089\u5FDC\u52DF\u3057\u3066\u304F\u3060\u3055\u3044\u3002'
-                )
-            )
-        )
-    );
-};
-exports.default = LightningTalkInfo;
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -2216,7 +2122,7 @@ var _H = __webpack_require__(3);
 
 var _H2 = _interopRequireDefault(_H);
 
-var _H3 = __webpack_require__(6);
+var _H3 = __webpack_require__(8);
 
 var _H4 = _interopRequireDefault(_H3);
 
@@ -2377,7 +2283,7 @@ var EventAbstract = function EventAbstract() {
 exports.default = EventAbstract;
 
 /***/ }),
-/* 39 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2473,7 +2379,7 @@ var SponsorBannars = function SponsorBannars() {
 exports.default = SponsorBannars;
 
 /***/ }),
-/* 40 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2495,7 +2401,7 @@ var _speakers = __webpack_require__(14);
 
 var _speakers2 = _interopRequireDefault(_speakers);
 
-var _Speakers = __webpack_require__(41);
+var _Speakers = __webpack_require__(39);
 
 var _Speakers2 = _interopRequireDefault(_Speakers);
 
@@ -2564,14 +2470,14 @@ var Speakers = function Speakers() {
 exports.default = Speakers;
 
 /***/ }),
-/* 41 */
+/* 39 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"container":"_32O-39Vv9glPdX07x_XQZ7","item":"_3IWa-OinuCiiNiN9u7DidW","title":"_3zJGoHFzvZMfH7eJHjwAFW","description":"MGbElk0E7RYDCWQGgHr-B","profile":"_tYBLuw6m6cUGwb8fkPYt","furi":"_2JvZYf7UAGpZrh3IZZNWGf","name":"_8gweplxtC0YggBiEC59kL","company":"_3wG6tnBDY8i_LoXzgp_wDQ"};
 
 /***/ }),
-/* 42 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2583,7 +2489,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _templateObject = _taggedTemplateLiteral(['\n  width: 100%;\n\n  background-color: white;\n  a {\n    text-decoration: none;\n    color: black;\n  }\n  a:hover {\n    text-decoration: underline;\n  }\n'], ['\n  width: 100%;\n\n  background-color: white;\n  a {\n    text-decoration: none;\n    color: black;\n  }\n  a:hover {\n    text-decoration: underline;\n  }\n']);
 
-var _reactHyperscript = __webpack_require__(43);
+var _reactHyperscript = __webpack_require__(41);
 
 var _reactHyperscript2 = _interopRequireDefault(_reactHyperscript);
 
@@ -2612,13 +2518,13 @@ exports.default = function (_ref) {
 };
 
 /***/ }),
-/* 43 */
+/* 41 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-hyperscript");
 
 /***/ }),
-/* 44 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2641,7 +2547,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _gridStyled = __webpack_require__(1);
 
-var _resources = __webpack_require__(8);
+var _resources = __webpack_require__(7);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2673,7 +2579,7 @@ var Base = function Base(_ref) {
 exports.default = (0, _styledComponents2.default)(Base)(_templateObject2, primary);
 
 /***/ }),
-/* 45 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2719,4 +2625,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.af30a5cf.js.map
+//# sourceMappingURL=static.ceb6462e.js.map
