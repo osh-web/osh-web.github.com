@@ -58,10 +58,13 @@ export default () => (
     <Box f={[3, 5]}>
       <EventTheme />
     </Box>
-    <Box mt={10} f={[5, 6]}>
-      <EventDate />
+    <Box mt={10} f={[1, 2]}>
+      イベントは終了しました
     </Box>
     <Box f={[3, 4]}>
+      <EventDate />
+    </Box>
+    <Box mt={10} f={[3, 4]}>
       <Place f={[4]} />
     </Box>
     <Flex justify="center" pt={40}>
