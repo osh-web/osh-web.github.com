@@ -1,7 +1,7 @@
 import React from 'react'
 
-import H1 from '../components/2018/H1'
-import speakers from '../resources/2018/speakers'
+import H1 from '../../components/2018/H1'
+import speakers from '../../resources/2018/speakers'
 
 import style from './Speakers.css'
 

@@ -8,6 +8,10 @@ export default {
       component: 'src/containers/Home',
     },
     {
+      path: '/2018/',
+      component: 'src/containers/2018/Home',
+    },
+    {
       path: '/about/',
       component: 'src/containers/About',
     },

@@ -3,11 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Flex, Half } from 'grid-styled'
 import { Link, Head } from 'react-static'
-
-import { Hero, H1, H2 } from '../components/2018'
-import EventAbstract from '../containers/EventAbstract'
-import SponsorBannars from '../containers/SponsorBannars'
-import Speakers from '../containers/Speakers'
+import { primary } from '../resources/color'
 
 const ListButtonInner = ({ to, className, children }) => (
   <Link to={to} className={className}>
@@ -58,12 +54,18 @@ const Menu = () => (
 export default () => (
   <div>
     <Head>
-      <title>オープンセミナー2018@広島</title>
+      <title>オープンセミナー2019@広島</title>
     </Head>
-    <Hero />
     <Menu />
-    <Speakers/>
-    <EventAbstract />
-    <SponsorBannars />
+    <h1 style={{
+        margin: 0,
+        backgroundColor: primary,
+        color: '#eee',
+        fontSize: '22px',
+        padding: '20% 0',
+        textAlign: 'center'
+    }}>
+        オープンセミナー2019@広島<br />2019年2月開催予定
+    </h1>
   </div>
 )
