@@ -479,7 +479,7 @@ exports.default = function () {
         } },
       '\u30AA\u30FC\u30D7\u30F3\u30BB\u30DF\u30CA\u30FC2019@\u5E83\u5CF6',
       _react2.default.createElement('br', null),
-      '2019\u5E742\u6708\u958B\u50AC\u4E88\u5B9A'
+      '2019\u5E742\u670823\u65E5\u958B\u50AC\u6C7A\u5B9A'
     )
   );
 };
@@ -2674,22 +2674,22 @@ exports.default = function () {
     '@type': 'Event',
     location: {
       '@type': 'Place',
-      name: 'サテライトキャンパスひろしま 501',
+      name: 'サテライトキャンパスひろしま 501 502',
       address: {
         '@type': 'PostalAddress',
         addressCountry: '日本',
         addressRegion: '中国地方'
       }
     },
-    name: 'オープンセミナー2018@広島 「いまさらチームビルディング」',
-    description: 'IT技術者のボランティアによる中四国最高のセミナーイベント。今回はチームビルディングにフォーカスを当てます。',
+    name: 'オープンセミナー2019@広島',
+    description: 'IT技術者のボランティアによる中四国最高のセミナーイベント',
     offers: {
       '@type': 'Offer',
       price: '0',
       priceCurrency: '円'
     },
-    startDate: '2018-02-24',
-    endDate: '2018-02-24'
+    startDate: '2019-02-23',
+    endDate: '2019-02-23'
   };
   var json = JSON.stringify(structedData);
   return _react2.default.createElement('script', { type: 'application/ld+json', dangerouslySetInnerHTML: { __html: json } });
@@ -2698,4 +2698,4 @@ exports.default = function () {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.40350caa.js.map
+//# sourceMappingURL=static.4eb4ef70.js.map
