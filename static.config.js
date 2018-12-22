@@ -58,4 +58,5 @@ export default {
       </Html>
     )
   },
+  plugins: ["react-static-plugin-emotion"],
 }
