@@ -18,3 +18,4 @@ dist
 .cache
 npm-debug.log
 .idea
+tmp
