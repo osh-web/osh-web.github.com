@@ -1,0 +1,13 @@
+$mdc-theme-primary: #000000;
+
+@import "@material/react-top-app-bar/index.scss";
+@import "@material/react-material-icon/index.scss";
+
+* {
+  font-family: "Noto Sans Japanese";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

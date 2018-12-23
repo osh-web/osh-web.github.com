@@ -2,7 +2,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Flex, Half } from 'grid-styled'
-import { Link, Head } from 'react-static'
+import { Head } from 'react-static'
+import { Link } from '@reach/router'
 import { primary } from '../resources/color'
 
 const ListButtonInner = ({ to, className, children }) => (

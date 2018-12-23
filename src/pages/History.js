@@ -1,11 +1,12 @@
 // @flow
 import React from 'react'
 import { Box, Flex } from 'grid-styled'
-import { Link } from 'react-static'
+import { Link } from '@reach/router'
 
 import { BackButton } from '../components'
 import H1 from '../components/2018/H1'
 import { seminarList } from '../resources'
+import { AppBar } from '../organisms/AppBar'
 
 const BoxWrap = Box.extend`
   color: black;
@@ -34,14 +35,10 @@ const Seminar = ({ name, theme, url }) => (
 
 export default () => (
   <Box>
-    <H1 f={[2, 5]} p={[2, 4]} mx={24} my={10}>
-      これまでのオープンセミナー広島
-    </H1>
-    <Flex wrap pl={[20, 100]} pt={[10, 40]}>
-      {seminarList.map(seminar => <Seminar {...seminar} />)}
-    </Flex>
-    <BackButton Link={Link} to="/">
-      HOME
-    </BackButton>,
+    <AppBar title="過去のイベント">
+      <Flex wrap pl={[20, 100]} pt={[10, 40]}>
+        {seminarList.map(seminar => <Seminar {...seminar} />)}
+      </Flex>
+    </AppBar>
   </Box>
 )

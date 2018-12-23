@@ -3,9 +3,9 @@ import React from 'react'
 import { Head } from 'react-static'
 
 import { Hero } from '../../components/2018'
-import EventAbstract from '../EventAbstract'
-import SponsorBannars from '../SponsorBannars'
-import Speakers from './Speakers'
+import EventAbstract from '../../containers/EventAbstract'
+import SponsorBannars from '../../containers/SponsorBannars'
+import Speakers from '../../containers/2018/Speakers'
 
 export default () => (
     <div>
