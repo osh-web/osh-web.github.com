@@ -960,6 +960,18 @@
   resolved "https://registry.yarnpkg.com/@material/base/-/base-0.41.0.tgz#badadce711b4c25b1eb889a5e7581e32cd07c421"
   integrity sha512-tEyzwBRu3d1H120SfKsDVYZHcqT5lKohh/7cWKR93aAaPDkSvjpKJIjyu2yuSkjpDduVZGzVocYbOvhUKhhzXQ==
 
+"@material/button@^0.41.0":
+  version "0.41.0"
+  resolved "https://registry.yarnpkg.com/@material/button/-/button-0.41.0.tgz#2663f23780e777e5c9ebc8bf35e385f1edc94673"
+  integrity sha512-9mA/7P8yD3YPJ8ijwu0oOiT65OCa8Km3M9OF6VAsBE+XJS9Wo5hWDMgkv16raeOFeXj+1ALsjvuTz31JdcSkgQ==
+  dependencies:
+    "@material/elevation" "^0.41.0"
+    "@material/ripple" "^0.41.0"
+    "@material/rtl" "^0.40.1"
+    "@material/shape" "^0.41.0"
+    "@material/theme" "^0.41.0"
+    "@material/typography" "^0.41.0"
+
 "@material/elevation@^0.41.0":
   version "0.41.0"
   resolved "https://registry.yarnpkg.com/@material/elevation/-/elevation-0.41.0.tgz#db6b75ea43354fe35936cba2d78c55390faf4e9e"
@@ -967,6 +979,17 @@
   dependencies:
     "@material/animation" "^0.41.0"
     "@material/theme" "^0.41.0"
+
+"@material/react-button@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@material/react-button/-/react-button-0.7.1.tgz#e7655325dbaad3163f946c8c49b33a51cfed658c"
+  integrity sha512-zlkU+0ti+tkBdliuwkKfBDzLlheR8z/8GJ6lz2FUChNQnAwzMaGzIp0cPuZIgp249iOOiRQhZrielxQbuSB/+w==
+  dependencies:
+    "@material/button" "^0.41.0"
+    "@material/react-ripple" "^0.7.1"
+    classnames "^2.2.5"
+    prop-types "^15.6.1"
+    react "^16.4.2"
 
 "@material/react-material-icon@^0.7.1":
   version "0.7.1"

@@ -1,9 +1,10 @@
-// @flow
+// @flow strict
 import React from 'react'
 import { Flex, Half } from 'grid-styled'
 import { Head } from 'react-static'
 import { Link } from '@reach/router'
-import { primary } from '../resources/color'
+import Button from '@material/react-button';
+import { primary, accent} from '../resources/color'
 
 const ListButtonStyle = {
     display: 'block',
@@ -16,7 +17,9 @@ const ListButtonStyle = {
 
 const ListButton = ({ to, className, children }) => (
   <Link to={to} className={className} style={ListButtonStyle}>
-    {children}
+      <Button>
+      {children}
+      </Button>
   </Link>
 )
 
@@ -41,6 +44,17 @@ const menuList = [
   },
 ]
 
+const MainButton = () => (
+    <Button href="https://osh.connpass.com/event/101380/"
+            raised={true}
+            style={{
+                padding: "20px 40px",
+                margin: "20px 10px",
+            }}>
+        参加申し込みする
+    </Button>
+)
+
 const Menu = () => (
   <Flex wrap>
     {menuList.map(({ to, text }) => (
@@ -56,16 +70,17 @@ export default () => (
     <Head>
       <title>オープンセミナー2019@広島</title>
     </Head>
-    <Menu />
     <h1 style={{
         margin: 0,
-        backgroundColor: primary,
-        color: '#eee',
+        backgroundColor: '#994a29',
+        color: '#fff',
         fontSize: '22px',
         padding: '20% 0',
         textAlign: 'center'
     }}>
-        オープンセミナー2019@広島<br />2019年2月23日開催決定
+        オープンセミナー2019@広島<br />2019年2月23日開催決定<br/>
+        <MainButton/>
     </h1>
+    <Menu />
   </div>
 )
