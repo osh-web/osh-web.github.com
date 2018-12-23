@@ -1,5 +1,4 @@
 import React from 'react'
-// import { ServerStyleSheet } from 'styled-components'
 
 export default {
   siteRoot: 'https://osh-web.github.io/',
@@ -21,36 +20,6 @@ export default {
       component: 'src/pages/History',
     },
  ],
- /*
-  webpack:
-    (config, { defaultLoaders }) => {
-      if (defaultLoaders.cssLoader.use) {
-        // develop
-        defaultLoaders.cssLoader.use[1].options['modules'] = true
-      } else {
-        // production
-        defaultLoaders.cssLoader.loader[2].options['modules'] = true
-      }
-      config.module.rules = [{
-        oneOf: [
-          defaultLoaders.jsLoader,
-          defaultLoaders.cssLoader,
-          defaultLoaders.fileLoader,
-        ]
-      }]
-      return config
-    },
-    */
-    /*
-  Html: ({ Html, Head, Body, children }) => {
-    const sheet = new ServerStyleSheet()
-    const newChildren = sheet.collectStyles(children)
-    const styleTags = sheet.getStyleElement()
-
-    return (
-    )
-  },
-  */
   Document: ({ Html, Head, Body, children }) => (
     <Html lang="ja-JP">
       <Head>
