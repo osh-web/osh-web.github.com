@@ -32,6 +32,7 @@
   "scripts": {
     "start": "react-static start",
     "list": "eslint",
+    "stage": "react-static build --staging",
     "build": "react-static build",
     "serve": "serve dist -p 3000",
     "push": "gh-pages -d dist -b master",
