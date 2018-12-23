@@ -25,7 +25,7 @@ const ListButton = ({ to, className, children }) => (
 
 const menuList = [
   {
-    to: '/about',
+    to: '/about/',
     text: '初めての方へ',
   },
   /*
@@ -39,7 +39,7 @@ const menuList = [
   },
   */
   {
-    to: '/history',
+    to: '/history/',
     text: 'これまでのオープンセミナー',
   },
 ]
