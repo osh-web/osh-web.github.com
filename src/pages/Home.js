@@ -1,25 +1,24 @@
 // @flow
 import React from 'react'
-import styled from 'styled-components'
 import { Flex, Half } from 'grid-styled'
 import { Head } from 'react-static'
 import { Link } from '@reach/router'
 import { primary } from '../resources/color'
 
-const ListButtonInner = ({ to, className, children }) => (
-  <Link to={to} className={className}>
+const ListButtonStyle = {
+    display: 'block',
+    padding: '18px',
+    textDecoration: 'none',
+    color: 'black',
+    textAlign: 'center',
+    fontWeight: 200,
+}
+
+const ListButton = ({ to, className, children }) => (
+  <Link to={to} className={className} style={ListButtonStyle}>
     {children}
   </Link>
 )
-
-const ListButton = styled(ListButtonInner)`
-  display: block;
-  padding: 18px;
-  text-decoration: none;
-  color: black;
-  text-align: center;
-  font-weight: 200;
-`
 
 const menuList = [
   {
