@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import { withRouter } from 'react-router'
+import React from 'react'
 import { Root, Routes } from 'react-static'
 import { Link } from '@reach/router'
 import Footer from './components/Footer'
