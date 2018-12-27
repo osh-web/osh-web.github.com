@@ -29,3 +29,14 @@ export const tatsuo310: Speaker = {
         uri: 'http://www.shudo-u.ac.jp/',
     },
 }
+
+export const tatsuyatakemura: Speaker = {
+    furi: 'たけむら たつや',
+    name: '武村 達也',
+    key: 'tatsuo310',
+    title: ['広島県商工労働局　イノベーション推進チーム'],
+    description: '某銀行から広島県に出向中。ハッカソン、NT広島などIT系のイベントの企画・運営および広島県のAI/IoT事業「ひろしまサンドボックス」の人材育成事業において中小企業のIoT人材育成に携わる。7年前、41歳のときに独学でiPhoneアプリを制作、現在まで12作品をリリース。うち１作品が面白法人カヤック主催クソゲー供養会で大賞を受賞。1年前、電子工作を独学で始めMakefFaire東京、台北などに出展。',
+    company: {
+        name: '広島県商工労働局',
+    },
+}
