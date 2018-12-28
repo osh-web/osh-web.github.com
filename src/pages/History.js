@@ -2,6 +2,7 @@
 import React from 'react'
 import Card from '@material/react-card'
 import { Cell, Grid, Row } from '@material/react-layout-grid'
+import { Body1, Headline1 } from '@material/react-typography'
 import { navigate } from '@reach/router'
 
 import { seminarList } from '../resources'
@@ -9,12 +10,13 @@ import { AppBar } from '../organisms/AppBar'
 
 const Seminar = ({ name, theme, url }) => (
   <Card
+    className="mdc-elevation--z1"
     outlined={true}
     style={{ margin: 4, padding: 16 }}
     onClick={() => navigate(url)}
   >
-    <h1 style={{ fontSize: 18, margin: 2, padding: 0 }}>{name}</h1>
-    <p style={{ padding: 0, margin: 0 }}>{theme}</p>
+    <Headline1 style={{ fontSize: 18, lineHeight: 1 }}>{theme}</Headline1>
+    <Body1 style={{ fontSize: 12 }}>{name}</Body1>
   </Card>
 )
 

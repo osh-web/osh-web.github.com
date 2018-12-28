@@ -4,11 +4,13 @@
   "private": true,
   "dependencies": {
     "@emotion/core": "^10.0.5",
+    "@material/elevation": "^0.41.0",
     "@material/react-button": "^0.7.1",
     "@material/react-card": "^0.7.1",
     "@material/react-layout-grid": "^0.7.1",
     "@material/react-material-icon": "^0.7.1",
     "@material/react-top-app-bar": "^0.7.1",
+    "@material/react-typography": "^0.7.1",
     "@material/theme": "^0.41.0",
     "grid-styled": "^2.0.0-11",
     "grommet-icons": "^0.10.1",

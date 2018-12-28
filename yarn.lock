@@ -1058,6 +1058,16 @@
     prop-types "^15.6.1"
     react "^16.4.2"
 
+"@material/react-typography@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@material/react-typography/-/react-typography-0.7.1.tgz#4ff80c083851cfaaea31d75d7a3e94a386d6ecba"
+  integrity sha512-6rQv0Ee88eJyr+hwhc/oCMHuIV/BPulLjqRyjvNP9NpCrGBh6sYgSFuvk7pakbf9ZYgcE48/oovbkmC1dEnyAw==
+  dependencies:
+    "@material/typography" "^0.41.0"
+    classnames "^2.2.5"
+    prop-types "^15.6.1"
+    react "^16.4.2"
+
 "@material/ripple@^0.41.0":
   version "0.41.0"
   resolved "https://registry.yarnpkg.com/@material/ripple/-/ripple-0.41.0.tgz#73dbb9bf0e1d72382926b39f2527c011e689dde2"
