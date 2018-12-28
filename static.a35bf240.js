@@ -158,28 +158,46 @@ module.exports = function (module) {
 /* 3 */
 /***/ (function(module, exports) {
 
-module.exports = require("grid-styled");
+module.exports = require("path");
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports) {
 
-module.exports = require("path");
+module.exports = require("babel-plugin-universal-import/universalImport");
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports) {
 
-module.exports = require("babel-plugin-universal-import/universalImport");
+module.exports = require("grid-styled");
 
 /***/ }),
 /* 6 */
 /***/ (function(module, exports) {
 
-module.exports = require("@babel/runtime/helpers/typeof");
+module.exports = require("@material/react-layout-grid");
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/typeof");
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+module.exports = require("@material/react-typography");
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+module.exports = require("@reach/router");
+
+/***/ }),
+/* 10 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -188,13 +206,7 @@ module.exports = require("@babel/runtime/helpers/typeof");
 var primary='#D84315';var accent='#C62828';/* harmony default export */ __webpack_exports__["b"] = ({primary:primary,accent:accent});
 
 /***/ }),
-/* 8 */
-/***/ (function(module, exports) {
-
-module.exports = require("@reach/router");
-
-/***/ }),
-/* 9 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -399,19 +411,13 @@ exports.onLoading = onLoading;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(2)(module)))
 
 /***/ }),
-/* 10 */
-/***/ (function(module, exports) {
-
-module.exports = require("@material/react-layout-grid");
-
-/***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof = __webpack_require__(6);
+var _typeof = __webpack_require__(7);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -848,16 +854,10 @@ exports.default = universal;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(2)(module)))
 
 /***/ }),
-/* 12 */
-/***/ (function(module, exports) {
-
-module.exports = require("styled-components");
-
-/***/ }),
 /* 13 */
 /***/ (function(module, exports) {
 
-module.exports = require("@material/react-typography");
+module.exports = require("styled-components");
 
 /***/ }),
 /* 14 */
@@ -876,7 +876,7 @@ exports.push([module.i, ".container {\n    display: -ms-flexbox;\n    display: f
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof2 = __webpack_require__(6);
+var _typeof2 = __webpack_require__(7);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1660,7 +1660,7 @@ module.exports = require("@babel/runtime/regenerator");
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof2 = __webpack_require__(6);
+var _typeof2 = __webpack_require__(7);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2212,6 +2212,12 @@ function isPrefetchableRoute(path) {
 
 /***/ }),
 /* 18 */
+/***/ (function(module, exports) {
+
+module.exports = require("@material/react-button");
+
+/***/ }),
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2234,7 +2240,7 @@ var requireById = function requireById(id) {
 exports.default = requireById;
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2340,19 +2346,13 @@ function useStaticInfo() {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(2)(module)))
 
 /***/ }),
-/* 20 */
-/***/ (function(module, exports) {
-
-module.exports = require("@material/react-button");
-
-/***/ }),
 /* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 
 // EXTERNAL MODULE: /Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/src/resources/color.js
-var color = __webpack_require__(7);
+var color = __webpack_require__(10);
 
 // CONCATENATED MODULE: /Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/src/resources/seminarList.js
 var event2013={name:'オープンセミナー2013@広島',theme:'モバイルプラットフォームとJava',url:'/2013/'};var event2014={name:'オープンセミナー2014@広島',theme:'TDD…そして Be Agile',url:'http://osh-2014.github.io/'};var event2015={name:'オープンセミナー2015@広島',theme:'クラウド時代の構成管理入門',url:'/2015/'};var event2016={name:'オープンセミナー2016@広島',theme:'みんなでつくろうモダンな開発現場',url:'/2016/'};var event2017={name:'オープンセミナー2017@広島',theme:'エンジニアがより良い社会を作れる!!',url:'/2017/'};var event2018={name:'オープンセミナー2018@広島',theme:'いまさらチームビルディング',url:'/2018/'};/* harmony default export */ var seminarList = ([event2018,event2017,event2016,event2015,event2014,event2013]);
@@ -2367,44 +2367,16 @@ var event2013={name:'オープンセミナー2013@広島',theme:'モバイルプ
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var grid_styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
-/* harmony import */ var grid_styled__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(grid_styled__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9);
-/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8);
-/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_reach_router__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_react_button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(20);
-/* harmony import */ var _material_react_button__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_react_button__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _resources_color__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7);
-var ListButtonStyle={display:'block',padding:'18px',textDecoration:'none',color:'black',textAlign:'center',fontWeight:200};var ListButton=function ListButton(_ref){var to=_ref.to,className=_ref.className,children=_ref.children;return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_3__["Link"],{to:to,className:className,style:ListButtonStyle},react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_button__WEBPACK_IMPORTED_MODULE_4___default.a,null,children));};var menuList=[{to:'/about/',text:'初めての方へ'},/*
-  {
-    to: '/2018/sessions',
-    text: 'セッション',
-  },
-  {
-    to: '/2018/staff',
-    text: 'スタッフ',
-  },
-  */{to:'/history/',text:'これまでのオープンセミナー'}];var MainButton=function MainButton(){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_button__WEBPACK_IMPORTED_MODULE_4___default.a,{href:"https://osh.connpass.com/event/101380/",raised:true,style:{padding:"20px 40px",margin:"20px 10px"}},"\u53C2\u52A0\u7533\u3057\u8FBC\u307F\u3059\u308B");};var Menu=function Menu(){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grid_styled__WEBPACK_IMPORTED_MODULE_1__["Flex"],{wrap:true},menuList.map(function(_ref2){var to=_ref2.to,text=_ref2.text;return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(grid_styled__WEBPACK_IMPORTED_MODULE_1__["Half"],null,react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListButton,{to:to},text));}));};/* harmony default export */ __webpack_exports__["default"] = (function(){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",null,react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_2__["Head"],null,react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title",null,"\u30AA\u30FC\u30D7\u30F3\u30BB\u30DF\u30CA\u30FC2019@\u5E83\u5CF6")),react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1",{style:{margin:0,backgroundColor:'#994a29',color:'#fff',fontSize:'22px',padding:'20% 0',textAlign:'center'}},"\u30AA\u30FC\u30D7\u30F3\u30BB\u30DF\u30CA\u30FC2019@\u5E83\u5CF6",react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br",null),"2019\u5E742\u670823\u65E5\u958B\u50AC\u6C7A\u5B9A",react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br",null),react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MainButton,null)),react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Menu,null));});
-
-/***/ }),
-/* 23 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(0);
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
 
 // EXTERNAL MODULE: ../lib/index.js
-var lib = __webpack_require__(9);
+var lib = __webpack_require__(11);
 
 // EXTERNAL MODULE: external "grid-styled"
-var external_grid_styled_ = __webpack_require__(3);
+var external_grid_styled_ = __webpack_require__(5);
 
 // EXTERNAL MODULE: external "styled-system"
 var external_styled_system_ = __webpack_require__(29);
@@ -2417,11 +2389,11 @@ var resources = __webpack_require__(21);
 // CONCATENATED MODULE: /Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/src/components/2018/Hero.js
 function Hero_templateObject2(){var data=Hero_taggedTemplateLiteral(["\n  display: box;\n  margin: 10px;\n  padding: 12px 58px;\n  text-align: center;\n  background-color: ",";\n  color: white;\n  font-size: 18px;\n  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.4);\n"]);Hero_templateObject2=function _templateObject2(){return data;};return data;}function Hero_templateObject(){var data=Hero_taggedTemplateLiteral(["\n  background-color: ",";\n  align-items: left;\n  a {\n    color: white;\n  }\n"]);Hero_templateObject=function _templateObject(){return data;};return data;}function Hero_taggedTemplateLiteral(strings,raw){if(!raw){raw=strings.slice(0);}return Object.freeze(Object.defineProperties(strings,{raw:{value:Object.freeze(raw)}}));}var primary=resources["a" /* color */].primary,accent=resources["a" /* color */].accent;var Banner=Box.extend(Hero_templateObject(),primary);var eventDate='2018年2月24日(土)';var Hero_EventDate=function EventDate(){return external_react_default.a.createElement("div",null,eventDate);};var mapUrl='https://goo.gl/maps/V6S6EQTARUE2';var Hero_Place=function Place(props){return external_react_default.a.createElement("div",props,external_react_default.a.createElement("a",{href:mapUrl},"\u30B5\u30C6\u30E9\u30A4\u30C8\u30AD\u30E3\u30F3\u30D1\u30B9\u3072\u308D\u3057\u307E 501"));};var themeText='いまさらチームビルディング';var Hero_EventTheme=function EventTheme(){return external_react_default.a.createElement("div",null,themeText);};var Hero_EventName=function EventName(){return external_react_default.a.createElement("div",null,external_react_default.a.createElement(Grid,null,"\u30AA\u30FC\u30D7\u30F3\u30BB\u30DF\u30CA\u30FC"),external_react_default.a.createElement(Grid,null,"2018@\u5E83\u5CF6"));};var Button=Grid.extend(Hero_templateObject2(),primary);var Hero_EntryPageButton=function EntryPageButton(){return external_react_default.a.createElement("a",{href:"https://osh.connpass.com/event/69092/"},external_react_default.a.createElement(Button,null,"\u7533\u3057\u8FBC\u307F\u30DA\u30FC\u30B8\u3078"));};/* harmony default export */ var Hero = (function(){return external_react_default.a.createElement(Banner,{px:[20,25],py:[40,120],color:"white"},external_react_default.a.createElement(Box,{f:[5,6]},external_react_default.a.createElement(Hero_EventName,null)),external_react_default.a.createElement(Box,{f:[3,5]},external_react_default.a.createElement(Hero_EventTheme,null)),external_react_default.a.createElement(Box,{mt:10,f:[5,6]},external_react_default.a.createElement(Hero_EventDate,null)),external_react_default.a.createElement(Box,{f:[3,4]},external_react_default.a.createElement(Hero_Place,{f:[4]})),external_react_default.a.createElement(external_grid_styled_["Flex"],{justify:"center",pt:40},external_react_default.a.createElement(Hero_EntryPageButton,null)));});
 // EXTERNAL MODULE: external "styled-components"
-var external_styled_components_ = __webpack_require__(12);
+var external_styled_components_ = __webpack_require__(13);
 var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(external_styled_components_);
 
 // EXTERNAL MODULE: /Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/src/resources/color.js
-var color = __webpack_require__(7);
+var color = __webpack_require__(10);
 
 // CONCATENATED MODULE: /Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/src/components/2018/H1.js
 function H1_templateObject(){var data=H1_taggedTemplateLiteral(["\n  font-size: 30px;\n  margin: 20px;\n\n  color: ",";\n  display: block;\n  text-align: center;\n  border: solid "," 0px;\n  border-bottom-width: 1px;\n  font-weight: 100;\n"]);H1_templateObject=function _templateObject(){return data;};return data;}function H1_taggedTemplateLiteral(strings,raw){if(!raw){raw=strings.slice(0);}return Object.freeze(Object.defineProperties(strings,{raw:{value:Object.freeze(raw)}}));}var H1=external_styled_components_default.a.h1(H1_templateObject(),color["a" /* accent */],color["a" /* accent */]);/* harmony default export */ var _2018_H1 = (H1);
@@ -2447,6 +2419,50 @@ var Speakers_Speakers=function Speakers(){return external_react_default.a.create
 /* harmony default export */ var home = __webpack_exports__["default"] = (function(){return external_react_default.a.createElement("div",null,external_react_default.a.createElement(lib["Head"],null,external_react_default.a.createElement("title",null,"\u30AA\u30FC\u30D7\u30F3\u30BB\u30DF\u30CA\u30FC2018@\u5E83\u5CF6")),external_react_default.a.createElement(Hero,null),external_react_default.a.createElement(containers_2018_Speakers,null),external_react_default.a.createElement(containers_EventAbstract,null),external_react_default.a.createElement(containers_SponsorBannars,null));});
 
 /***/ }),
+/* 23 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(0);
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+
+// EXTERNAL MODULE: ../lib/index.js
+var lib = __webpack_require__(11);
+
+// EXTERNAL MODULE: external "@reach/router"
+var router_ = __webpack_require__(9);
+
+// EXTERNAL MODULE: external "@material/react-button"
+var react_button_ = __webpack_require__(18);
+var react_button_default = /*#__PURE__*/__webpack_require__.n(react_button_);
+
+// EXTERNAL MODULE: external "@material/react-layout-grid"
+var react_layout_grid_ = __webpack_require__(6);
+
+// CONCATENATED MODULE: /Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/src/organisms/Menu.js
+var Menu_Menu=function Menu(){return external_react_default.a.createElement(react_layout_grid_["Grid"],null,external_react_default.a.createElement(react_layout_grid_["Row"],null,menuList.map(function(_ref){var to=_ref.to,text=_ref.text,key=_ref.key;return external_react_default.a.createElement(react_layout_grid_["Cell"],{columns:4},external_react_default.a.createElement(Menu_ListButton,{to:to,key:key},text));})));};var menuList=[{key:'about',to:'/about/',text:'初めての方へ'},/*
+    {
+      to: '/2018/sessions',
+      text: 'セッション',
+    },
+    {
+      to: '/2018/staff',
+      text: 'スタッフ',
+    },
+    */{key:'history',to:'/history/',text:'これまでのオープンセミナー'}];var ListButtonStyle={textAlign:'center'};var Menu_ListButton=function ListButton(_ref2){var to=_ref2.to,children=_ref2.children;return external_react_default.a.createElement(react_button_default.a,{onClick:function onClick(){return Object(router_["navigate"])(to);},style:ListButtonStyle},children);};
+// EXTERNAL MODULE: external "@material/react-typography"
+var react_typography_ = __webpack_require__(8);
+
+// CONCATENATED MODULE: /Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/src/organisms/2019/Hero.js
+var Hero_Hero=function Hero(){return external_react_default.a.createElement(react_typography_["Headline1"],{style:headerStyle,tag:"h1"},"\u30AA\u30FC\u30D7\u30F3\u30BB\u30DF\u30CA\u30FC2019@\u5E83\u5CF6",external_react_default.a.createElement("br",null),"2019\u5E742\u670823\u65E5\u958B\u50AC\u6C7A\u5B9A",external_react_default.a.createElement("br",null),external_react_default.a.createElement(Hero_MainButton,null));};var headerStyle={margin:0,backgroundColor:'#994a29',color:'#fff',fontSize:'22px',padding:'20% 0',lineHeight:1.8,textAlign:'center'};var Hero_MainButton=function MainButton(){return external_react_default.a.createElement(react_button_default.a,{href:"https://osh.connpass.com/event/101380/",raised:true,style:{padding:'20px 40px',margin:'20px 10px'}},"\u53C2\u52A0\u7533\u3057\u8FBC\u307F\u3059\u308B");};
+// CONCATENATED MODULE: /Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/src/pages/home.js
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "home", function() { return home_home; });
+var home_home=function home(){return external_react_default.a.createElement("div",null,external_react_default.a.createElement(Hero_Hero,null),external_react_default.a.createElement(Menu_Menu,null),external_react_default.a.createElement(lib["Head"],null,external_react_default.a.createElement("title",null,"\u30AA\u30FC\u30D7\u30F3\u30BB\u30DF\u30CA\u30FC2019@\u5E83\u5CF6")));};/* harmony default export */ var pages_home = __webpack_exports__["default"] = (home_home);
+
+/***/ }),
 /* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2454,7 +2470,7 @@ var Speakers_Speakers=function Speakers(){return external_react_default.a.create
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppBar; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9);
 /* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_reach_router__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(30);
 /* harmony import */ var _material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_2__);
@@ -2469,7 +2485,7 @@ function AppBar(_ref){var title=_ref.title,children=_ref.children;return react__
 "use strict";
 
 
-var _typeof2 = __webpack_require__(6);
+var _typeof2 = __webpack_require__(7);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2500,7 +2516,7 @@ var _react = __webpack_require__(0);
 
 var React = _interopRequireWildcard(_react);
 
-var _requireById = __webpack_require__(18);
+var _requireById = __webpack_require__(19);
 
 var _requireById2 = _interopRequireDefault(_requireById);
 
@@ -2840,13 +2856,13 @@ module.exports = require("@material/react-top-app-bar");
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(__dirname) {/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
+/* WEBPACK VAR INJECTION */(function(__dirname) {/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5);
+/* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4);
 /* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(11);
+/* harmony import */ var _Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
 /* harmony import */ var _Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2__);
-Object(_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2__["setHasBabelPlugin"])();var universalOptions={loading:function loading(){return null;},error:function error(props){console.error(props.error);return React.createElement("div",null,"An error occurred loading this page's template. More information is available in the console.");}};var t_0=_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({id:"../node_modules/react-static/lib/browser/components/Default404",load:function load(){return Promise.all([Promise.resolve(/* import() | node_modules-react-static-lib-browser-components-Default404 */).then(__webpack_require__.t.bind(null, 39, 7))]).then(function(proms){return proms[0];});},path:function path(){return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname,'../node_modules/react-static/lib/browser/components/Default404');},resolve:function resolve(){return /*require.resolve*/(39);},chunkName:function chunkName(){return"node_modules-react-static-lib-browser-components-Default404";}}),universalOptions);var t_1=_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({id:"../src/pages/2018/home.js",load:function load(){return Promise.all([Promise.resolve(/* import() | src-pages-2018-home */).then(__webpack_require__.bind(null, 23))]).then(function(proms){return proms[0];});},path:function path(){return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname,'../src/pages/2018/home.js');},resolve:function resolve(){return /*require.resolve*/(23);},chunkName:function chunkName(){return"src-pages-2018-home";}}),universalOptions);var t_2=_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({id:"../src/pages/about.js",load:function load(){return Promise.all([Promise.resolve(/* import() | src-pages-about */).then(__webpack_require__.bind(null, 40))]).then(function(proms){return proms[0];});},path:function path(){return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname,'../src/pages/about.js');},resolve:function resolve(){return /*require.resolve*/(40);},chunkName:function chunkName(){return"src-pages-about";}}),universalOptions);var t_3=_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({id:"../src/pages/history.js",load:function load(){return Promise.all([Promise.resolve(/* import() | src-pages-history */).then(__webpack_require__.bind(null, 41))]).then(function(proms){return proms[0];});},path:function path(){return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname,'../src/pages/history.js');},resolve:function resolve(){return /*require.resolve*/(41);},chunkName:function chunkName(){return"src-pages-history";}}),universalOptions);var t_4=_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({id:"../src/pages/home.js",load:function load(){return Promise.all([Promise.resolve(/* import() | src-pages-home */).then(__webpack_require__.bind(null, 22))]).then(function(proms){return proms[0];});},path:function path(){return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname,'../src/pages/home.js');},resolve:function resolve(){return /*require.resolve*/(22);},chunkName:function chunkName(){return"src-pages-home";}}),universalOptions);var t_5=_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({id:"../src/pages/home",load:function load(){return Promise.all([Promise.resolve(/* import() | src-pages-home */).then(__webpack_require__.bind(null, 22))]).then(function(proms){return proms[0];});},path:function path(){return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname,'../src/pages/home');},resolve:function resolve(){return /*require.resolve*/(22);},chunkName:function chunkName(){return"src-pages-home";}}),universalOptions);var t_6=_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({id:"../src/pages/2018/home",load:function load(){return Promise.all([Promise.resolve(/* import() | src-pages-2018-home */).then(__webpack_require__.bind(null, 23))]).then(function(proms){return proms[0];});},path:function path(){return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname,'../src/pages/2018/home');},resolve:function resolve(){return /*require.resolve*/(23);},chunkName:function chunkName(){return"src-pages-2018-home";}}),universalOptions);// Template Map
+Object(_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2__["setHasBabelPlugin"])();var universalOptions={loading:function loading(){return null;},error:function error(props){console.error(props.error);return React.createElement("div",null,"An error occurred loading this page's template. More information is available in the console.");}};var t_0=_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({id:"../node_modules/react-static/lib/browser/components/Default404",load:function load(){return Promise.all([Promise.resolve(/* import() | node_modules-react-static-lib-browser-components-Default404 */).then(__webpack_require__.t.bind(null, 39, 7))]).then(function(proms){return proms[0];});},path:function path(){return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname,'../node_modules/react-static/lib/browser/components/Default404');},resolve:function resolve(){return /*require.resolve*/(39);},chunkName:function chunkName(){return"node_modules-react-static-lib-browser-components-Default404";}}),universalOptions);var t_1=_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({id:"../src/pages/2018/home.js",load:function load(){return Promise.all([Promise.resolve(/* import() | src-pages-2018-home */).then(__webpack_require__.bind(null, 22))]).then(function(proms){return proms[0];});},path:function path(){return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname,'../src/pages/2018/home.js');},resolve:function resolve(){return /*require.resolve*/(22);},chunkName:function chunkName(){return"src-pages-2018-home";}}),universalOptions);var t_2=_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({id:"../src/pages/about.js",load:function load(){return Promise.all([Promise.resolve(/* import() | src-pages-about */).then(__webpack_require__.bind(null, 40))]).then(function(proms){return proms[0];});},path:function path(){return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname,'../src/pages/about.js');},resolve:function resolve(){return /*require.resolve*/(40);},chunkName:function chunkName(){return"src-pages-about";}}),universalOptions);var t_3=_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({id:"../src/pages/history.js",load:function load(){return Promise.all([Promise.resolve(/* import() | src-pages-history */).then(__webpack_require__.bind(null, 41))]).then(function(proms){return proms[0];});},path:function path(){return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname,'../src/pages/history.js');},resolve:function resolve(){return /*require.resolve*/(41);},chunkName:function chunkName(){return"src-pages-history";}}),universalOptions);var t_4=_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({id:"../src/pages/home.js",load:function load(){return Promise.all([Promise.resolve(/* import() | src-pages-home */).then(__webpack_require__.bind(null, 23))]).then(function(proms){return proms[0];});},path:function path(){return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname,'../src/pages/home.js');},resolve:function resolve(){return /*require.resolve*/(23);},chunkName:function chunkName(){return"src-pages-home";}}),universalOptions);var t_5=_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({id:"../src/pages/home",load:function load(){return Promise.all([Promise.resolve(/* import() | src-pages-home */).then(__webpack_require__.bind(null, 23))]).then(function(proms){return proms[0];});},path:function path(){return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname,'../src/pages/home');},resolve:function resolve(){return /*require.resolve*/(23);},chunkName:function chunkName(){return"src-pages-home";}}),universalOptions);var t_6=_Users_cw_himura_ghq_github_com_osh_web_osh_web_github_com_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_2___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({id:"../src/pages/2018/home",load:function load(){return Promise.all([Promise.resolve(/* import() | src-pages-2018-home */).then(__webpack_require__.bind(null, 22))]).then(function(proms){return proms[0];});},path:function path(){return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname,'../src/pages/2018/home');},resolve:function resolve(){return /*require.resolve*/(22);},chunkName:function chunkName(){return"src-pages-2018-home";}}),universalOptions);// Template Map
 /* harmony default export */ __webpack_exports__["default"] = ([t_0,t_1,t_2,t_3,t_4,t_5,t_6]);
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
@@ -3092,7 +3108,7 @@ module.exports = require("raf");
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof2 = __webpack_require__(6);
+var _typeof2 = __webpack_require__(7);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -3105,7 +3121,7 @@ var _react = _interopRequireWildcard(__webpack_require__(0));
 
 var _ = __webpack_require__(15);
 
-var _StaticInfo = __webpack_require__(19);
+var _StaticInfo = __webpack_require__(20);
 
 var _utils = __webpack_require__(17);
 
@@ -3667,11 +3683,11 @@ exports.default = _default2;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 /* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(10);
+/* harmony import */ var _material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
 /* harmony import */ var _material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_react_typography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(13);
+/* harmony import */ var _material_react_typography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8);
 /* harmony import */ var _material_react_typography__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_react_typography__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _organisms_AppBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(24);
 var p1="\n\u30AA\u30FC\u30D7\u30F3\u30BB\u30DF\u30CA\u30FC\u306F2003\u5E74\u3088\u308A\u4E2D\u56DB\u56FD\u5730\u57DF\u3067\u958B\u50AC\u3055\u308C\u3066\u3044\u308B\nIT\u6280\u8853\u8005\u5411\u3051\u306E\u975E\u55B6\u5229\u306E\u7121\u6599\u30BB\u30DF\u30CA\u30FC\u3067\u3059\u3002\n";var p2="\n\u73FE\u5728\u306F\u9999\u5DDD\u770C\u3001\u5CA1\u5C71\u770C\u3001\u5FB3\u5CF6\u770C\u3001\u5E83\u5CF6\u770C\u3001\u611B\u5A9B\u770C\u3067\u958B\u50AC\u3055\u308C\u3066\u304A\u308A\u3001\n\u4F01\u753B\u3068\u904B\u55B6\u306F\u5404\u5730\u57DF\u306E\u6280\u8853\u7CFB\u30E6\u30FC\u30B6\u30B3\u30DF\u30E5\u30CB\u30C6\u30A3\u306E\u30DC\u30E9\u30F3\u30C6\u30A3\u30A2\u306B\u3088\u3063\u3066\u884C\u308F\u308C\u3066\u3044\u307E\u3059\u3002\n";/* harmony default export */ __webpack_exports__["default"] = (function(){return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",null,react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_static__WEBPACK_IMPORTED_MODULE_1__["Head"],null,react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title",null,"\u521D\u3081\u3066\u306E\u65B9\u3078 - \u30AA\u30FC\u30D7\u30F3\u30BB\u30DF\u30CA\u30FC\u5E83\u5CF6")),react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_organisms_AppBar__WEBPACK_IMPORTED_MODULE_4__[/* AppBar */ "a"],{title:"\u521D\u3081\u3066\u306E\u65B9\u3078"},react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2__["Grid"],null,react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2__["Row"],null,react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2__["Cell"],{columns:6},react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_typography__WEBPACK_IMPORTED_MODULE_3__["Headline3"],{tag:"h1"},"\u30AA\u30FC\u30D7\u30F3\u30BB\u30DF\u30CA\u30FC\u3068\u306F"),react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_typography__WEBPACK_IMPORTED_MODULE_3__["Body1"],null,p1,p2)),react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2__["Cell"],{columns:6},react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_typography__WEBPACK_IMPORTED_MODULE_3__["Headline3"],{tag:"h1"},"\u30AA\u30FC\u30D7\u30F3\u30BB\u30DF\u30CA\u30FC\u5E83\u5CF6\u306B\u3064\u3044\u3066"),react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_typography__WEBPACK_IMPORTED_MODULE_3__["Body1"],null,react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p",null,"\u5E83\u5CF6\u3067\u306F\u6BCE\u5E742\u6708\u3054\u308D\u306B\u30AA\u30FC\u30D7\u30F3\u30BB\u30DF\u30CA\u30FC\u3092\u958B\u50AC\u3092\u3057\u3066\u3044\u307E\u3059\u3002 \u5B9F\u884C\u59D4\u54E1\u9577\u3092\u6BCE\u5E74\u4EA4\u4EE3\u3092\u3057\u3001\u904B\u55B6\u306E\u30CE\u30A6\u30CF\u30A6\u3092\u5F15\u304D\u7D99\u304E\u3001\u65B0\u305F\u306A\u5B9F\u884C\u59D4\u54E1\u4F1A\u3092\u6BCE\u5E74\u7ACB\u3061\u4E0A\u3052\u3066\u3044\u307E\u3059\u3002 \u5B9F\u884C\u59D4\u54E1\u4F1A\u3067\u306F\u3001IT\u30B3\u30DF\u30E5\u30CB\u30C6\u30A3\u306B\u7A4D\u6975\u7684\u306B\u53C2\u52A0\u30B7\u3066\u3044\u308B\u4EBA\u3084\u3001\u30B3\u30DF\u30E5\u30CB\u30C6\u30A3\u3092\u7ACB\u3061\u4E0A\u3052\u3066\u3044\u308B\u4EBA\u305F\u3061\u304C\u4E3B\u3068\u306A\u3063\u3066\u3044\u307E\u3059\u3002 \u305D\u306E\u305F\u3081\u3001\u30B3\u30DF\u30E5\u30CB\u30C6\u30A3\u306E\u5E74\u306B\u4E00\u5EA6\u306E\u304A\u796D\u308A\u306E\u3088\u3046\u306A\u3082\u306E\u3068\u306A\u3063\u3066\u3044\u307E\u3059\u3002"),react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p",null,"\u5B9F\u884C\u59D4\u54E1\u4F1A\u3067\u306F\u3001\u4E00\u7DD2\u306B\u30A4\u30D9\u30F3\u30C8\u3092\u4F5C\u308A\u3042\u3052\u305F\u3044\u4EF2\u9593\u3092\u63A2\u3057\u3066\u3044\u307E\u3059\u3002 \u30B3\u30DF\u30E5\u30CB\u30C6\u30A3\u540C\u58EB\u306E\u7E4B\u304C\u308A\u306E\u5F37\u304F\u3057\u305F\u3044\u65B9\u3084\u3001\u30B3\u30DF\u30E5\u30CB\u30C6\u30A3\u306E\u4E3B\u50AC\u8005\u3068\u4EF2\u826F\u304F\u3057\u305F\u3044\u65B9\u306B\u304A\u3059\u3059\u3081\u3067\u3059\u3002 \u53C2\u52A0\u3054\u5E0C\u671B\u306E\u65B9\u306F\u6C17\u8EFD\u306B\u3054\u9023\u7D61\u304F\u3060\u3055\u3044\u3002")))))));});
@@ -3686,11 +3702,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _material_react_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(43);
 /* harmony import */ var _material_react_card__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_react_card__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(10);
+/* harmony import */ var _material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
 /* harmony import */ var _material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_react_typography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(13);
+/* harmony import */ var _material_react_typography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8);
 /* harmony import */ var _material_react_typography__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_react_typography__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8);
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
 /* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_reach_router__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _resources__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(21);
 /* harmony import */ var _organisms_AppBar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(24);
@@ -3977,10 +3993,10 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	".": 18,
-	"./": 18,
-	"./index": 18,
-	"./index.js": 18
+	".": 19,
+	"./": 19,
+	"./index": 19,
+	"./index.js": 19
 };
 
 
@@ -4011,7 +4027,7 @@ webpackContext.id = 47;
 "use strict";
 
 
-var _typeof = __webpack_require__(6);
+var _typeof = __webpack_require__(7);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -4145,7 +4161,7 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(__webpack_require__(0));
 
-var _StaticInfo = _interopRequireDefault(__webpack_require__(19));
+var _StaticInfo = _interopRequireDefault(__webpack_require__(20));
 
 var _jsxFileName = "/Users/tannerlinsley/GitHub/react-static/packages/react-static/src/bootstrapApp.js";
 
@@ -4234,7 +4250,7 @@ module.exports = require("react-helmet");
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof2 = __webpack_require__(6);
+var _typeof2 = __webpack_require__(7);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -4250,7 +4266,7 @@ var _ = __webpack_require__(15);
 
 var _Spinner = _interopRequireDefault(__webpack_require__(26));
 
-var _StaticInfo = __webpack_require__(19);
+var _StaticInfo = __webpack_require__(20);
 
 var _Routes = __webpack_require__(37);
 
@@ -4597,7 +4613,7 @@ function withRouteData(Comp) {
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof2 = __webpack_require__(6);
+var _typeof2 = __webpack_require__(7);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -4613,7 +4629,7 @@ var _axios = _interopRequireDefault(__webpack_require__(33));
 
 var _Spinner = _interopRequireDefault(__webpack_require__(26));
 
-var _StaticInfo = __webpack_require__(19);
+var _StaticInfo = __webpack_require__(20);
 
 var _class,
     _temp,
@@ -4961,7 +4977,7 @@ function withSiteData(Comp) {
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof2 = __webpack_require__(6);
+var _typeof2 = __webpack_require__(7);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -5311,7 +5327,7 @@ _defineProperty(Prefetch, "defaultProps", {
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof2 = __webpack_require__(6);
+var _typeof2 = __webpack_require__(7);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -5320,7 +5336,7 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(__webpack_require__(0));
 
-var _router = __webpack_require__(8);
+var _router = __webpack_require__(9);
 
 var _ = __webpack_require__(15);
 
@@ -5330,7 +5346,7 @@ var _ErrorBoundary = _interopRequireDefault(__webpack_require__(58));
 
 var _HashScroller = _interopRequireDefault(__webpack_require__(59));
 
-var _StaticInfo = __webpack_require__(19);
+var _StaticInfo = __webpack_require__(20);
 
 var _jsxFileName = "/Users/tannerlinsley/GitHub/react-static/packages/react-static/src/browser/components/Root.js",
     _class,
@@ -5706,7 +5722,7 @@ exports.default = _default2;
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof2 = __webpack_require__(6);
+var _typeof2 = __webpack_require__(7);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -5947,7 +5963,7 @@ exports.default = ErrorBoundary;
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof2 = __webpack_require__(6);
+var _typeof2 = __webpack_require__(7);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -6246,13 +6262,13 @@ var external_react_dom_ = __webpack_require__(28);
 var external_react_dom_default = /*#__PURE__*/__webpack_require__.n(external_react_dom_);
 
 // EXTERNAL MODULE: ../lib/index.js
-var lib = __webpack_require__(9);
+var lib = __webpack_require__(11);
 
 // EXTERNAL MODULE: external "@material/react-button"
-var react_button_ = __webpack_require__(20);
+var react_button_ = __webpack_require__(18);
 
 // EXTERNAL MODULE: external "@reach/router"
-var router_ = __webpack_require__(8);
+var router_ = __webpack_require__(9);
 
 // CONCATENATED MODULE: /Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/src/organisms/Footer.js
 var Footer_name='© オープンセミナー広島';/* harmony default export */ var Footer = (function(){return external_react_default.a.createElement(react_button_["Button"],{style:{color:'black'},onClick:function onClick(){return Object(router_["navigate"])('/');}},Footer_name);});
@@ -6276,4 +6292,4 @@ src_render(osh_web_github_com_src_App);if(false){}}
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.edf68dfa.js.map
+//# sourceMappingURL=static.a35bf240.js.map
