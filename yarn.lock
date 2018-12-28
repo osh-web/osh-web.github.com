@@ -972,6 +972,17 @@
     "@material/theme" "^0.41.0"
     "@material/typography" "^0.41.0"
 
+"@material/card@^0.41.0":
+  version "0.41.1"
+  resolved "https://registry.yarnpkg.com/@material/card/-/card-0.41.1.tgz#962d282eb0a49c4539cb90efc916df45994a6ceb"
+  integrity sha512-0L3BkkHK9qRXNh9MOK4XkCYHmZcqwLK5gACIWSLDOjEefmifBeahJeDJSYLVHS9KWl43glIGSrpNGjyXs19mCQ==
+  dependencies:
+    "@material/elevation" "^0.41.0"
+    "@material/ripple" "^0.41.0"
+    "@material/rtl" "^0.40.1"
+    "@material/shape" "^0.41.0"
+    "@material/theme" "^0.41.0"
+
 "@material/elevation@^0.41.0":
   version "0.41.0"
   resolved "https://registry.yarnpkg.com/@material/elevation/-/elevation-0.41.0.tgz#db6b75ea43354fe35936cba2d78c55390faf4e9e"
@@ -986,6 +997,17 @@
   integrity sha512-zlkU+0ti+tkBdliuwkKfBDzLlheR8z/8GJ6lz2FUChNQnAwzMaGzIp0cPuZIgp249iOOiRQhZrielxQbuSB/+w==
   dependencies:
     "@material/button" "^0.41.0"
+    "@material/react-ripple" "^0.7.1"
+    classnames "^2.2.5"
+    prop-types "^15.6.1"
+    react "^16.4.2"
+
+"@material/react-card@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@material/react-card/-/react-card-0.7.1.tgz#3437ff484585eadb9c88ec0179c7e223cb7bb1c3"
+  integrity sha512-9m6R0xAsUCPZK66VQyTAyyGRlVqHOZf4+ZoAyJNo98NLDOOffIiAm3zcBS1+2MlYTOghsdZumwt7CxnBYGfCxg==
+  dependencies:
+    "@material/card" "^0.41.0"
     "@material/react-ripple" "^0.7.1"
     classnames "^2.2.5"
     prop-types "^15.6.1"
