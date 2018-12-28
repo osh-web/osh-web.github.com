@@ -5,19 +5,19 @@ export default {
   getRoutes: async () => [
     {
       path: '/',
-      component: 'src/pages/Home',
+      component: 'src/pages/home',
     },
     {
       path: '/2018/',
-      component: 'src/pages/2018/Home',
+      component: 'src/pages/2018/home',
     },
     {
       path: '/about/',
-      component: 'src/pages/About',
+      component: 'src/pages/about',
     },
     {
       path: '/history/',
-      component: 'src/pages/History',
+      component: 'src/pages/history',
     },
  ],
   Document: ({ Html, Head, Body, children }) => (
