@@ -34,7 +34,7 @@ export const event2018 = {
   url: '/2018/',
 }
 
-export default [
+export const seminarList = [
   event2018,
   event2017,
   event2016,

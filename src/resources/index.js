@@ -1,4 +1,3 @@
-import color from './color'
-import seminarList from './seminarList'
-
-export { color, seminarList }
+export * from './seminarList'
+export * from './color'
+export * from './2019/speakers'

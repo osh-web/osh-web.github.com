@@ -16,7 +16,7 @@ const Speaker = ({ name, furi, description, id, title, company }) => (
     outlined
     style={{ margin: 4, padding: 16 }}
   >
-    <CardMedia imageUrl={`/img/2019/${id}.jpg`} square={true} />
+    <CardMedia imageUrl={`/img/2019/${id}.jpg`} square />
     <Headline1 style={{ fontSize: 18, lineHeight: 1 }}>
       セッション内容 TBD
     </Headline1>
