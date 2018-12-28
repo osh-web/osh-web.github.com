@@ -11,7 +11,7 @@ import { AppBar } from '../organisms/AppBar'
 const Seminar = ({ name, theme, url }) => (
   <Card
     className="mdc-elevation--z1"
-    outlined={true}
+    outlined
     style={{ margin: 4, padding: 16 }}
     onClick={() => navigate(url)}
   >

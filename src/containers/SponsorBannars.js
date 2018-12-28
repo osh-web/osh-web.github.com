@@ -55,7 +55,12 @@ const SponsorBannars = () => (
   <Flex wrap justify="center">
     <div style={{ maxWidth }}>
       {sponsorGroups.map(sponsors => (
-        <Flex justify="center" wrap m={20} style={{ maxWidth, alignItems: 'center' }}>
+        <Flex
+          justify="center"
+          wrap
+          m={20}
+          style={{ maxWidth, alignItems: 'center' }}
+        >
           {sponsors.map(Bannar)}
         </Flex>
       ))}

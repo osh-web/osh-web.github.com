@@ -29,9 +29,16 @@ export const event2017 = {
 }
 
 export const event2018 = {
-    name: 'オープンセミナー2018@広島',
-    theme: 'いまさらチームビルディング',
-    url: '/2018/',
+  name: 'オープンセミナー2018@広島',
+  theme: 'いまさらチームビルディング',
+  url: '/2018/',
 }
 
-export default [event2018, event2017, event2016, event2015, event2014, event2013];
+export default [
+  event2018,
+  event2017,
+  event2016,
+  event2015,
+  event2014,
+  event2013,
+]

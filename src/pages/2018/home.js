@@ -8,13 +8,13 @@ import SponsorBannars from '../../containers/SponsorBannars'
 import Speakers from '../../containers/2018/Speakers'
 
 export default () => (
-    <div>
-        <Head>
-            <title>オープンセミナー2018@広島</title>
-        </Head>
-        <Hero />
-        <Speakers/>
-        <EventAbstract />
-        <SponsorBannars />
-    </div>
+  <div>
+    <Head>
+      <title>オープンセミナー2018@広島</title>
+    </Head>
+    <Hero />
+    <Speakers />
+    <EventAbstract />
+    <SponsorBannars />
+  </div>
 )

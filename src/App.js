@@ -1,7 +1,6 @@
 import React from 'react'
 import { Root, Routes } from 'react-static'
-import { Link } from '@reach/router'
-import Footer from './components/Footer'
+import Footer from './organisms/Footer'
 import Jsonld from './json_ld.js'
 
 import './App.scss'
@@ -11,7 +10,7 @@ const App = () => (
   <Root>
     <div className="content">
       <Routes />
-      <Footer Link={Link}/>
+      <Footer />
       <Jsonld />
     </div>
   </Root>
