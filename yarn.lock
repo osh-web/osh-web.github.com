@@ -991,6 +991,11 @@
     "@material/animation" "^0.41.0"
     "@material/theme" "^0.41.0"
 
+"@material/layout-grid@^0.41.0":
+  version "0.41.0"
+  resolved "https://registry.yarnpkg.com/@material/layout-grid/-/layout-grid-0.41.0.tgz#2e7d3be76313e0684d573b10c2c6a88b3230d251"
+  integrity sha512-Sa5RNoTGgfIojqJ9E94p7/k11V6q/tGk7HwKi4AQNAPjxield0zcl3G/SbsSb8YSHoK+D+7OXDN+n11x6EqF7g==
+
 "@material/react-button@^0.7.1":
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/@material/react-button/-/react-button-0.7.1.tgz#e7655325dbaad3163f946c8c49b33a51cfed658c"
@@ -1009,6 +1014,16 @@
   dependencies:
     "@material/card" "^0.41.0"
     "@material/react-ripple" "^0.7.1"
+    classnames "^2.2.5"
+    prop-types "^15.6.1"
+    react "^16.4.2"
+
+"@material/react-layout-grid@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@material/react-layout-grid/-/react-layout-grid-0.7.1.tgz#c970d672789d3d493de772dd22e44e179285d512"
+  integrity sha512-hWDP2P7Nr8AXR+w7LrS4Q1uTB22T3m3RXK7B4wg+yX15iK9/V01JLGB5uH9boXAFvamcqxEzL2MZg+0GVt+Z8Q==
+  dependencies:
+    "@material/layout-grid" "^0.41.0"
     classnames "^2.2.5"
     prop-types "^15.6.1"
     react "^16.4.2"
