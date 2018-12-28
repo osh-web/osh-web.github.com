@@ -43,3 +43,5 @@ export const tatsuyatakemura: Speaker = {
     uri: 'https://www.pref.hiroshima.lg.jp/soshiki/8.html',
   },
 }
+
+export const speakers = [tatsuo310, tatsuyatakemura]
