@@ -27,7 +27,14 @@ const Member = ({ name, title, twitter, github, facebook }) => (
   <Card>
     <div style={{ padding: '0 16px' }}>
       <Headline1 style={{ fontSize: 18, lineHeight: 1 }}>
-        {title ? <Caption>{title}<br/></Caption> : ''}
+        {title ? (
+          <Caption>
+            {title}
+            <br />
+          </Caption>
+        ) : (
+          ''
+        )}
         {name}
         {twitter ? <Twitter id={twitter} /> : ''}
         {github ? <GitHub id={github} /> : ''}

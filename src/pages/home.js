@@ -10,7 +10,7 @@ export const home = () => (
     <Hero />
     <Menu />
     <Speakers speakers={speakers} />
-      <Staff staff={staff}/>
+    <Staff staff={staff} />
     <Head>
       <title>オープンセミナー2019@広島</title>
     </Head>
