@@ -18,11 +18,11 @@ type Speaker = {
   },
 }
 
-export const mao_instantlife: Spaker = {
+export const mao_instantlife: Speaker = {
   furi: 'あべ しんすけ',
   name: '阿部 信介',
   key: 'mao_instantlife',
-  title: 'クラスメソッド株式会社 サーバーレス開発部マネージャ',
+  title: ['クラスメソッド株式会社 サーバーレス開発部マネージャ'],
   description: `パチンコ店向けWin32ネイティブアプリの開発、教育系企業のシステム子会社での社内システム開発、ショッピングセンター向けソリューションの開発チームマネージャなどを経て現在。現職ではエンジニアリングマネージャとして、
   分散受託チームのマネジメントをフルリモートでチャレンジ中。
   前々職より岡山を中心にコミュニティに参加し始め、現在はOkayama Managers Meetingの主催や合同勉強会での発表を中心に活動している。`,
