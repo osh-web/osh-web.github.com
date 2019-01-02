@@ -18,6 +18,18 @@ type Speaker = {
   },
 }
 
+export const cero_t: Speaker = {
+  furi: 'たにもと しん',
+  name: '谷本 心',
+  key: 'cero_t',
+  title: ['Acroquest Technology株式会社 ', '日本Javaユーザーグループ'],
+  description: 'Acroquest Technology株式会社にて、アーキテクトやコンサルタントの仕事に従事。コミュニティ活動として、日本Javaユーザーグループの幹事や、関西Javaエンジニアの会の立ち上げを務めるほか、JavaOneやSpringOneなど国内外で多数登壇し、2018年にJavaチャンピオンとして任命される。著書に「Java本格入門」、監訳書に「Javaパフォーマンス」好きなアーティストはBABYMETALデス！',
+  company: {
+    name: 'Acroquest Technology株式会社',
+    uri: 'https://www.acroquest.co.jp/',
+  }
+}
+
 export const mao_instantlife: Speaker = {
   furi: 'あべ しんすけ',
   name: '阿部 信介',
@@ -58,4 +70,4 @@ export const tatsuyatakemura: Speaker = {
   },
 }
 
-export const speakers = [mao_instantlife, tatsuo310, tatsuyatakemura]
+export const speakers = [cero_t, mao_instantlife, tatsuo310, tatsuyatakemura]
