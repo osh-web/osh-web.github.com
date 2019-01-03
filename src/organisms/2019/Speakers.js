@@ -23,20 +23,23 @@ const Speaker = ({ name, furi, description, id, title, memberships }) => (
       </Headline1>
       <div style={{ fontSize: 16, lineHeight: 1, margin: 0, padding: '8px 0' }}>
         {memberships.map(({ uri, name }) => (
-          <Button href={uri} style={{ height: 32, padding: "2px 0" }}>
+          <Button href={uri} style={{ height: 32, padding: '2px 0' }}>
             {name}
           </Button>
         ))}
       </div>
       <Body2>{description}</Body2>
       <Body2>
-        {title.reduce((acc, elem) => (
-          <span>
-            {acc}
-            <br />
-            {elem}
-          </span>
-        ))}
+        {title.reduce(
+          (acc, elem) => (
+            <span>
+              {acc}
+              <br />
+              {elem}
+            </span>
+          ),
+          [],
+        )}
       </Body2>
     </div>
   </Card>

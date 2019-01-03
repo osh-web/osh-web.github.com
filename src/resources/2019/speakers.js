@@ -37,6 +37,15 @@ export const cero_t: Speaker = {
   ],
 }
 
+export const kkd: Speaker = {
+  furi: 'Kakeda Takeshi',
+  name: '懸田 剛',
+  key: 'kkd',
+  description: 'プロフィール 東京で15年間ソフトウェア開発に携わり、特に日本のアジャイル創成期から自身での研究・実践やコミュニティ活動に携わり、多数の記事執筆や講演を行う。2010年より愛媛に拠点を移す。ここ数年は「組織」だけでなく「個人」に目を向け始め、個のウェルネス・ウェルビーングを実現することが、チーム・組織・社会のウェルネス・ウェルビーングを実現するための近道ではないかとの仮説を立てている。思いついたアイデアを試す、読書、農作業、雑談、ランニング、家族団らんをこよなく愛する２男１女の父。',
+  memberships: [],
+  title: [],
+}
+
 export const piacere: Speaker = {
   furi: 'もり まさかず',
   name: '森 正和',
@@ -119,6 +128,7 @@ export const tatsuyatakemura: Speaker = {
 
 export const speakers = [
   cero_t,
+  kkd,
   piacere,
   mao_instantlife,
   tatsuo310,
