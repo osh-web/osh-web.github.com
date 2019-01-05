@@ -6321,7 +6321,7 @@ var lib = __webpack_require__(12);
 var Footer = __webpack_require__(26);
 
 // CONCATENATED MODULE: /Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/src/json_ld.js
-/* harmony default export */ var json_ld = (function(){var structedData={'@context':'http://schema.org','@type':'Event',location:{'@type':'Place',name:'サテライトキャンパスひろしま 501 502',address:{'@type':'PostalAddress',addressCountry:'日本',addressRegion:'中国地方'}},name:'オープンセミナー2019@広島',description:'IT技術者のボランティアによる中四国最高のセミナーイベント',offers:{'@type':'Offer',price:'0',priceCurrency:'円',availability:'in_stock',validForm:'2018-10-30',url:'https://osh.connpass.com/event/101380/'},image:'',performar:[],startDate:'2019-02-23',endDate:'2019-02-23',performer:{'@type':'Person',name:''}};var json=JSON.stringify(structedData);return external_react_default.a.createElement("script",{type:"application/ld+json",dangerouslySetInnerHTML:{__html:json}});});
+/* harmony default export */ var json_ld = (function(){var structedData={'@context':'http://schema.org','@type':'Event',location:{'@type':'Place',name:'サテライトキャンパスひろしま 501 502',address:{'@type':'PostalAddress',addressCountry:'日本',addressRegion:'中国地方'}},name:'オープンセミナー2019@広島',description:'IT技術者のボランティアによる中四国最高のセミナーイベント',offers:{'@type':'Offer',price:'0',priceCurrency:'円'},startDate:'2019-02-23',endDate:'2019-02-23'};var json=JSON.stringify(structedData);return external_react_default.a.createElement("script",{type:"application/ld+json",dangerouslySetInnerHTML:{__html:json}});});
 // EXTERNAL MODULE: /Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/src/App.scss
 var src_App = __webpack_require__(61);
 
@@ -6340,4 +6340,4 @@ src_render(osh_web_github_com_src_App);if(false){}}
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.513e4d8d.js.map
+//# sourceMappingURL=static.0cf38aba.js.map
