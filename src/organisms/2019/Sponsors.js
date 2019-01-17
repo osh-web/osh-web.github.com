@@ -9,7 +9,7 @@ import { SponsorBanner as Banner } from '../../atoms/SponsorBanner'
 import type { Props as SponsorProps } from '../../atoms/SponsorBanner'
 import type { Sponsor as Resource } from '../../resources'
 
-export function Sponsors({ platinum, gold }: { platinum: Resource[], gold: Resource[] }) {
+export function Sponsors({ platinum, gold, silver }: { platinum: Resource[], gold: Resource[], silver: Resource[] }) {
   return (
     <Grid>
         <Row>
@@ -17,12 +17,21 @@ export function Sponsors({ platinum, gold }: { platinum: Resource[], gold: Resou
                 <Headline2>Sponsors</Headline2>
             </Cell>
         </Row>
-      <Row style={{margin: "0 0 80px 0"}}>
-        <Cell columns={6}>{platinum.map(toSponsor).map(Banner)}</Cell>
+      <Row>
+          {platinum.map((sponsor) =>(
+              <Cell columns={6}>{Banner(toSponsor(sponsor))}</Cell>
+          ))}
       </Row>
       <Row>
-        <Cell columns={4}>{gold.map(toSponsor).map(Banner)}</Cell>
+          {gold.map((sponsor) =>(
+              <Cell columns={4}>{Banner(toSponsor(sponsor))}</Cell>
+          ))}
       </Row>
+        <Row>
+            {silver.map((sponsor) =>(
+                <Cell columns={4}>{Banner(toSponsor(sponsor))}</Cell>
+            ))}
+        </Row>
     </Grid>
   )
 }

@@ -6,6 +6,13 @@ export type Sponsor = {
     banner: string,
 }
 
+export const orangesystem: Sponsor = {
+    name: '株式会社 オレンジシステム広島',
+    key: 'orangesystem',
+    url: 'https://www.orange.co.jp/',
+    banner: '/img/2019/orangesystem.svg',
+}
+
 export const cybozu: Sponsor = {
     name: 'サイボウズ株式会社',
     key: 'cyboz',
@@ -13,7 +20,7 @@ export const cybozu: Sponsor = {
     banner: '/img/2019/cybozu.svg',
 }
 
-export const platinum: Sponsor[] = [cybozu];
+export const platinum: Sponsor[] = [orangesystem, cybozu];
 
 const shuaruta = {
     name: '株式会社シュアルタ',
