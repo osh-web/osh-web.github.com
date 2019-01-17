@@ -6,7 +6,14 @@ export type Sponsor = {
     banner: string,
 }
 
-export const platinum: Sponsor[] = [];
+export const cybozu: Sponsor = {
+    name: 'サイボウズ株式会社',
+    key: 'cyboz',
+    url: 'https://cybozu.co.jp/',
+    banner: '/img/2019/cybozu.svg',
+}
+
+export const platinum: Sponsor[] = [cybozu];
 
 const shuaruta = {
     name: '株式会社シュアルタ',
@@ -20,4 +27,4 @@ export const gold: Sponsor[] = [shuaruta];
 export const silver: Sponsor[] = [];
 
 
-export const sponsors = [...platinum, ...gold, ...silver];
+export const sponsors = { platinum, gold, silver };
