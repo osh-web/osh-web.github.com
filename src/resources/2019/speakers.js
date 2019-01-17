@@ -80,6 +80,20 @@ AI学校「AIジョブカレ」福岡代表、文科省社会人向け教育PJ�
   ],
 }
 
+export const twingo_b: Speaker = {
+  furi: 'ふじわら よしのり',
+  name: '藤原 吉規',
+  key: 'twingo_b',
+  title: ['アマゾン ウェブ サービス ジャパン株式会社 ソリューション アーキテクト'],
+  description: `広島工業大学工学部を2000年に卒業後、SIerに10年、ビジネス向けチャットサービス事業を行う関西のスタートアップに6年勤務。スタートアップ在籍時はAWSを最大限活用し、事業の立ち上げ期から成長を支えてきました。現在はソリューション アーキテクトとして、AWSの各種サービスの利用を推進しています。`,
+  memberships: [
+    {
+      name: 'アマゾン ウェブ サービス ジャパン株式会社',
+      uri: 'https://aws.amazon.com/jp/',
+    },
+  ],
+}
+
 export const mao_instantlife: Speaker = {
   furi: 'あべ しんすけ',
   name: '阿部 信介',
@@ -130,6 +144,7 @@ export const speakers = [
   cero_t,
   kkd,
   piacere,
+  twingo_b,
   mao_instantlife,
   tatsuo310,
   tatsuyatakemura,
