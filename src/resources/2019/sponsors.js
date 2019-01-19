@@ -31,7 +31,21 @@ const shuaruta = {
 
 export const gold: Sponsor[] = [shuaruta];
 
-export const silver: Sponsor[] = [];
+export const pmaj: Sponsor = {
+    name: '日本プロジェクトマネジメント協会',
+    key: 'pmaj',
+    url: 'http://www.pmaj.or.jp/',
+    banner: '/img/2018/pmaj.png',
+}
+
+export const nextvision: Sponsor = {
+    name: '株式会社ネクストビジョン',
+    key: 'nextvision',
+    url: 'https://www.nextvision.co.jp/',
+    banner: '/img/2018/nextvision.png',
+}
+
+export const silver: Sponsor[] = [pmaj, nextvision];
 
 
 export const sponsors = { platinum, gold, silver };

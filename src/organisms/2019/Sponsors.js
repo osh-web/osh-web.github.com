@@ -19,17 +19,17 @@ export function Sponsors({ platinum, gold, silver }: { platinum: Resource[], gol
         </Row>
       <Row>
           {platinum.map((sponsor) =>(
-              <Cell columns={6}>{Banner(toSponsor(sponsor))}</Cell>
+              <Cell columns={8}>{Banner(toSponsor(sponsor))}</Cell>
           ))}
       </Row>
       <Row>
           {gold.map((sponsor) =>(
-              <Cell columns={4}>{Banner(toSponsor(sponsor))}</Cell>
+              <Cell columns={3} desktopColumns={6}>{Banner(toSponsor(sponsor))}</Cell>
           ))}
       </Row>
         <Row>
             {silver.map((sponsor) =>(
-                <Cell columns={4}>{Banner(toSponsor(sponsor))}</Cell>
+                <Cell columns={2} desktopColumns={3}>{Banner(toSponsor(sponsor))}</Cell>
             ))}
         </Row>
     </Grid>

@@ -20,9 +20,18 @@ export default () => {
       '@type': 'Offer',
       price: '0',
       priceCurrency: '円',
+      availability: 'in_stock',
+      validForm: '2018-10-30',
+      url: 'https://osh.connpass.com/event/101380/',
     },
+    image: '',
+    performar: [],
     startDate: '2019-02-23',
     endDate: '2019-02-23',
+    performer: {
+      '@type': 'Person',
+      name: '',
+    }
   }
   const json = JSON.stringify(structedData)
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: json }} />

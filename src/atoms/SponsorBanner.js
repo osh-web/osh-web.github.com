@@ -7,10 +7,10 @@ export type Props = {
     name: string,
 }
 
-export function SponsorBanner({name, href, src}: Props) {
+export function SponsorBanner({name, href, src, fit }: Props) {
     return (
         <a href={href}>
-            <img src={src} alt={`${name} バナー`} style={{objectFit: "contain", width: "100%", height: 200}}/>
+            <img src={src} alt={`${name} バナー`} style={{objectFit: 'contain', width: "100%", height: 150}}/>
         </a>
     )
 }
