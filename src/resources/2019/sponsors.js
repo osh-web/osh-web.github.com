@@ -20,7 +20,14 @@ export const cybozu: Sponsor = {
     banner: '/img/2019/cybozu.svg',
 }
 
-export const platinum: Sponsor[] = [orangesystem, cybozu];
+export const dreamarts = {
+    name: '株式会社ドリーム・アーツ',
+    key: 'dreamarts',
+    url: 'https://www.dreamarts.co.jp/',
+    banner: '/img/2019/dreamarts.png',
+}
+
+export const platinum: Sponsor[] = [orangesystem, cybozu, dreamarts];
 
 const shuaruta = {
     name: '株式会社シュアルタ',
