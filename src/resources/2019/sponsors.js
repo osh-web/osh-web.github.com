@@ -27,7 +27,14 @@ export const dreamarts = {
     banner: '/img/2019/dreamarts.png',
 }
 
-export const platinum: Sponsor[] = [orangesystem, cybozu, dreamarts];
+export const subthread: Sponsor = {
+    name: '株式会社サブスレッド',
+    key: 'subthread',
+    url: 'http://www.subthread.co.jp/',
+    banner: '/img/2019/subthread.png',
+}
+
+export const platinum: Sponsor[] = [orangesystem, cybozu, dreamarts, subthread];
 
 const shuaruta = {
     name: '株式会社シュアルタ',
