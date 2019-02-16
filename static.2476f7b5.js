@@ -206,7 +206,7 @@ var cero_t={furi:'たにもと しん',name:'谷本 心',key:'cero_t',title:['Ac
 // CONCATENATED MODULE: /Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/src/resources/2019/staff.js
 var kakenavi={key:'kakenavi',name:'山城戸 祐樹',title:'実行委員長',twitter:'kakenavi'};var mu2in={key:'mu2in',name:'mu2in',title:'企画',twitter:'mu2in'};var m_ando_japan={key:'m_ando_japan',name:'安藤 光昭',title:'会計',twitter:'m_ando_japan',facebook:'ando.mitsuaki',uri:'https://bitriver.jp/'};var nobuske={key:'nobuske',name:'佐々木 宣介'};var nanarichi={key:'7richi',name:'田中 靖也',twitter:'7richi'};var kwgch={key:'kwgch',name:'川口 稔'};var soudai1025={key:'soudai1025',name:'曽根 壮大',twitter:'soudai1025',facebook:'soudai.sone'};var isabasi1484={key:'isabasi1484',name:'石橋 伸介',twitter:'isabisi1484'};var nishimotz={key:'24motz',name:'西本 卓也',uri:'https://shuaruta.com/'};var mmorito={key:'mmorito',name:'森藤 敏之'};var hiroyuki={key:'hiroyuki',name:'前田 浩幸'};var naoyuki={key:'naoyuki',name:'濱田 直之'};var eiel={key:'eiel',name:'火村 智彦',twitter:'eielh',facebook:'eielh',github:'eiel',uri:'https://eiel.info/'};var staff=[kakenavi,mu2in,m_ando_japan,nobuske,nanarichi,kwgch,soudai1025,isabasi1484,nishimotz,mmorito,hiroyuki,naoyuki,eiel];
 // CONCATENATED MODULE: /Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/src/resources/2019/sponsors.js
-var orangesystem={name:'株式会社 オレンジシステム広島',key:'orangesystem',url:'https://www.orange.co.jp/',banner:'/img/2019/orangesystem.svg'};var cybozu={name:'サイボウズ株式会社',key:'cyboz',url:'https://cybozu.co.jp/',banner:'/img/2019/cybozu.svg'};var dreamarts={name:'株式会社ドリーム・アーツ',key:'dreamarts',url:'https://www.dreamarts.co.jp/',banner:'/img/2019/dreamarts.png'};var platinum=[orangesystem,cybozu,dreamarts];var shuaruta={name:'株式会社シュアルタ',key:'shuaruta',url:'https://shuaruta.com/',banner:'/img/2019/shuaruta.svg'};var gold=[shuaruta];var pmaj={name:'日本プロジェクトマネジメント協会',key:'pmaj',url:'http://www.pmaj.or.jp/',banner:'/img/2018/pmaj.png'};var nextvision={name:'株式会社ネクストビジョン',key:'nextvision',url:'https://www.nextvision.co.jp/',banner:'/img/2018/nextvision.png'};var silver=[pmaj,nextvision];var sponsors={platinum:platinum,gold:gold,silver:silver};
+var orangesystem={name:'株式会社 オレンジシステム広島',key:'orangesystem',url:'https://www.orange.co.jp/',banner:'/img/2019/orangesystem.svg'};var cybozu={name:'サイボウズ株式会社',key:'cyboz',url:'https://cybozu.co.jp/',banner:'/img/2019/cybozu.svg'};var dreamarts={name:'株式会社ドリーム・アーツ',key:'dreamarts',url:'https://www.dreamarts.co.jp/',banner:'/img/2019/dreamarts.png'};var subthread={name:'株式会社サブスレッド',key:'subthread',url:'http://www.subthread.co.jp/',banner:'/img/2019/subthread.png'};var platinum=[orangesystem,cybozu,dreamarts,subthread];var shuaruta={name:'株式会社シュアルタ',key:'shuaruta',url:'https://shuaruta.com/',banner:'/img/2019/shuaruta.svg'};var gold=[shuaruta];var pmaj={name:'日本プロジェクトマネジメント協会',key:'pmaj',url:'http://www.pmaj.or.jp/',banner:'/img/2018/pmaj.png'};var nextvision={name:'株式会社ネクストビジョン',key:'nextvision',url:'https://www.nextvision.co.jp/',banner:'/img/2018/nextvision.png'};var silver=[pmaj,nextvision];var sponsors={platinum:platinum,gold:gold,silver:silver};
 // CONCATENATED MODULE: /Users/cw-himura/ghq/github.com/osh-web/osh-web.github.com/src/resources/index.js
 /* unused concated harmony import event2013 */
 /* unused concated harmony import event2014 */
@@ -230,6 +230,7 @@ var orangesystem={name:'株式会社 オレンジシステム広島',key:'orange
 /* unused concated harmony import orangesystem */
 /* unused concated harmony import cybozu */
 /* unused concated harmony import dreamarts */
+/* unused concated harmony import subthread */
 /* unused concated harmony import platinum */
 /* unused concated harmony import gold */
 /* unused concated harmony import pmaj */
@@ -6356,4 +6357,4 @@ src_render(osh_web_github_com_src_App);if(false){}}
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.5f22c79c.js.map
+//# sourceMappingURL=static.2476f7b5.js.map
