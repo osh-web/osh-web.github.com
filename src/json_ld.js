@@ -31,7 +31,7 @@ export default () => {
     performer: {
       '@type': 'Person',
       name: '',
-    }
+    },
   }
   const json = JSON.stringify(structedData)
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: json }} />

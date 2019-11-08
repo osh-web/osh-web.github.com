@@ -5,7 +5,7 @@ import { Head } from 'react-static'
 import { Menu, Hero, Speakers, Staff, Sponsors } from '../organisms'
 import { speakers, staff, sponsors } from '../resources'
 
-export const home = () => (
+export default () => (
   <div>
     <Hero />
     <Menu />
@@ -17,5 +17,3 @@ export const home = () => (
     </Head>
   </div>
 )
-
-export default home
