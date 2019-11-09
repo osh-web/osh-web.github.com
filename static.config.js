@@ -39,7 +39,12 @@ export default {
         location: path.resolve('./src/pages'),
       },
     ],
-    'react-static-plugin-sass',
+    [
+      'react-static-plugin-sass',
+      {
+        includePaths: ['node_modules/']
+      },
+    ],
     'react-static-plugin-styled-components',
   ],
 }
