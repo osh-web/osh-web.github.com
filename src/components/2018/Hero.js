@@ -1,12 +1,13 @@
 import React from 'react'
+import styled from 'styled-components'
 import { Flex } from 'grid-styled'
 
 import { Box, Grid } from '../Box'
 import { color } from '../../resources'
 
-const { primary, accent } = color
+const { primary } = color;
 
-const Banner = Box.extend`
+const Banner = styled(Box)`
   background-color: ${primary};
   align-items: left;
   a {
@@ -33,7 +34,7 @@ const EventName = () => (
   </div>
 )
 
-const Button = Grid.extend`
+const Button = styled(Grid)`
   display: box;
   margin: 10px;
   padding: 12px 58px;
