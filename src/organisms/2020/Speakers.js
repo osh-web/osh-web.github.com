@@ -10,12 +10,14 @@ import {
   Caption,
 } from '@material/react-typography'
 
-const Speaker = ({ name, furi, description, id, title, memberships }) => (
+const Speaker = ({ name, furi, description, id, title, memberships, session }) => (
   <Card className="mdc-elevation--z1" outlined>
     <CardMedia imageUrl={`/img/2020/${id}.jpg`} square />
     <div style={{ padding: '0 16px' }}>
       <Headline1 style={{ fontSize: 18, lineHeight: 1 }}>
-        セッション内容 TBD
+        {session ?
+          '『' + (session.name) + '』' : 'セッション内容 TBD'
+        }
       </Headline1>
       <Caption style={{ fontSize: 14, margin: 0, padding: 0 }}>{furi}</Caption>
       <Headline1 style={{ fontSize: 18, lineHeight: 1, margin: 0 }}>
