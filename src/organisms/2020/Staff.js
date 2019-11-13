@@ -6,7 +6,7 @@ import { Headline1, Headline2, Caption } from '@material/react-typography'
 import { color } from '../../resources'
 
 const SNS = ({ uri, service }) => (
-  <a href={uri}>
+  <a href={uri} target="_blank">
     <i
       className={`fab fa-${service}`}
       style={{ margin: '0 0 0 6px', color: color.primary }}
