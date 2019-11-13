@@ -73,8 +73,23 @@ export const soudai1025: Speaker = {
   ],
 }
 
+export const konishi: Speaker = {
+  furi: 'Konishi Yudai',
+  name: '小西 雄大',
+  key: 'konishi',
+  title: [],
+  description:
+    '数21のときにフリーランスとしてWeb制作を始める。24のときに渋谷の小さなスタートアップにCTOとして関わる。iOSアプリやWebサービスをいくつか作った後、退職。現在、また広島でフリーランスとして活動しています。',
+  memberships: [],
+  session: {
+    name: '大学を中退した文系エンジニアがその後どうなったか',
+    description: '',
+  },
+}
+
 export const speakers = [
   takaking22,
   kawaguti,
   soudai1025,
+  konishi,
 ]
