@@ -62,6 +62,7 @@ const isabasi1484 = {
 const nishimotz = {
   key: '24motz',
   name: '西本 卓也',
+  title: '副委員長',
   uri: 'https://shuaruta.com/',
 }
 
@@ -94,6 +95,7 @@ const eiel = {
 
 export const staff: Staff[] = [
   nanarichi,
+  nishimotz,
   kakenavi,
   mu2in,
   m_ando_japan,
@@ -101,7 +103,6 @@ export const staff: Staff[] = [
   kwgch,
   soudai1025,
   isabasi1484,
-  nishimotz,
   mmorito,
   hiroyuki,
   naoyuki,
