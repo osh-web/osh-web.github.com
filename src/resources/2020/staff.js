@@ -71,12 +71,13 @@ const mmorito = {
   name: '森藤 敏之',
   twitter: 'mmorito_0318',
   facebook: 'toshi.val',
-  github: 'mmorito'
+  github: 'mmorito',
 }
 
 const hiroyuki = {
   key: 'hiroyuki',
   name: '前田 浩幸',
+  twitter: '@hiroyukimaeda_3',
 }
 
 const naoyuki = {
