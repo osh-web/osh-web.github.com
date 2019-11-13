@@ -24,7 +24,7 @@ export function Sponsors({ platinum, gold, silver }: { platinum: Resource[], gol
         </Row>
       <Row>
           {platinum.map((sponsor) =>(
-              <Cell columns={8} style={style}>{Banner(toSponsor(sponsor))}</Cell>
+              <Cell columns={12} style={style}>{Banner(toSponsor(sponsor))}</Cell>
           ))}
       </Row>
       <Row>
