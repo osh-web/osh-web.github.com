@@ -53,6 +53,10 @@ export const kawaguti: Speaker = {
       uri: 'https://www.jp.agilergo.com/',
     },
   ],
+  session: {
+    name: 'アジャイル開発の時代',
+    description: 'アジャイル開発はどうのように生まれ、発展し、どこに向かっていくのか？ 日本のソフトウェア産業は？プロダクト開発はどうなっていきそうなのか？ アジャイルの起源、クラウドの勃興、DevOpsの着眼点、 実感駆動、スクラムの仕組み、モブプログラミングはどう有効なのか？ 米国 Agile Conference 日本人最多連続参加記録更新中(非公式)のスピーカーが、 単にいま気になっていることを淡々と話します。',
+  },
 }
 
 export const soudai1025: Speaker = {
