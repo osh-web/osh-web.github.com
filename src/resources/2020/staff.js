@@ -77,7 +77,7 @@ const mmorito = {
 const hiroyuki = {
   key: 'hiroyuki',
   name: '前田 浩幸',
-  twitter: '@hiroyukimaeda_3',
+  twitter: 'hiroyukimaeda_3',
 }
 
 const naoyuki = {
