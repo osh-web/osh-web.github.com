@@ -38,6 +38,10 @@ export const takaking22: Speaker = {
       uri: 'http://www.agileteam.jp/',
     },
   ],
+  session: {
+    name: 'アジャイル時代の「個」と「チーム」',
+    description: '',
+  },
 }
 
 export const kawaguti: Speaker = {
@@ -75,6 +79,10 @@ export const soudai1025: Speaker = {
       uri: 'https://party-calendar.net/corp',
     },
   ],
+  session: {
+    name: '35歳を超えた僕たちが、今と未来の技術と如何に向き合うか ~ 35歳の壁を超えていく ~',
+    description: 'エンジニア35歳定年説、それは間違った論説であると理解しているものの、30歳を超え、責任、家庭、老い、様々なモノを背負ってくるとどうやって超えていくか？というのは多くの人達も一度は悩むのではないでしょうか。\n私も今年、35歳を越え、職場ではCTOとして決断を迫られる中、それでも新しい技術を理解し、向き合って行かねばなりません。\nもちろん一日は有限ですから勉強する時間も限られます。\nそんな中、私がどうやって新しい技術と理解し、未来の技術を予測し、今の技術を選定しているか。そのために日々をどう過ごしているか。そんな **"エンジニアとして生き残るためのhack"** を皆さんにお伝えします。',
+  },
 }
 
 export const konishi: Speaker = {
