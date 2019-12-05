@@ -62,21 +62,23 @@ export const orangesystem: Sponsor = {
     banner: '/img/2020/orangesystem.svg',
 }
 
-// export const dreamarts = {
-//     name: '株式会社ドリーム・アーツ',
-//     key: 'dreamarts',
-//     url: 'https://www.dreamarts.co.jp/',
-//     banner: '/img/2020/dreamarts.png',
-// }
+export const nextvision: Sponsor = {
+    name: '株式会社ネクストビジョン',
+    key: 'nextvision',
+    url: 'https://www.nextvision.co.jp/',
+    banner: '/img/2020/nextvision.png',
+}
 
-// export const nextvision: Sponsor = {
-//     name: '株式会社ネクストビジョン',
-//     key: 'nextvision',
-//     url: 'https://www.nextvision.co.jp/',
-//     banner: '/img/2020/nextvision.png',
-// }
+export const dreamarts = {
+    name: '株式会社ドリーム・アーツ',
+    key: 'dreamarts',
+    url: 'https://www.dreamarts.co.jp/',
+    banner: '/img/2020/dreamarts.png',
+}
 
-export const platinum: Sponsor[] = [cybozu, test, freee, orangesystem];
+
+
+export const platinum: Sponsor[] = [cybozu, test, freee, orangesystem, dreamarts];
 export const gold: Sponsor[] = [shuaruta, bitriver];
-export const silver: Sponsor[] = [pmaj];
+export const silver: Sponsor[] = [pmaj, nextvision];
 export const sponsors = { platinum, gold, silver };
