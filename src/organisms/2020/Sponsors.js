@@ -10,7 +10,7 @@ import type { Props as SponsorProps } from '../../atoms/SponsorBanner'
 import type { Sponsor as Resource } from '../../resources'
 
 const style = {
-    margin: '5% 10%',
+    margin: '3% 10%',
     boxSizing: 'border-box',
 };
 
@@ -29,12 +29,12 @@ export function Sponsors({ platinum, gold, silver }: { platinum: Resource[], gol
       </Row>
       <Row>
           {gold.map((sponsor) =>(
-              <Cell columns={3} desktopColumns={6} style={style}>{Banner(toSponsor(sponsor))}</Cell>
+              <Cell columns={6} desktopColumns={6} style={style}>{Banner(toSponsor(sponsor))}</Cell>
           ))}
       </Row>
         <Row>
             {silver.map((sponsor) =>(
-                <Cell columns={2} desktopColumns={3} style={style}>{Banner(toSponsor(sponsor))}</Cell>
+                <Cell columns={4} desktopColumns={3} style={style}>{Banner(toSponsor(sponsor))}</Cell>
             ))}
         </Row>
     </Grid>
