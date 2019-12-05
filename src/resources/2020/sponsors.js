@@ -55,12 +55,12 @@ export const bitriver: Sponsor = {
     height: 150,
 }
 
-// export const orangesystem: Sponsor = {
-//     name: '株式会社 オレンジシステム広島',
-//     key: 'orangesystem',
-//     url: 'https://www.orange.co.jp/',
-//     banner: '/img/2020/orangesystem.svg',
-// }
+export const orangesystem: Sponsor = {
+    name: '株式会社 オレンジシステム広島',
+    key: 'orangesystem',
+    url: 'https://www.orange.co.jp/',
+    banner: '/img/2020/orangesystem.svg',
+}
 
 // export const dreamarts = {
 //     name: '株式会社ドリーム・アーツ',
@@ -76,7 +76,7 @@ export const bitriver: Sponsor = {
 //     banner: '/img/2020/nextvision.png',
 // }
 
-export const platinum: Sponsor[] = [cybozu, test, freee];
+export const platinum: Sponsor[] = [cybozu, test, freee, orangesystem];
 export const gold: Sponsor[] = [shuaruta, bitriver];
 export const silver: Sponsor[] = [pmaj];
 export const sponsors = { platinum, gold, silver };
