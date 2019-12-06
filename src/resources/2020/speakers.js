@@ -103,15 +103,38 @@ export const tatsuo310: Speaker = {
   furi: 'さとう たつお',
   name: '佐藤 達男',
   key: 'tatsuo310',
-  title: ['広島修道大学 経済科学部教授', 'キャリアセンター長'],
+  title: ['広島修道大学 経済科学部教授'],
   description:
-    'SI企業で数多くのシステム開発にプロジェクトマネジャーとして参画し、人事課長、技術部長、PM部長などを経た後、大学にフィールドを移して現在に至る。技術経営、UX/HCD、アジャイル、プロジェクトマネジメントなどを領域横断的にカバーし、新たな価値創造型のマネジメントをテーマに研究活動を展開している。著書に「プロジェクトマネージャ育成法」（日科技連出版社）ほか。Ph.D.,PMP, PMS,CSPO, CSM',
+    '東京都出身。SIerにて数多くのシステム開発でプロジェクトマネジャーに従事した後、全社のプロジェクトを統括するPM部長を経て、2016年より広島に拠点を移して現職で「プロジェクトマネジメント」の教鞭を執るとともに、新たな時代のプロジェクトマネジメント論を提示・展開している。2019年度はPMI Japan Forum2019にて基調講演、2020年はBacklog World2020の基調講演を予定している。著書「プロジェクトマネージャ育成法」ほか。PMP, PMS, SPO, SSM, MOT, Ph.D.',
   memberships: [
     {
       name: '広島修道大学',
       uri: 'http://www.shudo-u.ac.jp/',
     },
   ],
+  session: {
+    name: 'エンジニアリング & プロジェクトマネジメント',
+    description: '',
+  },
+}
+
+export const sakagawa: Speaker = {
+  furi: 'Sakagawa Masatoshi',
+  name: '坂川 雅俊',
+  key: 'sakagawa',
+  title: ['株式会社ソニックガーデン Programmer/顧問CTO'],
+  description:
+    '東京都出身。SIerにて数多くのシステム開発でプロジェクトマネジャーに従事した後、全社のプロジェクトを統括するPM部長を経て、2016年より広島に拠点を移して現職で「プロジェクトマネジメント」の教鞭を執るとともに、新たな時代のプロジェクトマネジメント論を提示・展開している。2019年度はPMI Japan Forum2019にて基調講演、2020年はBacklog World2020の基調講演を予定している。著書「プロジェクトマネージャ育成法」ほか。PMP, PMS, SPO, SSM, MOT, Ph.D.',
+  memberships: [
+    {
+      name: '株式会社ソニックガーデン',
+      uri: 'https://www.sonicgarden.jp/',
+    },
+  ],
+  session: {
+    name: 'プログラミングが好きで一生続けたい。続けるためにどのように仕事に向き合っているか？顧問プログラマという仕事を通して学んだ私の考えを伝えられたらと思います。',
+    description: '',
+  },
 }
 
 export const speakers = [
@@ -120,4 +143,5 @@ export const speakers = [
   soudai1025,
   konishi,
   tatsuo310,
+  sakagawa,
 ]
