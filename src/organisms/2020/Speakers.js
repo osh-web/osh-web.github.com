@@ -19,6 +19,9 @@ const Speaker = ({ name, furi, description, id, title, memberships, session }) =
           '『' + (session.name) + '』' : 'セッション内容 TBD'
         }
       </Headline1>
+      <Body2>{session ?
+              (session.description) : ''
+             }</Body2>
       <Caption style={{ fontSize: 14, margin: 0, padding: 0 }}>{furi}</Caption>
       <Headline1 style={{ fontSize: 18, lineHeight: 1, margin: 0 }}>
         {name}
