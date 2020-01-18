@@ -76,9 +76,15 @@ export const dreamarts = {
     banner: '/img/2020/dreamarts.png',
 }
 
+export const ulsystems = {
+    name: 'ウルシステムズ株式会社',
+    key: 'ulsystems',
+    url: 'https://www.ulsystems.co.jp/',
+    banner: '/img/2020/ulsystems.png',
+}
 
 
-export const platinum: Sponsor[] = [cybozu, test, freee, orangesystem, dreamarts];
+export const platinum: Sponsor[] = [cybozu, test, freee, orangesystem, dreamarts, ulsystems];
 export const gold: Sponsor[] = [shuaruta, bitriver];
 export const silver: Sponsor[] = [pmaj, nextvision];
 export const sponsors = { platinum, gold, silver };
