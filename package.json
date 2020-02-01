@@ -28,7 +28,7 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-router-scroll": "^0.4.4",
-    "react-static": "^7.2.3",
+    "react-static": "7.1",
     "react-static-plugin-sass": "^7.2.2",
     "react-static-plugin-source-filesystem": "^7.2.3",
     "react-static-plugin-styled-components": "^7.2.2",
