@@ -13,6 +13,6 @@ module.exports = {
   parser: 'babel-eslint',
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
-    qoutes: ['error', 'double'],
+    qoutes: ['error', 'single'],
   },
 }
