@@ -13,7 +13,7 @@ export default () => (
     <Sponsors {...sponsors} />
     <Staff staff={staff} />
     <Head>
-      <title>オープンセミナー2020@広島</title>
+      <title>オープンセミナー2022@広島</title>
     </Head>
   </div>
 )
