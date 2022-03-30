@@ -40,18 +40,6 @@ const nanarichi = {
   twitter: '7richi',
 }
 
-const kwgch = {
-  key: 'kwgch',
-  name: '川口 稔',
-}
-
-const soudai1025 = {
-  key: 'soudai1025',
-  name: '曽根 壮大',
-  twitter: 'soudai1025',
-  facebook: 'soudai.sone',
-}
-
 const isabasi1484 = {
   key: 'isabasi1484',
   title: '企画',
@@ -86,15 +74,6 @@ const naoyuki = {
   title: '副実行委員長',
 }
 
-const eiel = {
-  key: 'eiel',
-  name: '火村 智彦',
-  twitter: 'eielh',
-  facebook: 'eielh',
-  github: 'eiel',
-  uri: 'https://eiel.info/',
-}
-
 export const staff: Staff[] = [
   nishimotz,
   naoyuki,
@@ -104,9 +83,9 @@ export const staff: Staff[] = [
   nobuske,
   nanarichi,
   mu2in,
-  kwgch,
-  // soudai1025,
   mmorito,
   hiroyuki,
+  // kwgch,
+  // soudai1025,
   // eiel,
 ]
