@@ -85,7 +85,4 @@ export const staff: Staff[] = [
   mu2in,
   mmorito,
   hiroyuki,
-  // kwgch,
-  // soudai1025,
-  // eiel,
 ]
