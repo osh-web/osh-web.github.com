@@ -40,7 +40,14 @@ export const event2019 = {
   url: '/2019/',
 }
 
+export const event2020 = {
+  name: 'オープンセミナー2020@広島',
+  theme: 'エンジニアライフ Hacks',
+  url: '/2020/',
+}
+
 export const seminarList = [
+  event2020,
   event2019,
   event2018,
   event2017,

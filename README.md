@@ -4,6 +4,8 @@
 
 ## 開発方法
 
+※ Node.js v12 での動作確認済
+
 ```
 $ yarn
 $ yarn start
