@@ -16,8 +16,8 @@ jobs:
     - uses: actions/checkout@v3
     - uses: actions/checkout@v3
       with:
-        path: './dist'
-        ref: 'master'
+        path: dist
+        ref: master
         fetch-depth: 1
     - uses: actions/setup-node@v3
       with:
