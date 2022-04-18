@@ -42,7 +42,6 @@ const nanarichi = {
 
 const isabasi1484 = {
   key: 'isabasi1484',
-  title: '企画',
   name: '石橋 伸介',
   twitter: 'isabisi1484',
 }
@@ -74,15 +73,19 @@ const naoyuki = {
   title: '副実行委員長',
 }
 
+const mosugi = {
+  key: 'mosugi',
+  name: 'Masaki Osugi',
+}
+
 export const staff: Staff[] = [
   nishimotz,
   naoyuki,
   isabasi1484,
   m_ando_japan,
-  kakenavi,
   nobuske,
   nanarichi,
   mu2in,
   mmorito,
-  hiroyuki,
+  mosugi,
 ]
