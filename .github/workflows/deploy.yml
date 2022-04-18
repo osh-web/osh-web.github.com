@@ -21,4 +21,7 @@ jobs:
     - name: yarn install
       run: yarn install
     - name: deploy
-      run: yarn deploy
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        yarn deploy
