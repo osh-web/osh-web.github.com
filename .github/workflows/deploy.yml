@@ -22,8 +22,7 @@ jobs:
       run: yarn install
     - name: deploy
       run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        yarn deploy
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        yarn deploy -u "github-actions <github-actions@github.com>"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
