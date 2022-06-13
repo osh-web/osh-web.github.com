@@ -13,7 +13,7 @@ export default () => {
         addressRegion: '中国地方',
       },
     },
-    name: 'オープンセミナー2020@広島',
+    name: 'オープンセミナー2022@広島',
     description:
       'IT技術者のボランティアによる中四国最高のセミナーイベント',
     offers: {
@@ -21,13 +21,13 @@ export default () => {
       price: '0',
       priceCurrency: '円',
       availability: 'in_stock',
-      validForm: '2019-12-01',
-      url: 'https://osh.connpass.com/event/146828/',
+      validFrom: '2022-03-30',
+      url: 'https://osh.connpass.com/event/242991/',
     },
     image: '',
     performar: [],
-    startDate: '2020-02-08',
-    endDate: '2020-02-08',
+    startDate: '2022-03-30',
+    endDate: '2022-05-26',
     performer: {
       '@type': 'Person',
       name: '',
