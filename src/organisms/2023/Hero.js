@@ -5,11 +5,13 @@ import { Headline1 } from '@material/react-typography'
 
 export const Hero = () => (
   <Headline1 style={headerStyle} tag="h1">
+    <img style={{ height: '300px' }} src="/img/logo.png"></img>
+    <br />
     オープンセミナー2023@広島
     <br />
     「生成AIとのつきあい方」
     <br />
-    2023年11月11日(土) 10:00 ～ 17:00 （仮）
+    2023年11月11日(土)
     <br />
     <Button style={{color: '#7b5544'}} href="https://goo.gl/maps/xxWZx4DDw1EBtomy8">
       広島市西区民文化センター
@@ -24,7 +26,7 @@ const headerStyle = {
   backgroundColor: '#F4EFAC',
   color: '#000000',
   fontSize: '22px',
-  padding: '20% 0',
+  padding: '15% 0',
   lineHeight: 1.8,
   textAlign: 'center',
 }

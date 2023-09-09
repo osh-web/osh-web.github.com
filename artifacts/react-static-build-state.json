@@ -1,0 +1,68 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "entry": "index.js",
+  "siteRoot": "https://osh-web.github.io",
+  "plugins": [
+    [
+      "/Users/mmorito/develop/mmorito/osh-web.github.com/node_modules/react-static-plugin-source-filesystem/node.api.js",
+      {
+        "location": "/Users/mmorito/develop/mmorito/osh-web.github.com/src/pages"
+      }
+    ],
+    [
+      "react-static-plugin-sass",
+      {
+        "includePaths": [
+          "node_modules/"
+        ]
+      }
+    ],
+    "react-static-plugin-styled-components",
+    "/Users/mmorito/develop/mmorito/osh-web.github.com"
+  ],
+  "paths": {
+    "ROOT": "/Users/mmorito/develop/mmorito/osh-web.github.com",
+    "SRC": "/Users/mmorito/develop/mmorito/osh-web.github.com/src",
+    "DIST": "/Users/mmorito/develop/mmorito/osh-web.github.com/dist",
+    "ASSETS": "/Users/mmorito/develop/mmorito/osh-web.github.com/dist",
+    "PLUGINS": "/Users/mmorito/develop/mmorito/osh-web.github.com/plugins",
+    "TEMP": "/Users/mmorito/develop/mmorito/osh-web.github.com/tmp",
+    "ARTIFACTS": "/Users/mmorito/develop/mmorito/osh-web.github.com/artifacts",
+    "PUBLIC": "/Users/mmorito/develop/mmorito/osh-web.github.com/public",
+    "NODE_MODULES": "/Users/mmorito/develop/mmorito/osh-web.github.com/node_modules",
+    "EXCLUDE_MODULES": "/Users/mmorito/develop/mmorito/osh-web.github.com/node_modules",
+    "PACKAGE": "/Users/mmorito/develop/mmorito/osh-web.github.com/package.json",
+    "HTML_TEMPLATE": "/Users/mmorito/develop/mmorito/osh-web.github.com/dist/index.html",
+    "STATIC_DATA": "/Users/mmorito/develop/mmorito/osh-web.github.com/dist/staticData"
+  },
+  "basePath": "",
+  "publicPath": "https://osh-web.github.io/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}

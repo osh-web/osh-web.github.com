@@ -19,6 +19,7 @@ const mu2in = {
   key: 'mu2in',
   name: 'mu2in',
   twitter: 'mu2in',
+  github: 'mu2in',
 }
 
 const m_ando_japan = {
@@ -29,26 +30,26 @@ const m_ando_japan = {
   uri: 'https://bitriver.jp/',
 }
 
-const nobuske = {
-  key: 'nobuske',
-  name: '佐々木 宣介',
-}
-
 const nanarichi = {
   key: '7richi',
   name: '田中 靖也',
   twitter: '7richi',
+  github: 'yasu7ri',
+  facebook: 'yasu7ri',
 }
 
 const isabasi1484 = {
   key: 'isabasi1484',
   name: '石橋 伸介',
   twitter: 'isabisi1484',
+  github: 'isabisi1484',
 }
 
 const nishimotz = {
   key: '24motz',
   name: '西本 卓也',
+  twitter: '24motz',
+  facebook: 'takuya.nishimoto',
   uri: 'https://shuaruta.com/',
 }
 
@@ -57,8 +58,6 @@ const mmorito = {
   name: 'mmorito',
   title: '副実行委員長',
   twitter: 'mmorito_0318',
-  facebook: 'toshi.val',
-  github: 'mmorito',
 }
 
 const hiroyuki = {
@@ -78,6 +77,27 @@ const mosugi = {
   name: 'Masaki Osugi',
 }
 
+const yoshida = {
+  key: 'yoshida',
+  name: '吉田 豪',
+}
+
+const yamamoto = {
+  key: 'yamamoto',
+  name: '山本 直輝',
+  twitter: 'ymnk4919',
+  github: 'mtbk4919naoki',
+  facebook: 'ymnk4919',
+}
+
+const ozaki = {
+  key: 'ozaki',
+  name: '尾崎 徳生',
+  twitter: 'ozk009',
+  github: 'ozk009',
+  facebook: 'norio.ozaki.711',
+}
+
 export const staff: Staff[] = [
   naoyuki,
   mmorito,
@@ -85,9 +105,11 @@ export const staff: Staff[] = [
   isabasi1484,
   kakenavi,
   m_ando_japan,
-  nobuske,
   nanarichi,
   mu2in,
-  mosugi,
+  // mosugi,
   hiroyuki,
+  yoshida,
+  yamamoto,
+  ozaki,
 ]

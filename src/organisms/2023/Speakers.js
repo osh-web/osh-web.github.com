@@ -12,7 +12,7 @@ import {
 
 const Speaker = ({ name, furi, description, id, title, memberships, session }) => (
   <Card className="mdc-elevation--z1" outlined>
-    <CardMedia imageUrl={`/img/2020/${id}.jpg`} square />
+    <CardMedia imageUrl={`/img/2023/${id}.jpg`} square />
     <div style={{ padding: '0 16px' }}>
       <Headline1 style={{ fontSize: 18, lineHeight: 1 }}>
         {session ?
