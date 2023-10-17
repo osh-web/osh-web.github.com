@@ -55,9 +55,27 @@ export const cybozu: Sponsor = {
   height: 200,
 }
 
+export const subthread = {
+  name: '株式会社サブスレッド',
+  key: 'subthread',
+  url: 'https://www.subthread.co.jp/',
+  banner: '/img/2023/subthread.png',
+  height: 200,
+}
+
+export const bitriver: Sponsor = {
+  name: 'ビットリバー株式会社',
+  key: 'bitriver',
+  url: 'https://bitriver.jp',
+  banner: '/img/2023/bitriver.png',
+  height: 200,
+}
+
 export const platinum: Sponsor[] = [
   ulsystems,
   future_life_partners,
+  subthread,
+  bitriver,
 ]
 export const gold: Sponsor[] = [
   cybozu,

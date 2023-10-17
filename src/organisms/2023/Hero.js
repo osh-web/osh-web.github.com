@@ -11,7 +11,7 @@ export const Hero = () => (
     <br />
     「生成AIとのつきあい方」
     <br />
-    2023年11月11日(土)
+    2023年11月11日(土) 10:00 ～ 17:00
     <br />
     <Button style={{color: '#7b5544'}} href="https://goo.gl/maps/xxWZx4DDw1EBtomy8">
       広島市西区民文化センター

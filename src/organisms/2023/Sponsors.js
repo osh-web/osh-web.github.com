@@ -2,7 +2,7 @@
 import React from 'react'
 import { Cell, Grid, Row } from '@material/react-layout-grid'
 import {
-    Headline2,
+    Headline2, Headline3,
 } from '@material/react-typography'
 
 import { SponsorBanner as Banner } from '../../atoms/SponsorBanner'
@@ -23,15 +23,24 @@ export function Sponsors({ platinum, gold, silver }: { platinum: Resource[], gol
             </Cell>
         </Row>
       <Row>
+          <Cell>
+              <Headline3>Platinum</Headline3>
+          </Cell>
           {platinum.map((sponsor) =>(
               <Cell columns={12} style={style}>{Banner(toSponsor(sponsor))}</Cell>
           ))}
       </Row>
       <Row>
+          <Cell>
+              <Headline3>Gold</Headline3>
+          </Cell>
           {gold.map((sponsor) =>(
               <Cell columns={6} desktopColumns={6} style={style}>{Banner(toSponsor(sponsor))}</Cell>
           ))}
       </Row>
+        <Cell>
+            <Headline3>Silver</Headline3>
+        </Cell>
         <Row>
             {silver.map((sponsor) =>(
                 <Cell columns={4} desktopColumns={3} style={style}>{Banner(toSponsor(sponsor))}</Cell>
