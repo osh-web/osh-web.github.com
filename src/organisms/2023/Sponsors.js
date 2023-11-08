@@ -14,7 +14,7 @@ const style = {
     boxSizing: 'border-box',
 };
 
-export function Sponsors({ platinum, gold, silver }: { platinum: Resource[], gold: Resource[], silver: Resource[] }) {
+export function Sponsors({ platinum, gold, silver, supporter}: { platinum: Resource[], gold: Resource[], silver: Resource[], supporter: Resource[]}) {
   return (
     <Grid>
         <Row>
@@ -43,6 +43,14 @@ export function Sponsors({ platinum, gold, silver }: { platinum: Resource[], gol
         </Cell>
         <Row>
             {silver.map((sponsor) =>(
+                <Cell columns={4} desktopColumns={3} style={style}>{Banner(toSponsor(sponsor))}</Cell>
+            ))}
+        </Row>
+        <Cell>
+            <Headline3>Supporter</Headline3>
+        </Cell>
+        <Row>
+            {supporter.map((sponsor) =>(
                 <Cell columns={4} desktopColumns={3} style={style}>{Banner(toSponsor(sponsor))}</Cell>
             ))}
         </Row>

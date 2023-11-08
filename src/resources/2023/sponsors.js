@@ -71,6 +71,14 @@ export const bitriver: Sponsor = {
   height: 200,
 }
 
+export const eventHandler = {
+  name: '株式会社イベントハンドラ',
+  key: 'eventHandler',
+  url: 'https://eventhandler.jp/',
+  banner: '/img/2023/eventhandler.png',
+  height: 120,
+}
+
 export const platinum: Sponsor[] = [
   ulsystems,
   future_life_partners,
@@ -85,4 +93,7 @@ export const silver: Sponsor[] = [
   hmcn,
   nextvision,
 ]
-export const sponsors = { platinum, gold, silver }
+export const supporter: Suponsor[] = [
+  eventHandler,
+]
+export const sponsors = { platinum, gold, silver, supporter }
