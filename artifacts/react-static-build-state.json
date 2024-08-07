@@ -16,9 +16,9 @@
   "siteRoot": "https://osh-web.github.io",
   "plugins": [
     [
-      "/Users/mmorito/develop/mmorito/osh-web.github.com/node_modules/react-static-plugin-source-filesystem/node.api.js",
+      "/Users/naoyuki/ghq/github.com/osh-web/osh-web.github.com/node_modules/react-static-plugin-source-filesystem/node.api.js",
       {
-        "location": "/Users/mmorito/develop/mmorito/osh-web.github.com/src/pages"
+        "location": "/Users/naoyuki/ghq/github.com/osh-web/osh-web.github.com/src/pages"
       }
     ],
     [
@@ -30,22 +30,22 @@
       }
     ],
     "react-static-plugin-styled-components",
-    "/Users/mmorito/develop/mmorito/osh-web.github.com"
+    "/Users/naoyuki/ghq/github.com/osh-web/osh-web.github.com"
   ],
   "paths": {
-    "ROOT": "/Users/mmorito/develop/mmorito/osh-web.github.com",
-    "SRC": "/Users/mmorito/develop/mmorito/osh-web.github.com/src",
-    "DIST": "/Users/mmorito/develop/mmorito/osh-web.github.com/dist",
-    "ASSETS": "/Users/mmorito/develop/mmorito/osh-web.github.com/dist",
-    "PLUGINS": "/Users/mmorito/develop/mmorito/osh-web.github.com/plugins",
-    "TEMP": "/Users/mmorito/develop/mmorito/osh-web.github.com/tmp",
-    "ARTIFACTS": "/Users/mmorito/develop/mmorito/osh-web.github.com/artifacts",
-    "PUBLIC": "/Users/mmorito/develop/mmorito/osh-web.github.com/public",
-    "NODE_MODULES": "/Users/mmorito/develop/mmorito/osh-web.github.com/node_modules",
-    "EXCLUDE_MODULES": "/Users/mmorito/develop/mmorito/osh-web.github.com/node_modules",
-    "PACKAGE": "/Users/mmorito/develop/mmorito/osh-web.github.com/package.json",
-    "HTML_TEMPLATE": "/Users/mmorito/develop/mmorito/osh-web.github.com/dist/index.html",
-    "STATIC_DATA": "/Users/mmorito/develop/mmorito/osh-web.github.com/dist/staticData"
+    "ROOT": "/Users/naoyuki/ghq/github.com/osh-web/osh-web.github.com",
+    "SRC": "/Users/naoyuki/ghq/github.com/osh-web/osh-web.github.com/src",
+    "DIST": "/Users/naoyuki/ghq/github.com/osh-web/osh-web.github.com/dist",
+    "ASSETS": "/Users/naoyuki/ghq/github.com/osh-web/osh-web.github.com/dist",
+    "PLUGINS": "/Users/naoyuki/ghq/github.com/osh-web/osh-web.github.com/plugins",
+    "TEMP": "/Users/naoyuki/ghq/github.com/osh-web/osh-web.github.com/tmp",
+    "ARTIFACTS": "/Users/naoyuki/ghq/github.com/osh-web/osh-web.github.com/artifacts",
+    "PUBLIC": "/Users/naoyuki/ghq/github.com/osh-web/osh-web.github.com/public",
+    "NODE_MODULES": "/Users/naoyuki/ghq/github.com/osh-web/osh-web.github.com/node_modules",
+    "EXCLUDE_MODULES": "/Users/naoyuki/ghq/github.com/osh-web/osh-web.github.com/node_modules",
+    "PACKAGE": "/Users/naoyuki/ghq/github.com/osh-web/osh-web.github.com/package.json",
+    "HTML_TEMPLATE": "/Users/naoyuki/ghq/github.com/osh-web/osh-web.github.com/dist/index.html",
+    "STATIC_DATA": "/Users/naoyuki/ghq/github.com/osh-web/osh-web.github.com/dist/staticData"
   },
   "basePath": "",
   "publicPath": "https://osh-web.github.io/",

@@ -52,7 +52,14 @@ export const event2022 = {
   url: '/2022/',
 }
 
+export const event2023 = {
+  name: 'オープンセミナー2023@広島',
+  theme: '生成AIとのつきあい方',
+  url: '/2023/',
+}
+
 export const seminarList = [
+    event2023,
   event2022,
   event2020,
   event2019,
