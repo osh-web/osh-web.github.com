@@ -69,6 +69,7 @@ const hiroyuki = {
 const naoyuki = {
   key: 'naoyuki',
   name: '濱田 直之',
+  twitter: 'Naoyukisc2',
 }
 
 const mosugi = {
@@ -92,17 +93,21 @@ const yamamoto = {
 const ozaki = {
   key: 'ozaki',
   name: '尾崎 徳生',
-  twitter: 'ozk009',
-  github: 'ozk009',
   facebook: 'norio.ozaki.711',
 }
 
 const kaneyasu = {
-  key: 'ozaki',
+  key: 'kaneyasu',
   name: '兼安 聡',
   twitter: 'satoshi256kbyte',
   github: 'satoshi256kbyte',
   facebook: 'kaneyasusatoshi',
+}
+
+const sugiyama = {
+  key: 'sugiyama',
+  name: '杉山 花代',
+  twitter: 'Bluerose_87',
 }
 
 export const staff: Staff[] = [
@@ -119,5 +124,6 @@ export const staff: Staff[] = [
   yamamoto,
   ozaki,
   kaneyasu,
-  naoyuki
+  sugiyama,
+  naoyuki,
 ]

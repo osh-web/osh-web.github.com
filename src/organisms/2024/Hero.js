@@ -11,7 +11,7 @@ export const Hero = () => (
     <br />
     「XRE - エンジニアを支える組織」
     <br />
-    2023年11月09日(土) 10:00 ～ 17:00
+    2023年11月09日(土) 10:00 ～
     <br />
     <Button style={{color: '#7b5544'}} href="https://goo.gl/maps/xxWZx4DDw1EBtomy8">
         広島市中区民文化センター(JMSアステールプラザ)
