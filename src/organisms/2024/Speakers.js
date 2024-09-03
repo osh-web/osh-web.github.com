@@ -12,14 +12,14 @@ import {
 
 const Speaker = ({ name, furi, description, id, title, memberships, session }) => (
   <Card className="mdc-elevation--z1" outlined>
-    <CardMedia imageUrl={`/img/2023/${id}.jpg`} square />
+    <CardMedia imageUrl={`/img/2024/${id}.jpg`} square />
     <div style={{ padding: '0 16px' }}>
       <Headline1 style={{ fontSize: 18, lineHeight: 1 }}>
         {session ?
           '『' + (session.name) + '』' : 'セッション内容 TBD'
         }
       </Headline1>
-      <Body2>{session ?
+      <Body2 style={{ whiteSpace: 'pre-line' }}>{session ?
               (session.description) : ''
              }</Body2>
       <Caption style={{ fontSize: 14, margin: 0, padding: 0 }}>{furi}</Caption>
@@ -33,7 +33,7 @@ const Speaker = ({ name, furi, description, id, title, memberships, session }) =
           </Button>
         ))}
       </div>
-      <Body2>{description}</Body2>
+      <Body2 style={{ whiteSpace: 'pre-line' }}>{description}</Body2>
       <Body2>
         {title.reduce(
           (acc, elem) => (
