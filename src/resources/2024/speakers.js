@@ -18,10 +18,10 @@ type Speaker = {
   },
 }
 
-export const uda: Speaker = {
+export const seiud07: Speaker = {
   furi: '',
   name: '宇田 誠之朗',
-  key: 'uda',
+  key: 'seiud07',
   title: [],
   description:
     '株式会社Skillnote インフラSRE/エンジニアリングマネージャー。\n' +
@@ -38,10 +38,10 @@ export const uda: Speaker = {
   twitter: '',
 }
 
-export const sugahara: Speaker = {
+export const plageoj: Speaker = {
   furi: '',
   name: '菅原 政行',
-  key: 'sugahara',
+  key: 'plageoj',
   title: [],
   description:
     '1998年広島県福山市生まれ。2019年合同会社Team IshiHaraを設立。\n' +
@@ -61,10 +61,10 @@ export const sugahara: Speaker = {
   twitter: '',
 }
 
-export const yoshikawa: Speaker = {
+export const dyoshikawa: Speaker = {
   furi: '',
   name: 'dyoshikawa',
-  key: 'yoshikawa',
+  key: 'dyoshikawa',
   title: [],
   description:
     '広島市でリモート勤務するソフトウェアエンジニア。\n' +
@@ -84,8 +84,45 @@ export const yoshikawa: Speaker = {
   twitter: '',
 }
 
+export const kentahi: Speaker = {
+  furi: '',
+  name: '菱田健太@トポタル',
+  key: 'kentahi',
+  title: [],
+  description:
+    'Topotal COO/CFOをやっています。\n' +
+    'もう一度読むSREというPodcastの相槌兼編集担当、SRE NEXT 2023 Staff、SRE NEXT 2024 Co-Chairなどの活動をしています。',
+  memberships: [],
+  session: {
+    name: '',
+    description:
+      '',
+  },
+  twitter: '',
+}
+
+export const tomo: Speaker = {
+  furi: '',
+  name: 'tomo',
+  key: 'tomo',
+  title: [],
+  description:
+    'SIer→ECサイトのSRE&DBRE→PdMという変わった職歴のエンジニア。\n' +
+    '過去の経験から「様々なバックグラウンドの方に、わかりやすく説明する」をモットーに、イベントに参加させていただきます！',
+  memberships: [],
+  session: {
+    name: '信頼性を高めるって結局何だったの？\n',
+    description:
+      'SREやDBRE、CRE…様々な「信頼性を高める」エンジニアリングがありますが、信頼性とは？信頼性を高めて何が嬉しいの？\n' +
+      'を、かみ砕いて説明します。',
+  },
+  twitter: '',
+}
+
 export const speakers = [
-  uda,
-  sugahara,
-  yoshikawa,
+  seiud07,
+  plageoj,
+  dyoshikawa,
+  kentahi,
+  tomo,
 ]
