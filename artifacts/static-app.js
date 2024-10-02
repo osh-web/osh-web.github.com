@@ -215,10 +215,10 @@ var seminarList = __webpack_require__(21);
 var color = __webpack_require__(11);
 
 // CONCATENATED MODULE: C:/Users/NaoyukiHamada/Documents/Source/osh-web.github.com/src/resources/2024/speakers.js
-var uda = {
+var seiud07 = {
   furi: '',
   name: '宇田 誠之朗',
-  key: 'uda',
+  key: 'seiud07',
   title: [],
   description: '株式会社Skillnote インフラSRE/エンジニアリングマネージャー。\n' + '広島地場SIerにてインフラエンジニア10年、Webアプリ開発4年、技術営業4年を経て、2022年に広島からフルリモートで株式会社Skillnote(本社東京)へ入社。\n' + 'インフラ設計構築、スクラムチームのマネージャやスクラムマスター、コンプライアンス整備などを担当しています。',
   memberships: [],
@@ -228,10 +228,10 @@ var uda = {
   },
   twitter: ''
 };
-var sugahara = {
+var plageoj = {
   furi: '',
   name: '菅原 政行',
-  key: 'sugahara',
+  key: 'plageoj',
   title: [],
   description: '1998年広島県福山市生まれ。2019年合同会社Team IshiHaraを設立。\n' + 'ウェブサービス開発・運用支援を行うほか、向洋駅前でコワーキングスペースを運営。\n' + '2023年株式会社Faber Companyに新卒入社し、主に開発者体験の向上・パフォーマンス改善に取り組む。\n' + '2024年秋からベトナム・ホーチミンの子会社へ異動し、現地でのSRE組織立ち上げを目指して活動中。\n' + 'お好み焼きはうどん派。',
   memberships: [],
@@ -241,10 +241,10 @@ var sugahara = {
   },
   twitter: ''
 };
-var yoshikawa = {
+var dyoshikawa = {
   furi: '',
   name: 'dyoshikawa',
-  key: 'yoshikawa',
+  key: 'dyoshikawa',
   title: [],
   description: '広島市でリモート勤務するソフトウェアエンジニア。\n' + '現職では月間PV数1000万以上、会員数10万以上のエンジニア向け情報共有プラットフォームZennにおいてNext.jsやRuby on Railsを用いた開発業務に参画。\n' + 'それ以前は受託開発案件におけるテックリードとしてチーム開発を主導。\n' + 'バックエンドアプリケーション開発をメイン領域としながらも、ReactフロントエンドやAWSインフラの開発も行うT型的人材であり、Webアプリケーションの構成要素全体について技術選定、初期構築フェーズから対応している。\n' + 'OSS活動も行っており、aws-cdkやopenGraphScraperへのコミット経験がある。\n' + '保有資格は応用情報技術者、AWS認定 セキュリティ - 専門知識など。',
   memberships: [],
@@ -254,7 +254,33 @@ var yoshikawa = {
   },
   twitter: ''
 };
-var speakers = [uda, sugahara, yoshikawa];
+var kentahi = {
+  furi: '',
+  name: '菱田健太@トポタル',
+  key: 'kentahi',
+  title: [],
+  description: 'Topotal COO/CFOをやっています。\n' + 'もう一度読むSREというPodcastの相槌兼編集担当、SRE NEXT 2023 Staff、SRE NEXT 2024 Co-Chairなどの活動をしています。',
+  memberships: [],
+  session: {
+    name: '',
+    description: ''
+  },
+  twitter: ''
+};
+var tomo = {
+  furi: '',
+  name: 'tomo',
+  key: 'tomo',
+  title: [],
+  description: 'SIer→ECサイトのSRE&DBRE→PdMという変わった職歴のエンジニア。\n' + '過去の経験から「様々なバックグラウンドの方に、わかりやすく説明する」をモットーに、イベントに参加させていただきます！',
+  memberships: [],
+  session: {
+    name: '信頼性を高めるって結局何だったの？\n',
+    description: 'SREやDBRE、CRE…様々な「信頼性を高める」エンジニアリングがありますが、信頼性とは？信頼性を高めて何が嬉しいの？\n' + 'を、かみ砕いて説明します。'
+  },
+  twitter: ''
+};
+var speakers = [seiud07, plageoj, dyoshikawa, kentahi, tomo];
 // CONCATENATED MODULE: C:/Users/NaoyukiHamada/Documents/Source/osh-web.github.com/src/resources/2024/staff.js
 var kakenavi = {
   key: 'kakenavi',
@@ -345,10 +371,31 @@ var sugiyama = {
 var staff = [mmorito, nishimotz, isabasi1484, kakenavi, m_ando_japan, nanarichi, mu2in, // mosugi,
 hiroyuki, yoshida, yamamoto, ozaki, kaneyasu, sugiyama, naoyuki];
 // CONCATENATED MODULE: C:/Users/NaoyukiHamada/Documents/Source/osh-web.github.com/src/resources/2024/sponsors.js
-var platinum = [];
+var shuaruta = {
+  name: '株式会社シュアルタ',
+  key: 'shuaruta',
+  url: 'https://shuaruta.com/',
+  banner: '/img/2024/shuaruta.svg',
+  height: 120
+};
+var subthread = {
+  name: '株式会社サブスレッド',
+  key: 'subthread',
+  url: 'https://www.subthread.co.jp/',
+  banner: '/img/2024/subthread.png',
+  height: 200
+};
+var eventHandler = {
+  name: '株式会社イベントハンドラ',
+  key: 'eventHandler',
+  url: 'https://eventhandler.jp/',
+  banner: '/img/2024/eventhandler.png',
+  height: 120
+};
+var platinum = [subthread];
 var gold = [];
-var silver = [];
-var supporter = [];
+var silver = [shuaruta];
+var supporter = [eventHandler];
 var sponsors = {
   platinum: platinum,
   gold: gold,
@@ -370,11 +417,16 @@ var sponsors = {
 /* unused concated harmony import primary */
 /* unused concated harmony import accent */
 /* concated harmony reexport color */__webpack_require__.d(__webpack_exports__, "a", function() { return color["b" /* color */]; });
-/* unused concated harmony import uda */
-/* unused concated harmony import sugahara */
-/* unused concated harmony import yoshikawa */
+/* unused concated harmony import seiud07 */
+/* unused concated harmony import plageoj */
+/* unused concated harmony import dyoshikawa */
+/* unused concated harmony import kentahi */
+/* unused concated harmony import tomo */
 /* concated harmony reexport speakers */__webpack_require__.d(__webpack_exports__, "c", function() { return speakers; });
 /* concated harmony reexport staff */__webpack_require__.d(__webpack_exports__, "e", function() { return staff; });
+/* unused concated harmony import shuaruta */
+/* unused concated harmony import subthread */
+/* unused concated harmony import eventHandler */
 /* unused concated harmony import platinum */
 /* unused concated harmony import gold */
 /* unused concated harmony import silver */
