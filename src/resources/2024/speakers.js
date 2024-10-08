@@ -111,7 +111,7 @@ export const tomo: Speaker = {
     '過去の経験から「様々なバックグラウンドの方に、わかりやすく説明する」をモットーに、イベントに参加させていただきます！',
   memberships: [],
   session: {
-    name: '信頼性を高めるって結局何だったの？\n',
+    name: '信頼性を高めるって結局何だったの？',
     description:
       'SREやDBRE、CRE…様々な「信頼性を高める」エンジニアリングがありますが、信頼性とは？信頼性を高めて何が嬉しいの？\n' +
       'を、かみ砕いて説明します。',
@@ -131,12 +131,33 @@ export const chanyou: Speaker = {
     'データ基盤の構築・運用に注力している。',
   memberships: [],
   session: {
-    name: 'データの信頼性を支える仕組みと技術\n',
+    name: 'データの信頼性を支える仕組みと技術',
     description:
       'タイミーでは、施策の意思決定やレコメンドエンジンの開発など、あらゆる場面でデータを活用しています。 本セッションでは、タイミーのデータ基盤にフォーカスを当てながら、データの信頼性とは何か、データの信頼性を保つための仕組みと技術について、事例を交えながらご紹介します。',
   },
   twitter: '',
 }
+
+export const gr1m0h: Speaker = {
+  furi: '',
+  name: 'Wataru Tsuda / gr1m0h',
+  key: 'gr1m0h',
+  title: [],
+  description:
+    '広島商船高等専門学校卒業後、ソフトウェアベンダーで開発、運用、SRE、企画を経験。\n' +
+    '2023年2月に株式会社Luupに入社。IoT領域のSREとして主にSLI・SLO、Incident Response周りを推進。\n' +
+    'SRE Lounge Staff。\n' +
+    'SRE NEXT 2022・SRE NEXT 2024 Staff、SRE NEXT 2023 Chair。\n' +
+    'Platform Engineering Kaigi 2024・Platform Engineering Meetup Staff。',
+  memberships: [],
+  session: {
+    name: '見えているものを見て、見えていないものに気づくことが "SRE" の技術だ',
+    description:
+      '',
+  },
+  twitter: '',
+}
+
 
 export const speakers = [
   seiud07,
@@ -145,4 +166,5 @@ export const speakers = [
   kentahi,
   tomo,
   chanyou,
+  gr1m0h,
 ]

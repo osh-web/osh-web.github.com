@@ -280,7 +280,20 @@ var tomo = {
   },
   twitter: ''
 };
-var speakers = [seiud07, plageoj, dyoshikawa, kentahi, tomo];
+var chanyou = {
+  furi: '',
+  name: 'chanyou',
+  key: 'chanyou',
+  title: [],
+  description: '呉工業高等専門学校卒業後、スタートアップスタジオ事業を展開する企業にエンジニアとして入社。\n' + 'SNSコンサルティング事業でコンサルタントやアナリストを技術面で支えながら、エンジニアチームの立ち上げやエンジニア向けのコミュニケーション施策など幅広く活動する。\n' + 'その後、MaaS事業を行うスタートアップに転職。データエンジニアとして本格始動し、交通データ分析ツールの開発や運用を経験した後、2024年3月にタイミーへ入社。\n' + 'データ基盤の構築・運用に注力している。',
+  memberships: [],
+  session: {
+    name: 'データの信頼性を支える仕組みと技術\n',
+    description: 'タイミーでは、施策の意思決定やレコメンドエンジンの開発など、あらゆる場面でデータを活用しています。 本セッションでは、タイミーのデータ基盤にフォーカスを当てながら、データの信頼性とは何か、データの信頼性を保つための仕組みと技術について、事例を交えながらご紹介します。'
+  },
+  twitter: ''
+};
+var speakers = [seiud07, plageoj, dyoshikawa, kentahi, tomo, chanyou];
 // CONCATENATED MODULE: C:/Users/NaoyukiHamada/Documents/Source/osh-web.github.com/src/resources/2024/staff.js
 var kakenavi = {
   key: 'kakenavi',
@@ -422,6 +435,7 @@ var sponsors = {
 /* unused concated harmony import dyoshikawa */
 /* unused concated harmony import kentahi */
 /* unused concated harmony import tomo */
+/* unused concated harmony import chanyou */
 /* concated harmony reexport speakers */__webpack_require__.d(__webpack_exports__, "c", function() { return speakers; });
 /* concated harmony reexport staff */__webpack_require__.d(__webpack_exports__, "e", function() { return staff; });
 /* unused concated harmony import shuaruta */
