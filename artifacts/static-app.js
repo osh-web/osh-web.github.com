@@ -275,7 +275,7 @@ var tomo = {
   description: 'SIer→ECサイトのSRE&DBRE→PdMという変わった職歴のエンジニア。\n' + '過去の経験から「様々なバックグラウンドの方に、わかりやすく説明する」をモットーに、イベントに参加させていただきます！',
   memberships: [],
   session: {
-    name: '信頼性を高めるって結局何だったの？\n',
+    name: '信頼性を高めるって結局何だったの？',
     description: 'SREやDBRE、CRE…様々な「信頼性を高める」エンジニアリングがありますが、信頼性とは？信頼性を高めて何が嬉しいの？\n' + 'を、かみ砕いて説明します。'
   },
   twitter: ''
@@ -288,12 +288,25 @@ var chanyou = {
   description: '呉工業高等専門学校卒業後、スタートアップスタジオ事業を展開する企業にエンジニアとして入社。\n' + 'SNSコンサルティング事業でコンサルタントやアナリストを技術面で支えながら、エンジニアチームの立ち上げやエンジニア向けのコミュニケーション施策など幅広く活動する。\n' + 'その後、MaaS事業を行うスタートアップに転職。データエンジニアとして本格始動し、交通データ分析ツールの開発や運用を経験した後、2024年3月にタイミーへ入社。\n' + 'データ基盤の構築・運用に注力している。',
   memberships: [],
   session: {
-    name: 'データの信頼性を支える仕組みと技術\n',
+    name: 'データの信頼性を支える仕組みと技術',
     description: 'タイミーでは、施策の意思決定やレコメンドエンジンの開発など、あらゆる場面でデータを活用しています。 本セッションでは、タイミーのデータ基盤にフォーカスを当てながら、データの信頼性とは何か、データの信頼性を保つための仕組みと技術について、事例を交えながらご紹介します。'
   },
   twitter: ''
 };
-var speakers = [seiud07, plageoj, dyoshikawa, kentahi, tomo, chanyou];
+var gr1m0h = {
+  furi: '',
+  name: 'Wataru Tsuda / gr1m0h',
+  key: 'gr1m0h',
+  title: [],
+  description: '広島商船高等専門学校卒業後、ソフトウェアベンダーで開発、運用、SRE、企画を経験。\n' + '2023年2月に株式会社Luupに入社。IoT領域のSREとして主にSLI・SLO、Incident Response周りを推進。\n' + 'SRE Lounge Staff。\n' + 'SRE NEXT 2022・SRE NEXT 2024 Staff、SRE NEXT 2023 Chair。\n' + 'Platform Engineering Kaigi 2024・Platform Engineering Meetup Staff。',
+  memberships: [],
+  session: {
+    name: '見えているものを見て、見えていないものに気づくことが "SRE" の技術だ',
+    description: ''
+  },
+  twitter: ''
+};
+var speakers = [seiud07, plageoj, dyoshikawa, kentahi, tomo, chanyou, gr1m0h];
 // CONCATENATED MODULE: C:/Users/NaoyukiHamada/Documents/Source/osh-web.github.com/src/resources/2024/staff.js
 var kakenavi = {
   key: 'kakenavi',
@@ -436,6 +449,7 @@ var sponsors = {
 /* unused concated harmony import kentahi */
 /* unused concated harmony import tomo */
 /* unused concated harmony import chanyou */
+/* unused concated harmony import gr1m0h */
 /* concated harmony reexport speakers */__webpack_require__.d(__webpack_exports__, "c", function() { return speakers; });
 /* concated harmony reexport staff */__webpack_require__.d(__webpack_exports__, "e", function() { return staff; });
 /* unused concated harmony import shuaruta */

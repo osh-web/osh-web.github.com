@@ -31,10 +31,38 @@ export const eventHandler = {
   height: 120,
 }
 
+export const ulsystems: Sponsor = {
+  name: 'ウルシステムズ株式会社',
+  key: 'ulsystems',
+  url: 'https://www.ulsystems.co.jp/',
+  banner: '/img/2024/ulsystems.png',
+  height: 200,
+}
+
+export const cybozu: Sponsor = {
+  name: 'サイボウズ株式会社',
+  key: 'cyboz',
+  url: 'https://cybozu.co.jp/',
+  banner: '/img/2024/cybozu.png',
+  height: 200,
+}
+
+export const bitriver: Sponsor = {
+  name: 'ビットリバー株式会社',
+  key: 'bitriver',
+  url: 'https://bitriver.jp',
+  banner: '/img/2024/bitriver.png',
+  height: 200,
+}
+
+
 export const platinum: Sponsor[] = [
   subthread,
+  ulsystems,
+  bitriver,
 ]
 export const gold: Sponsor[] = [
+  cybozu,
 ]
 export const silver: Sponsor[] = [
   shuaruta,
