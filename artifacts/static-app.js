@@ -306,7 +306,20 @@ var gr1m0h = {
   },
   twitter: ''
 };
-var speakers = [seiud07, plageoj, dyoshikawa, kentahi, tomo, chanyou, gr1m0h];
+var tmasa = {
+  furi: '',
+  name: '谷 昌典',
+  key: 'tmasa',
+  title: [],
+  description: '広島大学情報科学部を2023年に卒業し、新卒でサイボウズに入社。\n' + '現在は東広島からリモートで働いている。瀬戸内海の小さな島に写真を撮りに行くのが好き。\n' + '生産性向上チームでは1年間社内の GitHub Actions セルフホストランナー基盤に従事し、現在は開発生産性指標の一つ Four keys の社内推進に関わっている。\n' + 'Software Design 2024年7月号 GitHub Actions実践講座 では3章の Rulesets とセキュリティを担当。\n' + 'デプロイパイプラインにおけるセキュリティに興味がある。',
+  memberships: [],
+  session: {
+    name: '開発組織を横断して支える生産性向上チームの取り組み',
+    description: 'サイボウズの開発組織の中に、「生産性向上チーム」という変わった名前のチームがあります。\n' + '2015年に生産性向上チームが設立されてから10年ほど経過し、その間に様々な取り組みを行ってきました。\n' + 'その取り組みはどれも、開発者の生産性を上げる目的で行っています。\n' + '本セッションでは、生産性向上チームの紹介とこれまでの取り組みから得た学びをお伝えします。\n' + '長く開発生産性に取り組む中で見えてきた変わっていくもの、変わらないもの、そしてこれからの話をします。'
+  },
+  twitter: ''
+};
+var speakers = [seiud07, plageoj, dyoshikawa, kentahi, tomo, chanyou, gr1m0h, tmasa];
 // CONCATENATED MODULE: C:/Users/NaoyukiHamada/Documents/Source/osh-web.github.com/src/resources/2024/staff.js
 var kakenavi = {
   key: 'kakenavi',
@@ -418,8 +431,29 @@ var eventHandler = {
   banner: '/img/2024/eventhandler.png',
   height: 120
 };
-var platinum = [subthread];
-var gold = [];
+var ulsystems = {
+  name: 'ウルシステムズ株式会社',
+  key: 'ulsystems',
+  url: 'https://www.ulsystems.co.jp/',
+  banner: '/img/2024/ulsystems.png',
+  height: 200
+};
+var cybozu = {
+  name: 'サイボウズ株式会社',
+  key: 'cyboz',
+  url: 'https://cybozu.co.jp/',
+  banner: '/img/2024/cybozu.png',
+  height: 200
+};
+var bitriver = {
+  name: 'ビットリバー株式会社',
+  key: 'bitriver',
+  url: 'https://bitriver.jp',
+  banner: '/img/2024/bitriver.png',
+  height: 200
+};
+var platinum = [subthread, ulsystems, bitriver];
+var gold = [cybozu];
 var silver = [shuaruta];
 var supporter = [eventHandler];
 var sponsors = {
@@ -450,11 +484,15 @@ var sponsors = {
 /* unused concated harmony import tomo */
 /* unused concated harmony import chanyou */
 /* unused concated harmony import gr1m0h */
+/* unused concated harmony import tmasa */
 /* concated harmony reexport speakers */__webpack_require__.d(__webpack_exports__, "c", function() { return speakers; });
 /* concated harmony reexport staff */__webpack_require__.d(__webpack_exports__, "e", function() { return staff; });
 /* unused concated harmony import shuaruta */
 /* unused concated harmony import subthread */
 /* unused concated harmony import eventHandler */
+/* unused concated harmony import ulsystems */
+/* unused concated harmony import cybozu */
+/* unused concated harmony import bitriver */
 /* unused concated harmony import platinum */
 /* unused concated harmony import gold */
 /* unused concated harmony import silver */

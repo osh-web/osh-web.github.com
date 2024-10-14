@@ -151,9 +151,10 @@ export const gr1m0h: Speaker = {
     'Platform Engineering Kaigi 2024・Platform Engineering Meetup Staff。',
   memberships: [],
   session: {
-    name: '見えているものを見て、見えていないものに気づくことが "SRE" の技術だ',
+    name: '"君は見ているが観察していない" で考えるインシデントマネジメント',
     description:
-      '',
+      'シャーロック・ホームズの名言『君は見ているが観察していない』を通じて、SREにおけるインシデントマネジメント、インシデントレスポンス、ポストモーテムの重要性を解説。\n' +
+      '実例を交え、これらがシステム信頼性向上にどう寄与するかを紹介します。',
   },
   twitter: '',
 }
