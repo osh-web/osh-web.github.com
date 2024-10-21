@@ -301,8 +301,8 @@ var gr1m0h = {
   description: '広島商船高等専門学校卒業後、ソフトウェアベンダーで開発、運用、SRE、企画を経験。\n' + '2023年2月に株式会社Luupに入社。IoT領域のSREとして主にSLI・SLO、Incident Response周りを推進。\n' + 'SRE Lounge Staff。\n' + 'SRE NEXT 2022・SRE NEXT 2024 Staff、SRE NEXT 2023 Chair。\n' + 'Platform Engineering Kaigi 2024・Platform Engineering Meetup Staff。',
   memberships: [],
   session: {
-    name: '見えているものを見て、見えていないものに気づくことが "SRE" の技術だ',
-    description: ''
+    name: '"君は見ているが観察していない" で考えるインシデントマネジメント',
+    description: 'シャーロック・ホームズの名言『君は見ているが観察していない』を通じて、SREにおけるインシデントマネジメント、インシデントレスポンス、ポストモーテムの重要性を解説。\n' + '実例を交え、これらがシステム信頼性向上にどう寄与するかを紹介します。'
   },
   twitter: ''
 };
