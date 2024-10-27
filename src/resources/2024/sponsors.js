@@ -55,6 +55,14 @@ export const bitriver: Sponsor = {
   height: 200,
 }
 
+export const nextvision: Sponsor = {
+  name: '株式会社ネクストビジョン',
+  key: 'nextvision',
+  url: 'https://www.nextvision.co.jp/',
+  banner: '/img/2024/nextvision.png',
+  height: 120,
+}
+
 
 export const platinum: Sponsor[] = [
   subthread,
@@ -66,6 +74,7 @@ export const gold: Sponsor[] = [
 ]
 export const silver: Sponsor[] = [
   shuaruta,
+  nextvision,
 ]
 export const supporter: Suponsor[] = [
   eventHandler,

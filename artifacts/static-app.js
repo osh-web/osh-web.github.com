@@ -262,8 +262,8 @@ var kentahi = {
   description: 'Topotal COO/CFOをやっています。\n' + 'もう一度読むSREというPodcastの相槌兼編集担当、SRE NEXT 2023 Staff、SRE NEXT 2024 Co-Chairなどの活動をしています。',
   memberships: [],
   session: {
-    name: '',
-    description: ''
+    name: 'SREの組織類型に応じたリーダーシップの考察',
+    description: 'TopotalではSRE組織に対して技術支援を行っています。\n' + '様々な企業の技術支援を観察していると、SREが組織を牽引することが求められると感じます。\n' + '組織を牽引するためにはリーダーシップを持って活動しなければなりません。\n' + 'しかし、SREの組織には様々なタイプがあり、リーダーシップのあり方も異なると考えられます。\n' + '今回の発表では、SREの組織類型に応じたリーダーシップのあり方を共有します。'
   },
   twitter: ''
 };
