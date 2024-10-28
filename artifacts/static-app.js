@@ -452,9 +452,16 @@ var bitriver = {
   banner: '/img/2024/bitriver.png',
   height: 200
 };
+var nextvision = {
+  name: '株式会社ネクストビジョン',
+  key: 'nextvision',
+  url: 'https://www.nextvision.co.jp/',
+  banner: '/img/2024/nextvision.png',
+  height: 120
+};
 var platinum = [subthread, ulsystems, bitriver];
 var gold = [cybozu];
-var silver = [shuaruta];
+var silver = [shuaruta, nextvision];
 var supporter = [eventHandler];
 var sponsors = {
   platinum: platinum,
@@ -493,6 +500,7 @@ var sponsors = {
 /* unused concated harmony import ulsystems */
 /* unused concated harmony import cybozu */
 /* unused concated harmony import bitriver */
+/* unused concated harmony import nextvision */
 /* unused concated harmony import platinum */
 /* unused concated harmony import gold */
 /* unused concated harmony import silver */
