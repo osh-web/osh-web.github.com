@@ -441,7 +441,7 @@ var ulsystems = {
 var cybozu = {
   name: 'サイボウズ株式会社',
   key: 'cyboz',
-  url: 'https://cybozu.co.jp/',
+  url: 'https://tech.cybozu.io/',
   banner: '/img/2024/cybozu.png',
   height: 200
 };
@@ -456,7 +456,7 @@ var nextvision = {
   name: '株式会社ネクストビジョン',
   key: 'nextvision',
   url: 'https://www.nextvision.co.jp/',
-  banner: '/img/2024/nextvision.png',
+  banner: '/img/2024/nextvision2.png',
   height: 120
 };
 var platinum = [subthread, ulsystems, bitriver];

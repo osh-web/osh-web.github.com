@@ -18,7 +18,7 @@ export const shuaruta: Sponsor = {
 export const subthread = {
   name: '株式会社サブスレッド',
   key: 'subthread',
-  url: 'https://www.subthread.co.jp/',
+  url: 'https://subthread.jp/?osh2024',
   banner: '/img/2024/subthread.png',
   height: 200,
 }
