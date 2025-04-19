@@ -1,5 +1,5 @@
 {
-  "name": "Node.js 12 開発環境",
+  "name": "Node.js 12.18 開発環境",
   "build": {
     "dockerfile": "Dockerfile",
     "context": ".."
