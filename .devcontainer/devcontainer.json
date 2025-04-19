@@ -1,0 +1,59 @@
+{
+  "name": "Node.js 12 開発環境",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "forwardPorts": [
+    3000
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "styled-components.vscode-styled-components",
+        "flowtype.flow-for-vscode",
+        "eamodio.gitlens",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": true
+        },
+        "eslint.validate": [
+          "javascript",
+          "javascriptreact"
+        ],
+        "javascript.validate.enable": false,
+        "flow.useNPMPackagedFlow": true,
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash"
+          }
+        }
+      }
+    }
+  },
+  // 以下のコマンドでNode.jsのパッケージをインストールし、開発用サーバーを起動する準備を行います
+  "postCreateCommand": "yarn install",
+  // コンテナ内で使用するユーザー
+  "remoteUser": "node",
+  // GitリポジトリをVS Code Devcontainerでマウントするための設定
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+  ],
+  // コンテナにホスト側のGit認証情報を引き継ぐための設定
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "latest"
+    }
+  },
+  // 環境変数の設定
+  "containerEnv": {
+    "NODE_ENV": "development"
+  }
+}
