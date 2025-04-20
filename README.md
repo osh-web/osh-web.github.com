@@ -145,6 +145,17 @@ $ yarn deploy
 3. コンテナのビルドが完了すると、コンテナ内の開発環境で作業可能
 4. 通常通り `yarn start` で開発サーバーを起動
 
+## GitHub Codespaces による開発環境
+
+本プロジェクトはGitHub Codespacesにも対応しており、ローカル環境の構築なしにブラウザからすぐに開発を始めることができます。
+
+### 使用方法
+1. GitHubリポジトリページ上部の「Code」ボタンをクリック
+2. 「Codespaces」タブを選択
+3. 「Create codespace on source」をクリック
+4. Codespaceが構築されると、ブラウザ上でVS Code互換のエディタが開きます
+5. ターミナルで `yarn start` を実行して開発サーバーを起動
+
 ## GitHub Actions によるデプロイ
 
 本プロジェクトはGitHub Actionsを利用して自動デプロイを行っています。
