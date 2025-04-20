@@ -1,6 +1,9 @@
 FROM ubuntu:20.04
 
-# 基本的な開発ツールをインストール
+# 対話型プロンプトを避けるために環境変数を設定
+ENV DEBIAN_FRONTEND=noninteractive
+
+# 基本的な開発ツールとsudoなど必要なパッケージを一度にインストール
 RUN apt-get update && apt-get install -y \
     git \
     curl \
@@ -10,6 +13,10 @@ RUN apt-get update && apt-get install -y \
     python3 \
     build-essential \
     software-properties-common \
+    sudo \
+    tzdata \
+    && ln -fs /usr/share/zoneinfo/Asia/Tokyo /etc/localtime \
+    && dpkg-reconfigure -f noninteractive tzdata \
     && rm -rf /var/lib/apt/lists/*
 
 # pythonコマンドをpython3にリンク
@@ -17,17 +24,12 @@ RUN ln -s /usr/bin/python3 /usr/bin/python
 
 # Node.js 12.18のインストール（GitHub Actionsのsetup-nodeと同様）
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - \
-    && apt-get update \
     && apt-get install -y nodejs \
-    && npm install -g yarn \
+    && npm install -g yarn flow-bin@0.81.0 \
     && node --version \
     && npm --version \
-    && yarn --version
-
-# flow-binのインストール
-RUN npm install -g --unsafe-perm=true --allow-root flow-bin@0.81.0 && \
-    # インストール確認
-    flow version
+    && yarn --version \
+    && flow version
 
 # 作業ディレクトリを設定
 WORKDIR /workspace
@@ -40,13 +42,9 @@ ARG USER_GID=$USER_UID
 # ユーザーと必要なグループを作成
 RUN groupadd --gid $USER_GID $USERNAME \
     && useradd -s /bin/bash --uid $USER_UID --gid $USER_GID -m $USERNAME \
-    && apt-get update \
-    && apt-get install -y sudo \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
-    && chmod 0440 /etc/sudoers.d/$USERNAME
-
-# 作業ディレクトリの所有権をユーザーに設定
-RUN chown -R $USERNAME:$USERNAME /workspace
+    && chmod 0440 /etc/sudoers.d/$USERNAME \
+    && chown -R $USERNAME:$USERNAME /workspace
 
 # 非rootユーザーに切り替え
 USER $USERNAME
