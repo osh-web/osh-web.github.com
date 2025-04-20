@@ -14,8 +14,10 @@
   ├── Dockerfile - 開発環境のDockerfile
   └── devcontainer.json - DevContainer設定ファイル
 .github/
-  └── workflows/ - GitHub Actions ワークフロー
-      └── deploy.yml - デプロイ自動化設定
+  ├── workflows/ - GitHub Actions ワークフロー
+  │   └── deploy.yml - デプロイ自動化設定
+  └── prompts/ - GitHub Copilot プロンプト
+      └── create-new-page.prompt.md - 年度別ページ作成プロンプト
 artifacts/ - react-staticビルドの成果物
 public/
   ├── img/ - 画像リソース
@@ -119,6 +121,16 @@ $ yarn deploy
 ```
 
 このコマンドは `yarn build` でビルドした後、`gh-pages` を使用して `dist` ディレクトリの内容を `master` ブランチにプッシュします。
+
+## 年度別ページの作成
+
+本プロジェクトでは、GitHub Copilotを使用して年度別の新しいページ構造を簡単に作成できます。`.github/prompts/create-new-page.prompt.md`プロンプトを使用することで、以下のようなディレクトリとファイルが自動生成されます：
+
+1. `src/pages/[年度]/` ディレクトリとindex.jsファイル
+2. `src/resources/[年度]/` ディレクトリと必要なリソースファイル
+3. 必要に応じて関連コンポーネントディレクトリと画像ディレクトリ
+
+使用方法は、GitHub Copilotに対してこのプロンプトファイルを指定するか、プロンプトの内容に従って年度を指定するだけです。
 
 ## 過去のイベント
 
