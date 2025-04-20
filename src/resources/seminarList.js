@@ -58,8 +58,21 @@ export const event2023 = {
   url: '/2023/',
 }
 
+export const event2024 = {
+  name: 'オープンセミナー2024@広島',
+  theme: 'XRE - エンジニアを支える組織',
+  url: '/2024/',
+}
+
+export const event2025 = {
+  name: 'オープンセミナー2025@広島',
+  theme: 'テーマ名を入力してください',
+  url: '/2025/',
+}
+
 export const seminarList = [
-    event2023,
+  event2024,
+  event2023,
   event2022,
   event2020,
   event2019,
