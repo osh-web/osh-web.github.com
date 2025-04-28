@@ -4,9 +4,7 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
-  "forwardPorts": [
-    3000
-  ],
+  "forwardPorts": [3000],
   "customizations": {
     "vscode": {
       "extensions": [
@@ -14,7 +12,6 @@
         "esbenp.prettier-vscode",
         "styled-components.vscode-styled-components",
         "flowtype.flow-for-vscode",
-        "eamodio.gitlens",
         "ms-azuretools.vscode-docker"
       ],
       "settings": {
@@ -23,10 +20,7 @@
         "editor.codeActionsOnSave": {
           "source.fixAll.eslint": true
         },
-        "eslint.validate": [
-          "javascript",
-          "javascriptreact"
-        ],
+        "eslint.validate": ["javascript", "javascriptreact"],
         "javascript.validate.enable": false,
         "flow.useNPMPackagedFlow": true,
         "terminal.integrated.defaultProfile.linux": "bash",
