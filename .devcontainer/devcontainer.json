@@ -12,7 +12,9 @@
         "esbenp.prettier-vscode",
         "styled-components.vscode-styled-components",
         "flowtype.flow-for-vscode",
-        "ms-azuretools.vscode-docker"
+        "ms-azuretools.vscode-docker",
+        "github.vscode-pull-request-github",
+        "github.vscode-github-actions"
       ],
       "settings": {
         "editor.formatOnSave": true,
