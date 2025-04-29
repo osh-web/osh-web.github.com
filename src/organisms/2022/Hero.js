@@ -9,10 +9,10 @@ export const Hero = () => (
     <br />
     「Re: エンジニアのための統計・データ分析入門」
     <br />
-    2022年6月25日(土) 10:00 ～ 17:00 （仮）
+    2022年6月25日(土) 11:00 ～ 17:30
     <br />
     <Button style={{color: 'white'}} href="https://www.google.com/maps?ll=34.394533,132.45547&z=16&t=m&hl=ja&gl=US&mapclient=embed&q=%E3%80%92730-0051+%E5%BA%83%E5%B3%B6%E7%9C%8C%E5%BA%83%E5%B3%B6%E5%B8%82%E4%B8%AD%E5%8C%BA%E5%A4%A7%E6%89%8B%E7%94%BA%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%95%E2%88%92%EF%BC%93">
-      サテライトキャンパスひろしま 501,502講義室（仮）
+      サテライトキャンパスひろしま 501,502講義室
     </Button>
       <br />
     <MainButton />

@@ -19,3 +19,5 @@ dist
 npm-debug.log
 .idea
 tmp
+/package-lock.json
+/artifacts/

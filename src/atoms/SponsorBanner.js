@@ -9,7 +9,7 @@ export type Props = {
 }
 
 export function SponsorBanner({ name, href, src, height }: Props) {
-  return (
+  return href ? (
     <a href={href}>
       <img
         src={src}
@@ -17,5 +17,11 @@ export function SponsorBanner({ name, href, src, height }: Props) {
         style={{ objectFit: 'contain', width: '100%', height: height + 'px' }}
       />
     </a>
+  ) : (
+    <img
+        src={src}
+        alt={`${name} バナー`}
+        style={{ objectFit: 'contain', width: '100%', height: height + 'px' }}
+      />
   )
 }

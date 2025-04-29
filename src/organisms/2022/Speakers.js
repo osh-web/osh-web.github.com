@@ -12,7 +12,7 @@ import {
 
 const Speaker = ({ name, furi, description, id, title, memberships, session }) => (
   <Card className="mdc-elevation--z1" outlined>
-    <CardMedia imageUrl={`/img/2020/${id}.jpg`} square />
+    <CardMedia imageUrl={`/img/2022/${id}.jpg`} square />
     <div style={{ padding: '0 16px' }}>
       <Headline1 style={{ fontSize: 18, lineHeight: 1 }}>
         {session ?
@@ -28,7 +28,7 @@ const Speaker = ({ name, furi, description, id, title, memberships, session }) =
       </Headline1>
       <div style={{ fontSize: 16, lineHeight: 1, margin: 0, padding: '8px 0' }}>
         {memberships.map(({ uri, name }) => (
-          <Button href={uri} style={{ height: 32, padding: '2px 0' }}>
+          <Button href={uri} style={{ height: 32, padding: '2px 0', margin: '0 0.75rem 0 0' }}>
             {name}
           </Button>
         ))}
