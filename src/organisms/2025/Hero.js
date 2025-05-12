@@ -15,7 +15,7 @@ export const Hero = () => (
     <br />
     <Button
       style={{ color: '#7b5544' }}
-      href="https://goo.gl/maps/xxWZx4DDw1EBtomy8"
+      href="https://maps.app.goo.gl/Km3eDEZZ37obMuZt7"
     >
       広島市中区民文化センター(JMSアステールプラザ)
     </Button>
