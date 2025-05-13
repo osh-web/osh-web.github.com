@@ -5,7 +5,7 @@ import { Headline1 } from '@material/react-typography'
 
 export const Hero = () => (
   <Headline1 style={headerStyle} tag="h1">
-    <img style={{ height: '300px' }} src="/img/logo.png" />
+    <img style={{ height: '300px' }} src="/img/logo.png" alt="OSHロゴ" />
     <br />
     オープンセミナー2025@広島
     <br />
@@ -21,6 +21,27 @@ export const Hero = () => (
     </Button>
     <br />
     <MainButton />
+    <div style={{ marginTop: '24px' }}>
+      <span style={{ fontSize: '18px', color: '#7b5544' }}>
+        オープンセミナー広島では企業/個人スポンサーを公募中です！
+        <br />
+        内容は
+        <a
+          href="https://docs.google.com/document/d/1jCBsd3RKeLc6ULf_QrOrqrcbNO6wf09VmQoIXOOGbdE/edit?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            marginLeft: '10px',
+            color: '#d2691e',
+            textDecoration: 'underline',
+          }}
+        >
+          {' '}
+          こちら{' '}
+        </a>
+        をご参照ください
+      </span>
+    </div>
   </Headline1>
 )
 
