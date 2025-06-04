@@ -57,7 +57,7 @@ const headerStyle = {
 
 const MainButton = () => (
   <Button
-    href="#"
+    href="https://osh.connpass.com/event/355425/"
     raised
     style={{
       padding: '20px 40px',

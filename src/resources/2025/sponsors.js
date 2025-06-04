@@ -18,8 +18,16 @@ export const sampleSponsor: Sponsor = {
   height: 200,
 }
 
+export const subthread = {
+  name: '株式会社サブスレッド',
+  key: 'subthread',
+  url: 'https://subthread.jp/?osh2025',
+  banner: '/img/2025/subthread.png',
+  height: 200,
+}
+
 // スポンサーカテゴリ
-export const platinum: Sponsor[] = []
+export const platinum: Sponsor[] = [subthread]
 export const gold: Sponsor[] = []
 export const silver: Sponsor[] = []
 export const supporter: Sponsor[] = []
