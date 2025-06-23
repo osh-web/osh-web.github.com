@@ -48,10 +48,10 @@ export function Sponsors({
           </Cell>
         ))}
       </Row>
+      <Cell>
+        <Headline3>Gold</Headline3>
+      </Cell>
       <Row>
-        <Cell>
-          <Headline3>Gold</Headline3>
-        </Cell>
         {gold.map(sponsor => (
           <Cell columns={6} desktopColumns={6} style={style}>
             {Banner(toSponsor(sponsor))}
