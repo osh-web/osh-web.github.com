@@ -34,9 +34,17 @@ export const cybozu: Sponsor = {
   height: 120,
 }
 
+export const eventHandler = {
+  name: '株式会社イベントハンドラ',
+  key: 'eventHandler',
+  url: 'https://eventhandler.jp/',
+  banner: '/img/2025/eventhandler.png',
+  height: 120,
+}
+
 // スポンサーカテゴリ
 export const platinum: Sponsor[] = [subthread]
 export const gold: Sponsor[] = [cybozu]
 export const silver: Sponsor[] = []
-export const supporter: Sponsor[] = []
+export const supporter: Sponsor[] = [eventHandler]
 export const sponsors = { platinum, gold, silver, supporter }
