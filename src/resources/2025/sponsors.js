@@ -26,9 +26,17 @@ export const subthread = {
   height: 200,
 }
 
+export const cybozu: Sponsor = {
+  name: 'サイボウズ株式会社',
+  key: 'cyboz',
+  url: 'https://tech.cybozu.io/',
+  banner: '/img/2025/cybozu.png',
+  height: 120,
+}
+
 // スポンサーカテゴリ
 export const platinum: Sponsor[] = [subthread]
-export const gold: Sponsor[] = []
+export const gold: Sponsor[] = [cybozu]
 export const silver: Sponsor[] = []
 export const supporter: Sponsor[] = []
 export const sponsors = { platinum, gold, silver, supporter }
