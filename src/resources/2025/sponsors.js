@@ -34,6 +34,23 @@ export const cybozu: Sponsor = {
   height: 120,
 }
 
+export const pyconjp2025: Sponsor = {
+  name: 'PyCon JP 2025',
+  key: 'pyconjp2025',
+  url: 'https://2025.pycon.jp/ja',
+  banner: '/img/2025/pyconjp2025.png',
+  height: 140,
+}
+
+export const nextvision: Sponsor = {
+  name: '株式会社ネクストビジョン',
+  key: 'nextvision',
+  url: 'https://www.nextvision.co.jp/',
+  banner: '/img/2025/nextvision2.png',
+  height: 120,
+}
+
+
 export const eventHandler = {
   name: '株式会社イベントハンドラ',
   key: 'eventHandler',
@@ -44,7 +61,7 @@ export const eventHandler = {
 
 // スポンサーカテゴリ
 export const platinum: Sponsor[] = [subthread]
-export const gold: Sponsor[] = [cybozu]
-export const silver: Sponsor[] = []
+export const gold: Sponsor[] = [cybozu,pyconjp2025]
+export const silver: Sponsor[] = [nextvision]
 export const supporter: Sponsor[] = [eventHandler]
 export const sponsors = { platinum, gold, silver, supporter }
