@@ -26,6 +26,14 @@ export const subthread = {
   height: 200,
 }
 
+export const smarthr = {
+  name: '株式会社SmartHR',
+  key: 'smarthr',
+  url: 'https://smarthr.co.jp/',
+  banner: '/img/2025/SmartHR_Logo.png',
+  height: 250,
+}
+
 export const cybozu: Sponsor = {
   name: 'サイボウズ株式会社',
   key: 'cyboz',
@@ -60,7 +68,7 @@ export const eventHandler = {
 }
 
 // スポンサーカテゴリ
-export const platinum: Sponsor[] = [subthread]
+export const platinum: Sponsor[] = [subthread,smarthr]
 export const gold: Sponsor[] = [cybozu,pyconjp2025]
 export const silver: Sponsor[] = [nextvision]
 export const supporter: Sponsor[] = [eventHandler]
