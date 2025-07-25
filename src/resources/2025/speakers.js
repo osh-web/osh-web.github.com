@@ -175,6 +175,26 @@ export const S_O_F_Science: Speaker = {
   twitter: '',
 }
 
+export const masaki_m: Speaker = {
+  furi: '',
+  name: '森 将記',
+  key: 'masaki_m',
+  title: [],
+  description:
+    '広島県竹原市出身。\n' +
+    '新卒で独立系SIerに就職し、主にクレジットカード会社の様々な業務のプロジェクトや保守を担当。\n' +
+    '2014年に広島銀行に転職。\n' +
+    '入行後は勘定系、ATM、営業店システム、全銀など基幹系システム関連のシステムを担当。\n' +
+    '2020年に係替えでクラウド担当になり、それ以降、AWSにどっぷりはまり、コミュニティ活動にもはまってしまった。\n' +
+    '好きなものはAWSとコリラックマ。',
+  memberships: [],
+  session: {
+    name: 'TBD',
+    description: '',
+  },
+  twitter: '',
+}
+
 // 現時点でスピーカーは未定です
 export const speakers = [
   hiroyukimaeda,
@@ -184,4 +204,5 @@ export const speakers = [
   ici_mici,
   kyokucho,
   S_O_F_Science,
+  masaki_m,
 ]
