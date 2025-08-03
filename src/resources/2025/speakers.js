@@ -86,7 +86,7 @@ export const sankyo: Speaker = {
 
 export const gr1m0h: Speaker = {
   furi: '',
-  name: 'Wataru Tsuda',
+  name: 'Wataru Tsuda/gr1m0h様',
   key: 'gr1m0h',
   title: [],
   description:
