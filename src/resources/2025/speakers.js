@@ -151,7 +151,7 @@ export const kyokucho: Speaker = {
     'http://matoyomi.hatenablog.com',
   memberships: [],
   session: {
-    name: 'TBD',
+    name: '（意思があれば動かす場所など）なんとでもなるはずだ！',
     description: '',
   },
   twitter: '',
@@ -169,8 +169,11 @@ export const S_O_F_Science: Speaker = {
     '2024、2025 Japan All AWS Certifications Engineers受賞',
   memberships: [],
   session: {
-    name: 'TBD',
-    description: '',
+    name: '新しいシステムを動かす時になぜ浸透しないのか？日々の業務で「やり方」を変えていくために行なったこと（仮）',
+    description: '皆さんのチームでは、新しいツールはきちんと浸透しているでしょうか？\n' +
+      '今までオンプレミスで動いていた業務システムやファイルサーバーなどを、SaaSやクラウドアプリに切り替えることは多々あると思います。しかし、ツールは増えていくのに、仕事の進め方は昔のまま。気づけば「あの件はあのツール、この件はこっちのツール…」「A部とやりとりする時はこのツール、B部とやりとりする時はあのツール」と、かえって複雑になっていませんか？\n' +
+      '\n' +
+      '今回のオープンセミナー広島では、システムを動かす場所を変える際に、単にツールを導入するだけでなく、仕事の"やり方"そのものをどのように変えたのか。日々の業務の中で、仕事の進め方をいかにして少しずつ変えていったのか、そしてその阻害要因は何だったのか、体験談をお話しします。',
   },
   twitter: '',
 }
@@ -189,7 +192,7 @@ export const masaki_m: Speaker = {
     '好きなものはAWSとコリラックマ。',
   memberships: [],
   session: {
-    name: 'TBD',
+    name: '広島銀行におけるAWS活用の取り組みについて（仮）',
     description: '',
   },
   twitter: '',
@@ -197,12 +200,12 @@ export const masaki_m: Speaker = {
 
 // 現時点でスピーカーは未定です
 export const speakers = [
-  hiroyukimaeda,
+  masaki_m,
   sankyo,
   gr1m0h,
+  S_O_F_Science,
+  hiroyukimaeda,
   takao2704,
   ici_mici,
   kyokucho,
-  S_O_F_Science,
-  masaki_m,
 ]
