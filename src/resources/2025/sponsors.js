@@ -66,9 +66,21 @@ export const eventHandler = {
   height: 120,
 }
 
+// 個人スポンサー
+// 森 将記さん
+export const mori_masaki = {
+  name: '森 将記',
+  key: 'mori_masaki',
+  url: 'https://www.facebook.com/masakimori0314',
+  banner: '',
+  height: 80,
+}
+
+
 // スポンサーカテゴリ
 export const platinum: Sponsor[] = [subthread, smarthr]
 export const gold: Sponsor[] = [cybozu, pyconjp2025]
 export const silver: Sponsor[] = [nextvision]
 export const supporter: Sponsor[] = [eventHandler]
-export const sponsors = { platinum, gold, silver, supporter }
+export const personal: Sponsor[] = [mori_masaki]
+export const sponsors = { platinum, gold, silver, supporter, personal }
