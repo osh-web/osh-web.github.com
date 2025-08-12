@@ -72,7 +72,7 @@ export const mori_masaki = {
   name: '森 将記',
   key: 'mori_masaki',
   url: 'https://www.facebook.com/masakimori0314',
-  banner: '',
+  banner: '/img/2025/personalSponsors/masaki_m.png',
   height: 80,
 }
 
