@@ -58,11 +58,20 @@ export const nextvision: Sponsor = {
   height: 120,
 }
 
+// サポーター
 export const eventHandler = {
   name: '株式会社イベントハンドラ',
   key: 'eventHandler',
   url: 'https://eventhandler.jp/',
   banner: '/img/2025/sponsors/eventhandler.png',
+  height: 120,
+}
+
+export const wakiyaCoffee = {
+  name: 'ワキヤコーヒー',
+  key: 'wakiyaCoffee',
+  url: 'https://wakiya.coffee/',
+  banner: '/img/2025/sponsors/wakiya_coffee.png',
   height: 120,
 }
 
@@ -76,11 +85,10 @@ export const mori_masaki = {
   height: 80,
 }
 
-
 // スポンサーカテゴリ
 export const platinum: Sponsor[] = [subthread, smarthr]
 export const gold: Sponsor[] = [cybozu, pyconjp2025]
 export const silver: Sponsor[] = [nextvision]
-export const supporter: Sponsor[] = [eventHandler]
+export const supporter: Sponsor[] = [eventHandler, wakiyaCoffee]
 export const personal: Sponsor[] = [mori_masaki]
 export const sponsors = { platinum, gold, silver, supporter, personal }
