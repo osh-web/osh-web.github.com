@@ -18,28 +18,6 @@ type Speaker = {
   },
 }
 
-// 2025年のスピーカーはまだいません。
-// 以下はサンプルです。実際のスピーカーが決定次第、更新してください。
-// export const seiud07: Speaker = {
-//   furi: '',
-//   name: '宇田 誠之朗',
-//   key: 'seiud07',
-//   title: [],
-//   description:
-//     '株式会社Skillnote インフラSRE/エンジニアリングマネージャー。\n' +
-//     '広島地場SIerにてインフラエンジニア10年、Webアプリ開発4年、技術営業4年を経て、2022年に広島からフルリモートで株式会社Skillnote(本社東京)へ入社。\n' +
-//     'インフラ設計構築、スクラムチームのマネージャやスクラムマスター、コンプライアンス整備などを担当しています。',
-//   memberships: [],
-//   session: {
-//     name: 'プロダクトと開発を支えるSREの力',
-//     description:
-//       '品質に対する要求が厳しいエンタープライズにクラウドサービスを提供するには、サイトの信頼性は非常に重要です。\n' +
-//       'またセールス、カスタマーサクセス、開発といった異なる目標を持つ部門が協力しビジネスを成長させていくためにも信頼性は欠かせない要素です。\n' +
-//       '本セッションではサイトの信頼性とSREの関わりについてSaas事業会社での実例を交えてお話します。',
-//   },
-//   twitter: '',
-// }
-
 export const hiroyukimaeda: Speaker = {
   furi: '',
   name: '前田 浩幸',
@@ -202,6 +180,22 @@ export const masaki_m: Speaker = {
   twitter: '',
 }
 
+export const tohru_tsunoda: Speaker = {
+  furi: '',
+  name: '角田 徹',
+  key: 'tohru_tsunoda',
+  title: [],
+  description:
+    'SIer、受託開発を経て、2023年10月から株式会社Helpfeelにフルリモートでエンジニアリングマネージャーとして参加。\n' +
+    '複業としてワークアット株式会社の立ち上げに加わり、地元のコワーキングスペースのコミュニティマネージャーやセミナー、地域のIT勉強会に携わっている。',
+  memberships: [],
+  session: {
+    name: '振り子と螺旋とコンピューティング',
+    description: '',
+  },
+  twitter: '',
+}
+
 // 現時点でスピーカーは未定です
 export const speakers = [
   masaki_m,
@@ -212,4 +206,5 @@ export const speakers = [
   takao2704,
   ici_mici,
   kyokucho,
+  tohru_tsunoda,
 ]
