@@ -100,8 +100,8 @@ export const gr1m0h: Speaker = {
     'SRE NEXT / SRE Loungeコミュニティでの活動を通じて、SRE文化の普及・発展にも貢献。',
   memberships: [],
   session: {
-    name: 'TBD',
-    description: '',
+    name: 'マイクロモビリティシェアサービスを支えるプラットフォームアーキテクチャ',
+    description: '電動マイクロモビリティシェアサービス「LUUP」が急成長する過程で、SREとして、ビジネスやサービスの特性、そしてその変化に対してどのような課題認識を持ち、どういう対応をしてきたのかをお話しします。',
   },
   twitter: '',
 }
