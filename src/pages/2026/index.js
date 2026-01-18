@@ -2,8 +2,8 @@
 import React from 'react'
 import { Head } from 'react-static'
 
-import { Menu, Hero, Speakers, Staff, Sponsors } from '../organisms/2026'
-import { speakers, staff, sponsors } from '../resources/2026'
+import { Menu, Hero, Speakers, Staff, Sponsors } from '../../organisms/2026'
+import { speakers, staff, sponsors } from '../../resources/2026'
 
 export default () => (
   <div>
