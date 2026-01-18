@@ -66,11 +66,18 @@ export const event2024 = {
 
 export const event2025 = {
   name: 'オープンセミナー2025@広島',
-  theme: 'テーマ名を入力してください',
+  theme: '君はどこで動かすか？',
   url: '/2025/',
 }
 
+export const event2026 = {
+  name: 'オープンセミナー2026@広島',
+  theme: '事業を進めるコーポレートIT',
+  url: '/2026/',
+}
+
 export const seminarList = [
+  event2025,
   event2024,
   event2023,
   event2022,
