@@ -115,6 +115,16 @@ const sugiyama = {
   twitter: 'Bluerose_87',
 }
 
+const hadama = {
+  key: 'hadama',
+  name: '波多間 時',
+}
+
+const omura = {
+  key: 'omura',
+  name: '小村 朋輝',
+}
+
 export const staff: Staff[] = [
   ozaki,
   isozuka,
@@ -130,5 +140,7 @@ export const staff: Staff[] = [
   yoshida,
   yamamoto,
   sugiyama,
+  hadama,
+  omura,
   naoyuki,
 ]
