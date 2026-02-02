@@ -24,6 +24,14 @@ export const chugaiTec: Sponsor = {
   height: 200,
 }
 
+export const toppan: Sponsor = {
+  name: 'TOPPANデジタル株式会社',
+  key: 'toppan',
+  url: 'https://www.digital.toppan.com/ja/',
+  banner: '/img/2026/sponsors/toppan.png',
+  height: 110,
+}
+
 // シルバースポンサー
 export const nextvision: Sponsor = {
   name: '株式会社ネクストビジョン',
@@ -43,7 +51,7 @@ export const eventHandler: Sponsor = {
 }
 
 // スポンサーカテゴリ
-export const platinum: Sponsor[] = [subthread, chugaiTec]
+export const platinum: Sponsor[] = [subthread, chugaiTec, toppan]
 export const gold: Sponsor[] = []
 export const silver: Sponsor[] = [nextvision]
 export const supporter: Sponsor[] = [eventHandler]
