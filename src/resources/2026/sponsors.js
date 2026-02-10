@@ -32,6 +32,14 @@ export const toppan: Sponsor = {
   height: 110,
 }
 
+export const dreamarts: Sponsor = {
+  name: '株式会社ドリーム・アーツ',
+  key: 'dreamarts',
+  url: 'https://recruit.dreamarts.co.jp/',
+  banner: '/img/2026/sponsors/dreamarts.png',
+  height: 120,
+}
+
 // シルバースポンサー
 export const nextvision: Sponsor = {
   name: '株式会社ネクストビジョン',
@@ -51,9 +59,12 @@ export const eventHandler: Sponsor = {
 }
 
 // スポンサーカテゴリ
-export const platinum: Sponsor[] = [subthread, chugaiTec, toppan]
+export const platinum: Sponsor[] = [subthread, chugaiTec, toppan, dreamarts]
 export const gold: Sponsor[] = []
 export const silver: Sponsor[] = [nextvision]
 export const supporter: Sponsor[] = [eventHandler]
-export const personal: Sponsor[] = []
+export const personal: Sponsor[] = [
+  { name: 'ozk', key: 'ozk', url: 'https://x.com/ozk009', banner: '/img/2026/personalSponsors/ozk.jpg', height: 80 },
+  { name: 'いそづか', key: 'isozuka', url: 'https://x.com/1so2ca', banner: '/img/2026/personalSponsors/isozuka.png', height: 80 },
+]
 export const sponsors = { platinum, gold, silver, supporter, personal }
