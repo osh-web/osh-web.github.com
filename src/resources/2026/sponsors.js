@@ -49,6 +49,14 @@ export const nextvision: Sponsor = {
   height: 120,
 }
 
+export const teamIshihara: Sponsor = {
+  name: '合同会社Team IshiHara',
+  key: 'team-ishihara',
+  url: 'https://ishihara.team',
+  banner: '/img/2026/sponsors/team-ishihara.png',
+  height: 120,
+}
+
 // サポーター
 export const eventHandler: Sponsor = {
   name: '株式会社イベントハンドラ',
@@ -61,7 +69,7 @@ export const eventHandler: Sponsor = {
 // スポンサーカテゴリ
 export const platinum: Sponsor[] = [subthread, chugaiTec, toppan, dreamarts]
 export const gold: Sponsor[] = []
-export const silver: Sponsor[] = [nextvision]
+export const silver: Sponsor[] = [nextvision, teamIshihara]
 export const supporter: Sponsor[] = [eventHandler]
 export const personal: Sponsor[] = [
   { name: 'ozk', key: 'ozk', url: 'https://x.com/ozk009', banner: '/img/2026/personalSponsors/ozk.jpg', height: 80 },
