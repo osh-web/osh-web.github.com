@@ -76,5 +76,6 @@ export const personal: Sponsor[] = [
   { name: 'いそづか', key: 'isozuka', url: 'https://x.com/1so2ca', banner: '/img/2026/personalSponsors/isozuka.png', height: 80 },
   { name: '森将記', key: 'mori_masaki', url: 'https://x.com/Masaki_jaws', banner: '/img/2026/personalSponsors/mori_masaki.jpg', height: 80 },
   { name: '加来 慎太郎', key: 'kaku', url: 'https://x.com/thdy_jp', banner: '/img/2026/personalSponsors/kaku.jpg', height: 80 },
+  { name: '中村 哲也', key: 'nakamura', url: 'https://x.com/S_O_F_Science', banner: '/img/2026/personalSponsors/nakamura.jpg', height: 80 },
 ]
 export const sponsors = { platinum, gold, silver, supporter, personal }
