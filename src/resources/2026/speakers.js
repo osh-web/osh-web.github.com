@@ -29,8 +29,8 @@ export const tomooka: Speaker = {
     '呉で生まれ、広島カープをこよなく愛する生粋の鯉党。',
   memberships: [],
   session: {
-    name: '準備中',
-    description: '',
+    name: '事業を強くするIT戦略 ― 経営理念・顧客理解から始めるDX',
+    description: 'DXやIT戦略は、技術から始めても成功しません。本来の出発点は「企業はなぜ存在するのか」「顧客の困りごとは何か」。\n本講演では、経営理念・顧客価値・事業戦略を起点に、IT・DX戦略をどのように紡ぎ出していくのかを解説します。実際の企業変革の経験をもとに、経営・事業を視点にコーポレートITを作る思考フレームと、企業内でDXを推進するための実践的な視点を共有します。',
   },
   twitter: '',
 }
@@ -198,7 +198,7 @@ export const yoshida: Speaker = {
     'そんな人たちと、価値ある仕事をしたいと考えています。',
   memberships: [],
   session: {
-    name: '準備中',
+    name: 'コネクト！',
     description: '',
   },
   twitter: '',
