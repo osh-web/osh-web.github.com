@@ -40,6 +40,15 @@ export const dreamarts: Sponsor = {
   height: 120,
 }
 
+// ゴールドスポンサー
+export const bitzemi: Sponsor = {
+  name: '株式会社ビットゼミ',
+  key: 'bitzemi',
+  url: 'https://www.bitzemi.com/',
+  banner: '/img/2026/sponsors/bitzemi.png',
+  height: 200,
+}
+
 // シルバースポンサー
 export const nextvision: Sponsor = {
   name: '株式会社ネクストビジョン',
@@ -68,7 +77,7 @@ export const eventHandler: Sponsor = {
 
 // スポンサーカテゴリ
 export const platinum: Sponsor[] = [subthread, chugaiTec, toppan, dreamarts]
-export const gold: Sponsor[] = []
+export const gold: Sponsor[] = [bitzemi]
 export const silver: Sponsor[] = [nextvision, teamIshihara]
 export const supporter: Sponsor[] = [eventHandler]
 export const personal: Sponsor[] = [
