@@ -167,17 +167,31 @@ export const masaki_m: Speaker = {
   twitter: '',
 }
 
-export const arima: Speaker = {
+export const fukui: Speaker = {
   furi: '',
-  name: '有馬 和彦',
-  key: 'arima',
+  name: '福井 健太',
+  key: 'fukui',
   title: [],
   description:
-    '株式会社アスカネット　経営企画部\n' +
-    '広島市出身。東京のSIerでERP開発に従事した後、地元広島へUターン。2008年より現職。\n' +
-    'インフラエンジニアとしてキャリアを積み、社内システムのクラウド移行や情報セキュリティ体制の構築、ISMS認証取得などを主導してきました。\n' +
-    '現在は経営企画として、技術的知見を活かした組織運営にも携わっています。\n' +
-    '趣味はランニング。',
+    '岡山県出身。\n' +
+    '新卒で電力系のIT子会社に入社し、システムの開発・運用を担当。\n' +
+    'その傍ら、RPA推進を行い、その後、社内のDX推進部署に異動。\n' +
+    '現在は社内での生成AI、ノーコードツールなどのデジタルツール運用をしながら、Microsoft 365 Copilotを中心に勉強中。\n' +
+    '趣味はキックボクシング。（エクササイズ）',
+  memberships: [],
+  session: {
+    name: 'RPAの挫折を教訓とした、業務視点と現場ニーズの両面で進めるDX推進',
+    description: 'RPA導入時、「誰でも簡単に使えるツール」という期待がある一方で、業務整理やガバナンス対応が求められ、現場にとっては気軽に使い始めにくいものになってしまいました。結果として、便利そうなのに広がらない、定着しないという壁に直面しました。\n本発表ではそんなRPA導入失敗の共有、この経験をもとに学んだ、「手段先行でも目的先行でもなく、業務視点と現場ニーズの両面から進めるDX」について、皆さんと一緒に考えていければ幸いです。',
+  },
+  twitter: '',
+}
+
+export const monke: Speaker = {
+  furi: '',
+  name: '門家 利樹',
+  key: 'monke',
+  title: [],
+  description: '',
   memberships: [],
   session: {
     name: '準備中',
@@ -199,7 +213,7 @@ export const yoshida: Speaker = {
   memberships: [],
   session: {
     name: 'コネクト！',
-    description: '',
+    description: '企業研修やDX人材育成に携わってきた経験をもとに、伸びる人材と成長する組織に共通する特徴についてお話しします。DX時代に求められる「挑戦する組織文化」とは何かを整理しながら、皆さんと一緒に考えを深める機会になれば幸いです。',
   },
   twitter: '',
 }
@@ -237,7 +251,8 @@ export const speakers = [
   hiroyukimaeda,
   nakagawara,
   masaki_m,
-  arima,
+  fukui,
+  monke,
   yoshida,
   sato,
 ]
